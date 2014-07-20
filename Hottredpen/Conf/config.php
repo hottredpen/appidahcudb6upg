@@ -24,17 +24,17 @@ return array(
 	'LOG_RECORD' => true, 
     'LOG_LEVEL'  =>'EMERG,ALERT,CRIT,ERR', // 只记录EMERG ALERT CRIT ERR 错误
 
-/*        //数据库
+       //数据库
   'DB_SQL' => 'mysql',
   'DB_HOST' => 'sqld.duapp.com',
-  'DB_NAME' => 'iptuDkDhtwErarLbMGbx',
-  'DB_USER' => 'gbU4Z4qGeG0GzegabrHbCfLL',
-  'DB_PWD' => 'THxPRGGOybf9wnjIcG3kOtXmmb0APxw7',
+  'DB_NAME' => 'qBDgtvIptekxhBEvgzIH',
+  'DB_USER' => 'mkFjr6riGk8Oh1A2ILH5p342',
+  'DB_PWD' => 'DOy0YxhBEs3BtLQLMHZ8IsI0h7W6gDDU',
   'DB_PORT' => '4050',
   'DB_PREFIX' => 'fdz_',
-  'USER_AUTH_KEY'=>'userid',   */ 
+  'USER_AUTH_KEY'=>'userid',   
   
-       //数据库
+/*        //数据库
   'DB_SQL' => 'mysql',
   'DB_HOST' => 'localhost',
   'DB_NAME' => 'fdzzj',
@@ -42,7 +42,7 @@ return array(
   'DB_PWD' => '111',
   'DB_PORT' => '3306',
   'DB_PREFIX' => 'fdz_',
-  'USER_AUTH_KEY'=>'userid',    
+  'USER_AUTH_KEY'=>'userid',  */   
   
 /*
 *
