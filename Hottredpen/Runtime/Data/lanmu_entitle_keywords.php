@@ -1,0 +1,1 @@
+<?php	return array ( 'zuowen' => '作文导航,简看作文,作文摘录,作文点评', 'yygj' => '', 'haocihaoju' => '', 'fenlei' => '好句好句分类,好词好句标记', 'jiaocai' => '', 'sefasfd' => '', 'ssss' => '', );?>

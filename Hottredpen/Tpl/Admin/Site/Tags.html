@@ -1,0 +1,74 @@
+<include file="Index:header" />
+<style type="text/css">
+.cla1{ font-weight:600; font-size:14px;}
+.cla2{ font-weight:500; font-size:12px; margin-left:5px;}
+.cla3{ font-weight:500; font-size:10px; margin-left:10px;}
+</style>
+<script>
+  function toSearch(dom){
+	  var url = $("#o_"+dom).attr("url");
+	  window.location = url;
+  }
+</script>
+<div class="container-fluid">
+	<div class="row-fluid">
+        <!--左栏 starts -->
+		<include file="left" />
+        <!--左栏 end -->
+			
+			
+       <!-- content starts -->
+      <div id="content" class="span10">
+          <ul class="breadcrumb">
+              <li>
+                  <a href="__ROOT__/Admin.html">首页</a> <span class="divider">/</span>
+              </li>
+              <li class="active">{$article.modname}</li>
+          </ul>
+        
+          <table class="table table-striped table-bordered table-condensed" id="articleList" name="articleList" <notempty name="Think.get.id">title="{$Think.get.id}"</notempty> >
+            <thead>
+              <tr>
+                <th>ID</th>
+				<th>关键字</th>
+                <th>信息总数</th>
+				<th>最后使用时间</th>
+                <th>点击次数</th>
+                <th>操作</th>
+              </tr>
+            </thead>
+            <tbody>
+			 <volist name="list" id="vo">
+              <tr>
+                <td>{$vo.tagid}</td>
+				<th>{$vo.tag}</th>
+                <td>{$vo.usetimes}</td>
+                <td>{$vo.lastusetime|date="Y-m-d H:m:s",###}</td>
+                <td>{$vo.hits}</td>
+                <td>
+                   <a data-rel="tooltip" href="__ROOT__/Admin/Site/editags/id/{$vo.tagid}.html"  class="icon icon-color icon-edit" title="修改文章"></a>
+                   <a data-rel="tooltip" href="#" onclick="if(confirm('是否要删除？'))window.location.href=''"  class="icon icon-color icon-trash" title="删除文章"></a>
+                </td>
+              </tr>
+            </volist>
+            </tbody>
+           
+          </table>          
+          
+
+      <div class="pagination pagination-centered">
+          <ul>{$Page}</ul>
+          </div>
+        
+      </div>
+       <!-- content end -->
+   </div>
+</div>
+
+<include file="Index:footer" />
+<script>
+$(function(){
+	var id = $("#articleList").attr("title");
+	$("#catid").find("option[value='"+id+"']").attr("selected","selected");
+});
+</script>

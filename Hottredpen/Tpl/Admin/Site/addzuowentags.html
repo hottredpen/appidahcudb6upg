@@ -1,0 +1,98 @@
+<include file="Index:header" />
+
+<div class="container-fluid">
+	<div class="row-fluid">
+        <!--左栏 starts -->
+		<include file="left" />
+        <!--左栏 end -->
+			
+			
+       <!-- content starts -->
+      <div id="content" class="span10">
+          <ul class="breadcrumb">
+              <li>
+                  <a href="__ROOT__/Admin.html">首页</a> <span class="divider">/</span>
+              </li>
+              <li>
+                  <a href="__ROOT__/Admin/Site/zuowentags.html">作文标签</a> <span class="divider">/</span>
+              </li>
+              <li class="active">添加栏目</li>
+              
+          </ul>
+          
+            <ul id="myTab" class="nav nav-tabs">
+
+              <li class="active"><a href="#home" data-toggle="tab">基本信息</a></li>
+            </ul>
+ <form method="post"  action='__ROOT__/Admin/Site/savezuowentags'>
+ <input name="user_id" type="hidden" value="{$user_id}" />
+ <input name="idtree" id="id" type="hidden" value="{$idtree}" />
+ <notempty name="list.newOrder">
+ <input id="order" name="order" type="hidden" value="{$list['newOrder']}">
+ <else />
+ <input id="order" name="order" type="hidden" value="1">
+ </notempty>
+            <div id="myTabContent" class="tab-content">
+
+              <div class="tab-pane fade in active" id="home">
+
+                
+                    <table class="table">
+                                    <tbody>
+                                      <tr>
+                                        <td>
+                                               作文标签名称：
+                                        </td>
+                                        <td>
+                                          <input name="title" type="text" class="span5" placeholder="请输入分类名称..." >
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                               作文标签英文：
+                                        </td>
+                                        <td>
+                                          <input name="entitle" type="text" class="span5" placeholder="请输入分类名称..." >
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                               上级类目：
+                                        </td>
+                                        <td>
+                                        <notempty name="idtree">
+                                            <select name="pid" id="pid">
+                                                <option value="{$pid}" id="Type">{$list['title']}</option>
+                                            </select>                                          
+                                        <else />
+                                            <select name="pid" id="pid">
+                                                <option value="0" id="Type">顶级类目</option>
+											</select>  
+                                        </notempty>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+
+                
+                    </table>
+
+
+              </div>
+              <!--基本信息end-->
+
+              <div class="modal-footer">
+                  <a href="#" class="btn" data-dismiss="modal">关闭</a>
+                  <button type="submit" class="btn btn-primary" >确认添加</button>
+              </div>
+              </form>
+
+
+            </div>
+
+          
+          
+      </div>
+       <!-- content end -->
+   </div>
+</div>
+<include file="Index:footer" />

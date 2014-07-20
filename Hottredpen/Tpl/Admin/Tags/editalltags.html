@@ -1,0 +1,104 @@
+<include file="Index:header" />
+<div class="container">
+	<include file="left" />
+	<div id="content" class="col-md-10">
+		<ul class="breadcrumb">
+			<li><a href="__ROOT__/Admin.html">首页</a></li>
+			<li><a href="__ROOT__/Admin/Tags/alltags.html">Tags管理</a></li>
+			<li><a href="__ROOT__/Admin/Tags/{$article.mod}List.html">{$article.modname}Tags</a></li>
+			<li class="active">修改{$article.modname}Tags</li>
+		</ul>
+          
+            <ul id="myTab" class="nav nav-tabs">
+              <li class="active"><a href="#home" data-toggle="tab">基本信息</a></li>
+            </ul>
+
+            <div id="myTabContent" class="tab-content">
+                <form method="post"  action="__URL__/updatealltags">
+				<input name="id" type="hidden" value="{$thisdata['id']}">
+				    <!--基本信息start-->
+                    <div class="tab-pane fade in active" id="home">
+							<table class="table">
+											<tbody>
+											  <tr>
+												<td>
+													   栏目名称：
+												</td>
+												<td>
+												  <input name="title" type="text" class="form-control" value="{$thisdata['title']}" maxlength="30">
+												</td>
+											  </tr>
+											  <tr>
+												<td>
+													   栏目英文：
+												</td>
+												<td>
+												  <input name="entitle" type="text" class="form-control" value="{$thisdata['entitle']}" maxlength="30">
+												</td>
+											  </tr>
+											  <tr>
+												<td>
+													   上级类目：
+												</td>
+												<td>
+												  <select name="pid">
+												  <notempty name="pid">
+												       <volist name="pdata" id="vo">
+													       
+																   <if condition="$vo.id eq $pid">
+																		<option selected="selected" value="{$vo.id}" class="cal{$vo.order}">
+																			<if condition="intval($vo['order']) eq 1 ">
+																			   {$vo.title}
+																			<elseif condition="intval($vo['order']) eq 2 " />
+																				├ {$vo.title}
+																			<elseif condition="intval($vo['order']) eq 3 " /> 
+																				│├ {$vo.title}
+																			</if>
+																		</option>
+																   <else />
+																		<option value="{$vo.id}" class="cal{$vo.order}">
+																			<if condition="intval($vo['order']) eq 1 ">
+																			   {$vo.title}
+																			<elseif condition="intval($vo['order']) eq 2 " />
+																				├ {$vo.title}
+																			<elseif condition="intval($vo['order']) eq 3 " /> 
+																				│├ {$vo.title}
+																			</if>
+																		</option>
+																   </if>
+
+													   </volist>
+													   <else />
+														<option>请给他分类</option>
+												       <volist name="pdata" id="vo">
+													       
+
+															<option value="{$vo.id}" class="cal{$vo.order}">
+																<if condition="intval($vo['order']) eq 1 ">
+																   {$vo.title}
+																<elseif condition="intval($vo['order']) eq 2 " />
+																	├ {$vo.title}
+																<elseif condition="intval($vo['order']) eq 3 " /> 
+																	│├ {$vo.title}
+																</if>
+															</option>
+
+													   </volist>
+												   </notempty>
+												  </select>
+												</td>
+											  </tr>
+											</tbody>
+					  
+							</table>
+                    </div>
+                    <!--基本信息end-->
+					<div class="modal-footer">
+						<a href="#" class="btn" data-dismiss="modal">关闭</a>
+						<button type="submit" class="btn btn-primary" >确认添加</button>
+					</div>
+                </form>
+            </div>
+    </div>
+</div>
+<include file="Index:footer" />

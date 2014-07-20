@@ -1,0 +1,96 @@
+<include file="Index:header" />
+<style type="text/css">
+.cla1{ font-weight:600; font-size:16px;}
+.cla2{ font-weight:500; font-size:15px; margin-left:5px;}
+.cla3{ font-weight:500; font-size:14px; margin-left:10px;}
+.cla4{ font-weight:500; font-size:13px; margin-left:10px;}
+.cla5{ font-weight:500; font-size:12px; margin-left:10px;}
+.cla{ font-weight:500; font-size:12px; margin-left:10px;}
+</style>
+<div class="container-fluid">
+	<div class="row-fluid">
+        <!--左栏 starts -->
+		<include file="left" />
+        <!--左栏 end -->
+			
+			
+       <!-- content starts -->
+      <div id="content" class="span10">
+          <ul class="breadcrumb">
+              <li>
+                  <a href="__ROOT__/Admin.html">首页</a> <span class="divider">/</span>
+              </li>
+              <li>
+                  <a href="__ROOT__/Admin/Site/{$article.mod}List.html">{$article.modname}</a> <span class="divider">/</span>
+              </li>
+			  <li><a href="__ROOT__/Admin/Site/show123/{$article.mod}/{$article['id']}.html">{$article.title}</a></li><span class="divider">/</span>
+              <li class="active">添加段落</li>
+              
+          </ul>
+          
+            <ul id="myTab" class="nav nav-tabs">
+              <li class="active"><a href="#home" data-toggle="tab">基本信息</a></li>
+            </ul>
+ <form method="post"  action='__URL__/addsave123' name="myform" id="myform">
+  <input name="pid" type="hidden" value="{$pid}" />
+  <input name="mod" type="hidden" value="{$article.mod}" />
+            <div id="myTabContent" class="tab-content">
+
+              <div class="tab-pane fade in active" id="home">
+
+                
+                    <table class="table">
+                                    <tbody>
+                                      <tr>
+                                        <td>
+                                               段落ID：
+                                        </td>
+                                        <td>
+                                          <input name="duanid" type="text" class="span5"  maxlength="30">
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                               段落类型：
+                                        </td>
+                                        <td>
+                                          <input name="leixing" type="radio" value="0" checked>文字<input name="leixing" type="radio" value="1" >图片
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                               段落内容：
+                                        </td>
+                                        <td>
+                                          <textarea name="content" type="text" class="span5" ></textarea>
+                                        </td>
+                                      </tr>
+
+                                    </tbody>
+                
+                    </table>
+              </div>
+
+              <div class="modal-footer">
+                  <button type="submit" class="btn btn-primary" >确认添加</button>
+              </div>
+              </form>
+
+
+            </div>
+
+          
+          
+      </div>
+       <!-- content end -->
+   </div>
+   <script>
+     function setCatPid(v){
+		 var catpid  = $(v).attr("catpid");
+		 var order =  $(v).attr("order");
+		 var pid  = $(v).attr("value");
+		 $("#catpid").attr("value",catpid);
+	 }
+   </script>
+</div>
+<include file="Index:footer" />

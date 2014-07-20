@@ -1,0 +1,56 @@
+<include file="Index:nofollowheader" />
+<!--头部 end -->
+<div class="container">
+    <div class="col-lg-8">
+        <div class="content_box">
+			<!-- 文章头部 -->
+			<div class="content_head">
+				<div class="col-md-12 ">
+						<!-- 位置导航 -->
+						<span class="glyphicon glyphicon-home"></span><a href="/">首页</a>-><font>分类</font>
+				</div>
+
+			    <volist name="data" id="vo">
+				    
+				     <volist name="vo.huaju" id="voo">
+					 <div class="panel panel-default">
+				     <div class="panel-heading ">
+					    <p class="text-right"><font class="text-muted">jk-kj:恭喜获得10个赞</font><a class="btn btn-success">被收录</a><a class="btn btn-default">赞</a><a class="btn btn-default">采蜜</a></p>
+					    <p>【划线】<a href="javascript:void(0)" class="text-primary dianhuaju" data-jiexid="{$vo.id}-{$voo.numb}">{$voo.huaju}</a></p>
+						<p class="text-right">-------采蜜者###</p>
+						
+					 </div>
+                            <div id="chakan-{$vo.id}-{$voo.numb}"  style="display:none" class="alert">
+						        <p>{$voo.articleduanwen}</p><p class="text-right">-------------出自<a href="/zuowen/html/{$vo.indexid}.html" class="text-warning">《{$vo.articletitle}》</a></p>
+			                </div>  
+					 </div>
+
+					 </volist>
+					 
+				</volist>
+			</div>
+        </div>
+    </div>
+
+
+    <div class="col-lg-4">
+		<!-- UJian Button BEGIN -->
+		<div class="ujian-hook"></div>
+		<script type="text/javascript">var ujian_config = {num:6,fillet:0,lkrc:0,picSize:120,picHeight:72,textHeight:15};</script>
+		<script type="text/javascript" src="http://v1.ujian.cc/code/ujian.js?uid=1915631"></script>
+		<a href="http://www.ujian.cc" style="border:0;"><img src="http://img.ujian.cc/pixel.png" alt="友荐云推荐" style="border:0;padding:0;margin:0;" /></a>
+		<!-- UJian Button END -->
+    </div>
+    <div class="clean"></div>
+</div>
+<!-- container start --> 
+
+<!-- container end -->
+<!--底部  start-->
+<script type="text/javascript">
+	$('.dianhuaju').click(function (e) {
+	    var id=$(this).attr("data-jiexid");
+	    $("#chakan-"+id).toggle();
+    })
+</script>
+<include file="Index:footer" />

@@ -1,0 +1,174 @@
+<include file="Index:header" />
+<style type="text/css">
+.cla1{ font-weight:600; font-size:16px;}
+.cla2{ font-weight:500; font-size:15px; margin-left:5px;}
+.cla3{ font-weight:500; font-size:14px; margin-left:10px;}
+.cla4{ font-weight:500; font-size:13px; margin-left:10px;}
+.cla5{ font-weight:500; font-size:12px; margin-left:10px;}
+.cla{ font-weight:500; font-size:12px; margin-left:10px;}
+</style>
+
+  
+<!--编辑器部分-->
+			<script charset="utf-8" src="__PUBLIC__/editor/kindeditor-min.js"></script>
+			<script type="text/javascript">
+                    KindEditor.ready(function(K) {
+                        window.editor = K.create('#editor_id',{
+                            uploadJson : '/index.php?g=Comments&m=Uploadimg&a=ke_upimg',
+                            //fileManagerJson : '__PUBLIC__/editor/php/file_manager_json.php',
+                            //allowFileManager : true
+						});
+                    });
+			</script>
+    <!-- editor -->
+	<script src="__PUBLIC__/editor/kindeditor.js"></script>
+<!--编辑器部分结束-->
+<div class="container-fluid">
+	<div class="row-fluid">
+        <!--左栏 starts -->
+		<include file="left" />
+        <!--左栏 end -->
+			
+			
+       <!-- content starts -->
+      <div id="content" class="span10">
+          <ul class="breadcrumb">
+              <li>
+                  <a href="__ROOT__/Admin.html">首页</a> <span class="divider">/</span>
+              </li>
+              <li>
+                  <a href="__ROOT__/Admin/Site/{$article.mod}List.html">{$article.modname}</a> <span class="divider">/</span>
+              </li>
+              <li class="active">添加文章</li>
+              
+          </ul>
+          
+            <ul id="myTab" class="nav nav-tabs">
+
+              <li class="active"><a href="#home" data-toggle="tab">基本信息</a></li>
+            </ul>
+ <form method="post"  action='__URL__/savehott' name="myform" id="myform">
+ <input name="user_id" type="hidden" value="{$user_id}" />
+  <input name="u"  type="hidden" value="__ROOT__/Admin/Site/{$article.mod}List.html" />
+  <input name="q" id="q" type="hidden" value="{$article.mod}" />
+            <div id="myTabContent" class="tab-content">
+
+              <div class="tab-pane fade in active" id="home">
+
+                    <table class="table">
+                                    <tbody>
+                                      <tr>
+                                        <td>
+                                               文章名称：
+                                        </td>
+                                        <td>
+                                          <input name="title" type="text" class="span5" placeholder="请输入分类名称..." >
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                               作者：
+                                        </td>
+                                        <td>
+                                          <input name="author" type="text" class="span5" placeholder="作者" >
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                               来源：
+                                        </td>
+                                        <td>
+                                          <input name="laiyuan" type="text" class="span5" placeholder="来源" >
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                               文章所属栏目：
+                                        </td>
+                                        <td>
+                                        <if condition="$list">
+                                          <select id="catid" name="catid">
+												<volist name="list" id="voo">
+											   
+												   <if condition="$voo['order'] eq 1 ">
+												   <option id="o_{$voo.id}" value="{$voo.id}"  class="cla{$voo.order}" url="__ROOT__/Admin/Site/{$article.mod}List/id/{$voo.id}.html">{$voo.title}</option>
+												   <elseif condition="$voo['order'] eq 2 " />
+													 <option id="o_{$voo.id}" value="{$voo.id}"  class="cla{$voo.order}" url="__ROOT__/Admin/Site/{$article.mod}List/id/{$voo.id}.html">├ {$voo.title}</option>
+													<elseif condition="$voo['order'] eq 3 " /> 
+													<option id="o_{$voo.id}" value="{$voo.id}"  class="cla{$voo.order}" url="__ROOT__/Admin/Site/{$article.mod}List/id/{$voo.id}.html">│├  {$voo.title}</option>
+													</if>
+											   
+											   </volist>
+
+                                          </select>
+                                        <else />
+                                          <p class="red">当前的书都已上传完，请选择未完结的书籍</p>
+                                        </if>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                               Tags标签：
+                                        </td>
+                                        <td>
+                                          <input name="tags" type="text" class="span5" placeholder="请输入标签..." >
+                                        </td>
+                                      </tr>
+                   
+                    <tr>
+                      <td>
+                             内容：
+                      </td>
+                      <td>
+                          	<textarea class="editor" id="editor_id" name="content" style="width:700px;height:300px;"></textarea>
+                      </td>
+                    </tr>
+                                      <tr>
+                                        <td>
+                                               缩略图：
+                                        </td>
+                                        <td>
+                                          <input name="img" type="text" class="span5">
+                                        </td>
+                                      </tr>                                  
+                                      <tr>
+                                        <td>
+                                               是否发布：
+                                        </td>
+                                        <td>
+                                          <input name="isfabu" type="radio" value="1" checked>是<input name="isfabu" type="radio" value="0">否
+                                        </td>
+                                      </tr>                                       
+                                    </tbody>
+                
+                    </table>
+
+                      <input name="modified" type="hidden" value="0" />
+                      <input name="modified_by" type="hidden" value="0" />
+
+              </div>
+
+              <div class="modal-footer">
+                  <button type="submit" class="btn btn-primary" >确认添加</button>
+              </div>
+              </form>
+
+
+            </div>
+
+          
+          
+      </div>
+
+       <!-- content end -->
+   </div>
+   <script>
+     function setCatPid(v){
+		 var catpid  = $(v).attr("catpid");
+		 var order =  $(v).attr("order");
+		 var pid  = $(v).attr("value");
+		 $("#catpid").attr("value",catpid);
+	 }
+   </script>
+</div>
+<include file="Index:footer" />

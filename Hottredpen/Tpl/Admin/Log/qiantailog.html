@@ -1,0 +1,47 @@
+<include file="index/header" />
+<div class="container">
+	<include file="left" />
+    <div id="content" class="col-md-10">
+		<ul class="breadcrumb">
+			<li><a href="__ROOT__/Admin.html">首页</a></li>
+			<li><a href="__ROOT__/Admin/Log/QianTaiLog.html">操作记录</a></li>
+			<li class="active">用户操作记录</li>
+		</ul>
+        <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>操作者</th>
+                <th>操作说明</th>
+                <th>操作时间</th>
+                <th>操作IP</th>
+              </tr>
+            </thead>
+            <tbody>
+                <volist name="list" id="vo">
+                <tr>
+                <td>
+                       {$vo.id}
+                </td>
+                <td>
+                       {$vo.username}
+                </td>
+                <td>
+                       {$vo.actionname}
+                </td>
+                <td>
+                       {$vo.time|date="Y-m-d H:i:s",###}
+                </td>
+                <td>
+                        {$vo.ip}
+                </td>
+              </tr>
+				</volist>
+            </tbody>
+        </table>
+          <div>
+          <ul class="pagination pagination-lg">{$page}</ul>
+          </div>
+	</div>
+</div>
+<include file="index/footer" />

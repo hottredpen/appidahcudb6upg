@@ -1,0 +1,111 @@
+<include file="Index/header" />
+<div class="container">
+	<include file="left" />
+	<div id="content" class="col-md-10">
+		<ul class="breadcrumb">
+			<li><a href="__ROOT__/Admin.html">首页</a></li>
+			<li><a href="__ROOT__/Admin/jifen/index.html">积分等级配置</a></li>
+			<li class="active">积分等级</li>
+			<div  class="pull-right"> 
+			    <a href="#" data-toggle="modal" data-target="#myModal">添加积分等级</a>
+			</div>
+		</ul>
+        <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>等级名称</th>
+                <th>图片</th>
+                <th>分值</th>
+                <th>操作</th>
+              </tr>
+            </thead>
+            <tbody>
+            <volist name="list" id="vo">
+                <tr>
+                <td>
+                       {$vo.id}
+                </td>
+                <td>
+                       {$vo.name}
+                </td>
+                <td>
+                      <img src="__PUBLIC__/uploadify/uploads/grade_img/{$vo.img}"/>
+                </td>
+                <td>
+                      {$vo.min}-{$vo.max}
+                </td>    
+                <td>
+                    <a href="__ROOT__/Admin/Jifen/editdengji/id/{$vo.id}.html" >编辑</a>
+                    <a href="#"  onclick="if(confirm('是否要删除？'))window.location.href='__URL__/deledengji/id/{$vo.id}'">删除</a>
+                </td>
+                </tr>
+            </volist>
+            </tbody>
+          </table>
+<div>
+</div>
+<!--添加积分等级 start-->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">添加积分等级</h4>
+      </div>
+	  <form method="post"  action='__URL__/adddengji'>
+      <div class="modal-body">
+
+			<table class="table table-striped">
+        <tbody>
+          <tr>
+            <td>
+                   等级名称：
+            </td>
+            <td>
+              <input name="name" type="text" class="form-control" placeholder="请输入等级名称...">
+            </td>
+          </tr>
+          <tr>
+            <td>
+                   图片：
+            </td>
+            <td>
+                <img id="feil" />
+                <input id="img" name="img" type="hidden" />
+                <input id="folder" type="hidden" value="grade_img"/>
+                <input id="file_delete" type="hidden" value="/uploads/grade_img/1381309359.4541.gif"/>
+                <input data-no-uniform="true" type="file" id="file_upload" /> 
+            </td>
+          </tr>
+          <tr>
+            <td>
+                   最小值：
+            </td>
+            <td>
+              <input name="min" type="text" class="form-control" placeholder="请输入最小值...">
+            </td>
+          </tr>
+          <tr>
+            <td>
+                   最大值：
+            </td>
+            <td>
+              <input name="max" type="text" class="form-control" placeholder="请输入最大值...">
+            </td>
+          </tr>
+        </tbody> 
+						
+			</table>
+			
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+        <button type="submit" class="btn btn-primary">确认添加</button>
+      </div>
+	  </form>
+    </div>
+  </div>
+</div>
+<!--添加系统变量 结束-->
+<include file="Index:footer" />

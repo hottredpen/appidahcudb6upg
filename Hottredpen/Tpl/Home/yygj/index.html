@@ -1,0 +1,32 @@
+<include file="Index:header" />
+<!--头部 end -->
+<div class="container">
+       <div class="col-md-8 col-sm-8">
+            <h2 class="title">最新发布</h2>
+			
+	        <foreach name="list" item="foo">
+            <div class="row">
+				<div class="col-md-6">
+					<empty name="foo[img]">
+						<a title="{$foo.title}" href="/yygj/html/{$foo.indexid}.html" class="thumbnail"><img alt="{$foo.title}" src="__PUBLIC__/images/thumbnail.png"></a>
+					<else />
+						<a title="{$foo.title}" href="/yygj/html/{$foo.indexid}.html" class="thumbnail"><img alt="{$foo.title}" src="{$foo[img]|substr=0,-4}01.jpg" ></a>
+					</empty>
+				</div>
+				<div class="col-md-6">
+					<h4><a href="/yygj/html/{$foo.indexid}.html" title="">{$foo.title}</a></h4>
+					<p> <span class="muted"><i class="icon-user icon12"></i><empty name="foo[author]">佚名<else />{$foo[author]}</empty></span> <span class="muted"><i class="icon-time icon12"></i>{$foo[addtime]|date='Y-m-d',###}</span> <span class="muted"><i class="icon-eye-open icon12"></i>{$foo[click]}浏览</span> <span class="muted"></span>
+					    <a href="/{$foo.modenname}/{$foo.catenname}"><span class="label">{$foo.catname}</span></a>
+					</p>
+					<p>{$foo[gaiyao]}...</p>
+				</div>
+	        </div>
+			</foreach>
+            
+          <div>
+          <ul class="pagination">{$Page}</ul>
+          </div>
+       </div>
+</div>
+<!--底部  start-->
+<include file="Index:footer" />

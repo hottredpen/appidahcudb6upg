@@ -1,0 +1,55 @@
+<include file="Index:centerheader" />
+<!--头部 end -->
+<!-- container start --> 
+<div class="container">
+<!-- left start-->
+<include file="left" />
+<!-- left end-->
+    <!-- right start-->
+    <div id="content" class="col-md-9 col-sm-9">
+      	<switch name="mid" >
+            <case value="password">
+            <!--修改登陆密码 start-->
+            <form method="post"  action='__URL__/updaPass'>
+                <ul class="breadcrumb">
+                    <li>
+                    <a href="#">安全中心</a> <span class="divider">/</span>
+                    </li>
+                    <li class="active">修改登陆密码</li>
+                </ul>
+                <div class="alert alert-info">
+            		<a class="close" data-dismiss="alert">×</a>
+                    <p>请不要在网吧、公共场合修改密码！</p>
+                </div>
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <td class="span2">原始密码：</td>
+                            <td><input name="passwd" type="password" class="span2"/></td>
+                         </tr>
+                         <tr>
+                            <td class="span2">新密码：</td>
+                            <td><input name="passw" type="password" class="span2"/></td>
+                         </tr>
+                         <tr>
+                            <td class="span2">确认密码：</td>
+                            <td><input name="password" type="password" class="span2"/></td>
+                         </tr>
+                    </tbody>
+                </table>
+                 <div class="span10">
+                  <button class="btn btn-primary" type="submit">
+                      确认提交
+                  </button>
+                </div>
+            <!--修改登陆密码 end-->
+            </case>
+
+            <default />空
+        </switch>
+    </div>
+    <!-- right end--> 
+
+<!-- container end -->
+<!--底部  start-->
+<include file="Index:footer" />

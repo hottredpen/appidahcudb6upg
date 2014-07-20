@@ -1,0 +1,56 @@
+<include file="Index:searchheader" />
+<!--头部 end -->
+<div class="container">
+    <div class="col-lg-8">
+        <div class="content_box">
+			<!-- 文章头部 -->
+			<div class="content_head">
+				<div class="col-md-12 ">
+						<!-- 位置导航 -->
+						<span class="glyphicon glyphicon-home"></span><a href="/">首页</a>-><font>搜索页</font>
+				</div>
+						<!-- Nav tabs -->
+						<ul class="nav nav-tabs">
+						  <li class="active"><a href="#tabzuowen"  data-toggle="tab">作文</a></li>
+						</ul>
+
+						<!-- Tab panes -->
+						<div class="tab-content">
+							<div class="tab-pane active" id="tabzuowen">
+										<volist name="zuowendata" id="art">
+											 <div class="panel panel-default">
+													 <div class="panel-heading ">
+														<a  href="/zuowen/html/{$art.indexid}.html" >
+															<div class="col-md-6">
+																{$art.title}<small class="text-muted">--<empty name="art.author">佚名<else />{$art.author}</empty></small>
+															</div>
+															<div class="col-md-6">
+																<div class="rateit pull-right" data-rateit-value="{$art.starfenshu}" title="{$art.starfenshu}" data-rateit-ispreset="true" data-rateit-readonly="true"><font>好句(0)</font><font>好段(0)</font></div>
+															</div>
+															<div class="clean"></div>
+														</a>
+                                                     </div>
+													<div class="alert">
+														<p>{$art.gaiyao}</p>
+													</div>
+											 </div>
+										</volist>
+							</div>
+							<div class="tab-pane" id="tabhaocihaoju">
+
+							</div>
+						</div>
+
+
+			</div>
+        </div>
+    </div>
+
+
+    <div class="col-lg-4">
+
+    </div>
+    <div class="clean"></div>
+</div>
+<!-- container start --> 
+<include file="Index:footer" />

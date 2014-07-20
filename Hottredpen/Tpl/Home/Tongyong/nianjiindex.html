@@ -1,0 +1,37 @@
+<include file="Index:header" />
+<!--头部 end -->
+<!-- container start --> 
+<div class="container">
+    <div class="row">
+	    <div class="span12">
+		    <div class="row">
+	            <div  class="span9">
+				    <div id="content_hd">
+                            <div class="bar30"></div>
+					        <div  id="mytable">
+					            <h1>{$title}</h1>
+					            <div class="line">
+						        </div>
+								<div class="bar10"></div>
+			                        <ul>
+	                                   <foreach name="list" item="foo">
+									   <li><a href="/{$modenname}/{$actenname}/html/{$foo['indexid']}.html">{$foo['title']}</a></li>
+	                                   </foreach>
+			                        </ul>
+                            </div>
+                            							
+					</div>
+
+		        </div>
+		        <div class="span3">
+                       cemian
+		        </div>
+		    </div>
+		    
+		</div>
+	</div>	
+</div>	
+      
+<!-- container end -->
+<!--底部  start-->
+<include file="Index:footer" />

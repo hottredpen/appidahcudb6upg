@@ -1,0 +1,50 @@
+<!-- left start-->
+    <div class="col-md-3 col-sm-3">
+	        <div class="row">
+				<p class="text-center">
+					<if condition="$heads gt 0">
+						<img class="img-thumbnail" src="__PUBLIC__/FaustCplus/php/img/big_user_{$Think.session.user_uid}.jpg" width="120" />
+					<else/>
+						<img class="img-thumbnail" src="__PUBLIC__/FaustCplus/php/img/big_user_0.jpg" width="120" />
+					</if>
+				</p>
+				<h1 class="text-center">{$Think.session.user_name}</h1>
+		    </div>
+			<div class="row">
+				<div class="col-xs-4">
+					<p class="text-center"><a>1144</a></p>
+					<p class="text-muted text-center">关注</p>
+				</div>
+				<div class="col-xs-4">
+					<p class="text-center"><a>1144</a></p>
+					<p class="text-muted text-center">粉丝</p>
+				</div>
+				<div class="col-xs-4">
+					<p class="text-center"><a>1144</a></p>
+					<p class="text-muted text-center">文章</p>
+				</div>
+			</div>
+		    <div class="clean"></div>
+			<div class="row">
+                <h1><a>我的主页</a></h1>
+			    <h2>基本设置</h2>
+					<p><a href="__ROOT__/Center/basic/personal_data.html" >个人资料</a></p>
+					<p><a href="__ROOT__/Center/portrait.html">更换头像</a></p>
+					<p><a href="__ROOT__/Center/approve/email.html" >邮箱认证</a></p>
+				<h2>我的文章</h2>
+                    <p><a href="__ROOT__/Center/basic/mail.html" >已发表</a></p>
+					<p><a href="__ROOT__/Center/basic/mail.html" >待审核</a></p>
+					<p><a href="__ROOT__/Center/basic/mail.html" >草稿箱</a></p>
+					<p><a href="__ROOT__/Center/basic/mail.html" >退稿箱</a></p>
+				<h2>我的好友</h2>
+                    <p><a href="__ROOT__/Center/basic/mail.html" >站内信</a></p>
+					<p><a href="__ROOT__/Center/basic/mail.html" >我的关注</a></p>
+					<p><a href="__ROOT__/Center/basic/mail.html" >我的粉丝</a></p>
+				<h2>评论</h2>
+                    <p><a href="__ROOT__/Center/basic/mail.html" >我的评论</a></p>
+					<p><a href="__ROOT__/Center/basic/mail.html" >评论我的</a></p>
+				<h2>安全中心</h2>
+				<p><a href="__ROOT__/Center/security/password.html" >修改登陆密码</a></p>
+			</div>
+    </div>
+<!-- left end-->

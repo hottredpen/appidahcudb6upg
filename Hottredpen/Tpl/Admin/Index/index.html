@@ -1,0 +1,68 @@
+<include file="header" />
+<div class="container">
+        	<h2>主要功能</h2>
+            <div class="col-md-10 col-md-offset-2">
+                <div class="col-md-2">
+					<a  class="btn btn-default btn-md" href="__ROOT__/Admin/basic/index.html">
+					  <span class="glyphicon glyphicon-star"></span>全站基础设置
+					</a>
+                </div>
+                <div class="col-md-2">
+					<a  class="btn btn-default btn-md" href="__ROOT__/Admin/Log/QianTaiLog.html">
+					  <span class="glyphicon glyphicon-star"></span>前后操作记录
+					</a>
+                </div>
+                <div class="col-md-2">
+					<a  class="btn btn-default btn-md" href="__ROOT__/Admin/jifen/index.html">
+					  <span class="glyphicon glyphicon-star"></span>积分等级配置
+					</a>
+                </div>
+                <div class="col-md-2">
+					<a  class="btn btn-default btn-md" href="__ROOT__/Admin/Article/lanmu.html">
+					  <span class="glyphicon glyphicon-star"></span>文章相关管理
+					</a>
+                </div>
+                <div class="col-md-2">
+					<a  class="btn btn-default btn-md" href="__ROOT__/Admin/Tags/alltags.html">
+					  <span class="glyphicon glyphicon-star"></span>Tags管理
+					</a>
+                </div>
+                <div class="col-md-2">
+					<a  class="btn btn-default btn-md" href="__ROOT__/Admin/User.html">
+					  <span class="glyphicon glyphicon-star"></span>用户管理
+					</a>
+                </div>
+            </div>
+			<div class="clean"></div>
+			<h2>快捷导航</h2>
+            <div  class="col-md-10 col-md-offset-2">
+                <div class="col-md-2">
+					<a  class="btn btn-default btn-md" href="__ROOT__/Admin/Article/zuowenList/year/2014.html">
+					  <span class="glyphicon glyphicon-star"></span>添加作文（2014）
+					</a>
+                </div>
+            </div>
+			<div class="clean"></div>
+            <h3>服务器信息</h3>
+            <div  class="col-md-10">
+            	<div class="col-md-4">
+                    <dl class="dl-horizontal">
+                        <dt>环境：</dt><dd><?php echo php_sapi_name();?></dd>
+                        <dt>PHP版本：</dt><dd><?php echo PHP_VERSION;?></dd>
+                        <dt>Zend版本：</dt><dd><?php echo Zend_Version();?></dd>
+                        <dt>PHP安装路径：</dt><dd><?php echo DEFAULT_INCLUDE_PATH;?></dd>
+                        <dt>mysql版本：</dt><dd><?php echo mysql_get_server_info();;?></dd>  
+                    </dl>
+                </div>
+                <div class="col-md-4">
+                    <dl class="dl-horizontal">
+                    	<dt>系统类型：</dt><dd><?php echo php_uname('s');?></dd>
+                        <dt>系统版本号：</dt><dd><?php echo php_uname('r');?></dd>
+                        <dt>服务器IP：</dt><dd><?php echo GetHostByName($_SERVER['SERVER_NAME']);?></dd>
+                        <dt>服务器解译引擎：</dt><dd><?php echo $_SERVER['SERVER_SOFTWARE'];?></dd>
+                        <dt>服务器语言：</dt><dd><?php echo $_SERVER['HTTP_ACCEPT_LANGUAGE'];?></dd>
+                    </dl>
+                </div>
+            </div>
+<!--底部 -->
+<include file="footer" />

@@ -1,0 +1,124 @@
+<include file="Index:header" />
+<!--编辑器部分-->
+			<script charset="utf-8" src="__PUBLIC__/editor/kindeditor-min.js"></script>
+			<script type="text/javascript">
+                    KindEditor.ready(function(K) {
+                        window.editor = K.create('#editor_id',{
+                            uploadJson : '/index.php?g=Comments&m=Uploadimg&a=ke_upimg&mod={$article.mod}',
+                            //fileManagerJson : '__PUBLIC__/editor/php/file_manager_json.php',
+                            //allowFileManager : true
+						});
+                    });
+			</script>
+    <!-- editor -->
+	<script src="__PUBLIC__/editor/kindeditor.js"></script>
+<!--编辑器部分结束-->
+<div class="container">
+	<include file="left" />
+	<div id="content" class="col-md-10">
+		<ul class="breadcrumb">
+			<li><a href="__ROOT__/Admin.html">首页</a></li>
+			<li><a href="__ROOT__/Admin/Article/lanmu.html">文章相关管理</a></li>
+			<li><a href="__ROOT__/Admin/Article/{$article.mod}List.html">{$article.modname}</a></li>
+			<li class="active">添加文章</li>
+		</ul>          
+            <ul id="myTab" class="nav nav-tabs">
+              <li class="active"><a href="#home" data-toggle="tab">基本信息</a></li>
+            </ul>
+			
+            <form method="post"  action='__URL__/{$article.mod}save' name="myform" id="myform">
+                <div id="myTabContent" class="tab-content">
+
+                    <div class="tab-pane fade in active" id="home">
+
+							<table class="table">
+											<tbody>
+											  <tr>
+												<td>
+													   文章名称：
+												</td>
+												<td>
+												    <div class="col-sm-5">
+												  <input name="title" type="text" class="form-control" placeholder="请输入分类名称..." >
+												  </div>
+												</td>
+											  </tr>
+											  <tr>
+												<td>
+													   作者：
+												</td>
+												<td>
+												   <div class="col-sm-5">
+												  <input name="author" type="text" class="form-control" placeholder="作者" >
+												  </div>
+												</td>
+											  </tr>
+											  <tr>
+												<td>
+													   来源：
+												</td>
+												<td>
+												    <div class="col-sm-5">
+												  <input name="laiyuan" type="text" class="form-control" placeholder="来源" >
+												  </div>
+												</td>
+											  </tr>
+											  <tr>
+												<td>
+													   Tags标签：
+												</td>
+												<td>
+												     <div class="col-sm-5">
+												  <input name="tags" type="text" class="form-control" placeholder="请输入标签..." >
+												  </div>
+												</td>
+											  </tr>
+						   
+											<tr>
+											  <td>
+													 内容：
+											  </td>
+											  <td>  
+											        <div class="col-sm-10">
+													<textarea class="editor" id="editor_id" name="content" style="width:700px;height:300px;"></textarea>
+													</div>
+											  </td>
+											</tr>
+											  <tr>
+												<td>
+													   缩略图：
+												</td>
+												<td>
+												<div class="col-sm-5">
+												  <input name="img" type="text" class="form-control">
+												  </div>
+												</td>
+											  </tr>                                  
+											  <tr>
+												<td>
+													   是否发布：
+												</td>
+												<td>
+												   <div class="col-sm-5">
+												  <input name="isfabu" type="radio" value="1" checked />是<input name="isfabu" type="radio" value="0"/>否
+												    </div>
+												</td>
+											  </tr>                                       
+											</tbody>
+						
+							</table>
+                    </div>
+				    <div class="modal-footer">
+					    <button type="submit" class="btn btn-primary" >确认添加</button>
+				    </div>
+				</div>	
+            </form>
+
+
+            
+
+          
+          
+    </div>
+</div>
+<include file="Index:footer" />

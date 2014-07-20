@@ -1,0 +1,129 @@
+<include file="Index:nofollowheader" />
+<!--头部 end -->
+<div class="container">
+
+    <div class="col-lg-8 col-md-8">
+      <div class="panel panel-bian">
+        <div class="panel-heading content_head">
+            <div class="col-md-12 "> 
+            <!-- Baidu Button BEGIN -->
+			<span class="glyphicon glyphicon-home"></span><a href="/">首页</a>-><a href="#">优秀作文</a>-><font>tags</font>-><font>{$tagstitle}</font>
+            <div id="bdshare" class="bdshare_b pull-right"> <a class="btn btn-default btn-sm pull-left"> <span class="glyphicon glyphicon-thumbs-up"></span> 分享</a> <a class="shareCount btn btn-default btn-sm pull-right" style="background: #fff !important;line-height: 28px;height: 30px;width: auto;color: #666;padding: 0 10px;"></a>
+              <div class="clean"></div>
+            </div>
+            <script type="text/javascript" id="bdshare_js" data="type=button&amp;mini=1&amp;uid=835052" ></script> 
+            <script type="text/javascript" id="bdshell_js"></script> 
+            <script type="text/javascript">
+                document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000);
+            </script> 
+            <!-- Baidu Button END --> 
+            </div>
+			<div class="clean"></div>
+			<h1 class="text-center" itemprop="name"><small>标签</small>{$tagstitle}</h1>
+			<div class="clean"></div>
+			<div class="row line">
+				<div class="col-sm-3 pull-left"><a href="#">按收录时间</a></div>
+				<div class="col-sm-3 pull-left"><a href="#">按点击率</a></div>
+				<div class="col-sm-3 pull-left"><a href="#">按批注率</a></div>
+			</div>
+				<div class="tags panel panel-default col-sm-12">
+						<div class="col-sm-1"><span>相关标签</span></div>
+						<div class="col-sm-5">
+							<div class="panel-heading">
+							<volist name="tags_xiangguan_data" id="vo">
+								<a class="label label-info" href="/{$modenname}/tags?w={$vo.title}">{$vo.title}</a><span class="glyphicon"></span>
+							</volist>
+							</div>
+						</div>
+						<div class="col-sm-1"><span>细化标签</span></div>
+						<div class="col-sm-5">
+							<div class="panel-heading">
+							<volist name="tags_xi_data" id="vo">
+								<a class="label label-info" href="/{$modenname}/tags?w={$vo.title}">{$vo.title}</a><span class="glyphicon"></span>
+							</volist>
+							</div>
+						</div>
+
+				</div>
+          <div class="clean"></div>
+        </div>
+        <div itemprop="articleBody" class="panel-body">
+
+
+				<div   class="row panel">
+       <ul class="list-group">
+		<volist name="list" id="vo">
+				<li>
+				  <a href="/zuowen/html/{$vo.indexid}.html" class="text-danger list-group-item">
+				  <small class="text-muted label label-default">{$vo.click}</small>{$vo.title}<small class="text-muted">--<empty name="vo.author">佚名<else />{$vo.author}</empty></small>
+				  <span class="pull-right text-muted">{$vo.addtime|date='y-m-d',###}</span></a>
+				  <p class="text-muted gaiyao">{$vo.gaiyao|substr=0,400}</p>
+				  
+				</li>	
+		</volist>
+      </ul>
+				</div>
+        </div>
+        <div class="clean"></div>
+      </div>
+<if condition="$article.iscommend eq 1">
+<!--评论开始-->
+<iframe class="col-lg-12 col-md-12" scrolling="no"  src="<{:U('Index/Comment/comments_article',array('aid'=>$aid))}>" frameborder="0"  style="max-width:730px;min-height:540px;padding:0;margin:0 auto;"></iframe>
+<!--评论结束-->
+</if>
+    </div>
+
+
+  <div class="col-lg-4 col-md-4 sidebar">
+    <div class="clean"></div>
+      <div class="panel panel-success">
+        <div class="panel-heading">
+								    <notempty name="teachers">
+										<i>以下用户进行了批注：</i>
+
+									<else />
+									    <p>本文还没批注，赶紧对其批注吧！</p>
+									</notempty>
+		</div>
+        <div class="panel-collapse in" style="height: auto;"> 
+											<ul>
+											<volist name="teachers" id="voo">
+												<li>{$voo.username}<a href='javascript:void(0)' class='ksliulan' data-pid= "{$voo.pid}" data-mokuai="{$modenname}"  data-uid="{$voo.uid}">点击浏览</a></li>
+											</volist>
+											</ul>
+        </div>
+      </div>
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <h3 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" class=""> <span class="glyphicon glyphicon-thumbs-down mr10"></span> <span itemprop="name">最受争议的5篇文章</span> </a> </h3>
+        </div>
+        <div  class="panel-collapse in" style="height: auto;">
+        	<foreach name="sidebar2" item="sidebar2Val">
+        		<a href="<{:U('Index/Article/index',array('articleid'=>$sidebar2Val['article_id']))}>" class="list-group-item"><span><{$sidebar2Val.title}></span></a> 
+        	</foreach>
+        </div>
+      </div>
+      <div class="panel panel-warning">
+        <div class="panel-heading">
+          <h3 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" class=""> <span class="glyphicon glyphicon-pushpin mr10"></span> <span itemprop="name">随机推荐5篇文章</span> </a> </h3>
+        </div>
+        <div  class="panel-collapse in" style="height: auto;"> 
+			   <foreach name="sidebar3" item="sidebar3Val">
+        		<a href="<{:U('Index/Article/index',array('articleid'=>$sidebar3Val['article_id']))}>" class="list-group-item"><span><{$sidebar3Val.title}></span></a> 
+        	</foreach>
+        </div>
+      </div>
+	
+   
+   
+
+    <script>var ad=$('#ad'),st;var sd=$('.sidebar'),st;ad.attr('data-offset-top',ad.offset().top+ad.innerWidth());var wd=sd.innerWidth()-30;ad.attr({style:'width:'+wd+'px'});</script> 
+  </div>
+  <div class="clean"></div>
+</div>
+</div>
+<!-- container start --> 
+
+
+<!--底部  start-->
+<include file="Index:footer" />

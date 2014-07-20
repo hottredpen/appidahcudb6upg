@@ -1,0 +1,109 @@
+<include file="Index:nofollowheader" />
+<!--头部 end -->
+<div class="container">
+    <div class="col-lg-8">
+        <div class="content_box">
+			<!-- 文章头部 -->
+			<div class="content_head">
+				<div class="col-md-12 ">
+						<!-- 位置导航 -->
+						<span class="glyphicon glyphicon-home"></span><a href="/">首页</a>-><font>分类</font>
+				</div>
+
+
+				
+
+						<!-- Nav tabs -->
+						<ul class="nav nav-tabs">
+						  <li class="active"><a href="#tabhuaju"  data-toggle="tab">批注句子</a></li>
+						  <li><a href="#tabquanzi" data-toggle="tab">摘录字词</a></li>
+						</ul>
+
+						<!-- Tab panes -->
+						<div class="tab-content">
+							<div class="tab-pane active" id="tabhuaju">
+										<volist name="data" id="vo">
+											
+											 <volist name="vo.huaju" id="voo">
+											 <div class="panel panel-default">
+													 <div class="panel-heading ">
+														<p class="text-left"><a href="#">{$vo.username}</a>
+														在<a href="/zuowen/html/{$vo.indexid}.html" class="text-warning">《{$vo.articletitle}》</a>
+														<small>中对以下词句进行了</small>【划句】</p>
+														<p><font class="text-muted">jk-kj：</font><a href="javascript:void(0)" class="text-primary dianhuaju" data-jiexid="{$vo.id}-{$voo.numb}">{$voo.huaju}</a></p>
+														<p class="text-right"><font class="text-muted">给"采蜜者"点赞</font><a class="btn btn-success">被收录</a>
+															<button data-zan="1" data-catid="{$article.catid}" data-id="{$article.id}" data-jxid="{$voo.jxid}" class="pizhudz btn btn-default btn-xs"><span class="text-danger glyphicon glyphicon-thumbs-up mr10"></span><font id="jxid-{$voo.jxid}-up" class="text-danger">{$voo.uprenshu}</font></button>
+															<button data-zan="-1" data-catid="{$article.catid}" data-id="{$article.id}" data-jxid="{$voo.jxid}" class="pizhudz btn btn-default btn-xs"><span class="text-muted glyphicon glyphicon-thumbs-down mr10"></span><font id="jxid-{$voo.jxid}-down" class="text-muted">{$voo.downrenshu}</font></button>
+														</p>
+													 </div>
+													<div id="chakan-{$vo.id}-{$voo.numb}-huaju"  style="display:none" class="alert">
+														<p>{$voo.articleduanwen}</p>
+														<p class="text-right">-------------出自<a href="/zuowen/html/{$vo.indexid}.html" class="text-warning">《{$vo.articletitle}》</a></p>
+														<p class="text-right"><font class="text-muted">给原文点赞</font>
+															<button data-zan="1" data-catid="{$article.catid}" data-id="{$article.id}" data-jxid="{$voo.jxid}" class="pizhudz btn btn-default btn-xs"><span class="text-danger glyphicon glyphicon-thumbs-up mr10"></span><font id="jxid-{$voo.jxid}-up" class="text-danger">{$voo.uprenshu}</font></button>
+															<button data-zan="-1" data-catid="{$article.catid}" data-id="{$article.id}" data-jxid="{$voo.jxid}" class="pizhudz btn btn-default btn-xs"><span class="text-muted glyphicon glyphicon-thumbs-down mr10"></span><font id="jxid-{$voo.jxid}-down" class="text-muted">{$voo.downrenshu}</font></button>
+														</p>
+													</div>  
+											 </div>
+
+											 </volist>
+											 
+										</volist>
+							</div>
+							<div class="tab-pane" id="tabquanzi">
+										<volist name="data" id="qvo">
+											
+											 <volist name="qvo.quanzi" id="qvoo">
+											 <div class="panel panel-default">
+													 <div class="panel-heading ">
+														<p class="text-left"><a href="#">{$qvo.username}</a>
+														在<a href="/zuowen/html/{$qvo.indexid}.html" class="text-warning">《{$qvo.articletitle}》</a>
+														<small>中对以下词语进行了</small>【摘录】</p>
+														<p><font class="text-muted">jk-kj：</font><a href="javascript:qvoid(0)" class="text-primary dianquanzi" data-jiexid="{$qvo.id}-{$qvoo.numb}">{$qvoo.quanzi}</a></p>
+														<p class="text-right"><font class="text-muted">给"采蜜者"点赞</font><a class="btn btn-success">被收录</a>
+															<button data-zan="1" data-catid="{$article.catid}" data-id="{$article.id}" data-jxid="{$qvoo.jxid}" class="pizhudz btn btn-default btn-xs"><span class="text-danger glyphicon glyphicon-thumbs-up mr10"></span><font id="jxid-{$qvoo.jxid}-up" class="text-danger">{$qvoo.uprenshu}</font></button>
+															<button data-zan="-1" data-catid="{$article.catid}" data-id="{$article.id}" data-jxid="{$qvoo.jxid}" class="pizhudz btn btn-default btn-xs"><span class="text-muted glyphicon glyphicon-thumbs-down mr10"></span><font id="jxid-{$qvoo.jxid}-down" class="text-muted">{$qvoo.downrenshu}</font></button>
+														</p>
+													 </div>
+													<div id="chakan-{$qvo.id}-{$qvoo.numb}-quanzi"  style="display:none" class="alert">
+														<p>{$qvoo.articleduanwen}</p>
+														<p class="text-right">-------------出自<a href="/zuowen/html/{$qvo.indexid}.html" class="text-warning">《{$qvo.articletitle}》</a></p>
+														<p class="text-right"><font class="text-muted">给原文点赞</font>
+															<button data-zan="1" data-catid="{$article.catid}" data-id="{$article.id}" data-jxid="{$qvoo.jxid}" class="pizhudz btn btn-default btn-xs"><span class="text-danger glyphicon glyphicon-thumbs-up mr10"></span><font id="jxid-{$qvoo.jxid}-up" class="text-danger">{$qvoo.uprenshu}</font></button>
+															<button data-zan="-1" data-catid="{$article.catid}" data-id="{$article.id}" data-jxid="{$qvoo.jxid}" class="pizhudz btn btn-default btn-xs"><span class="text-muted glyphicon glyphicon-thumbs-down mr10"></span><font id="jxid-{$qvoo.jxid}-down" class="text-muted">{$qvoo.downrenshu}</font></button>
+														</p>
+													</div>  
+											 </div>
+
+											 </volist>
+											 
+										</volist>
+							</div>
+						</div>
+
+
+			</div>
+        </div>
+    </div>
+
+
+    <div class="col-lg-4">
+
+    </div>
+    <div class="clean"></div>
+</div>
+<!-- container start --> 
+
+<!-- container end -->
+<!--底部  start-->
+<script type="text/javascript">
+	$('.dianhuaju').click(function (e) {
+	    var id=$(this).attr("data-jiexid");
+	    $("#chakan-"+id+"-huaju").toggle();
+    })
+	$('.dianquanzi').click(function (e) {
+	    var id=$(this).attr("data-jiexid");
+	    $("#chakan-"+id+"-quanzi").toggle();
+    })
+</script>
+<include file="Index:footer" />

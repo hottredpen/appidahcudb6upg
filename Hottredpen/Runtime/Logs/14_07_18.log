@@ -1,0 +1,1433 @@
+[ 2014-07-18T18:37:35+08:00 ] 127.0.0.1 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.004511s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004960s ]
+NOTIC: [2048] Declaration of IndexAction::aa() should be compatible with that of AppstartAction::aa() D:\wamp\www\Hottredpen\Lib\Action\Home\IndexAction.class.php 第 4 行.
+NOTIC: [8] Undefined index: index D:\wamp\www\Hottredpen\Lib\Action\HomeAction.class.php 第 26 行.
+NOTIC: [8] Undefined index: index D:\wamp\www\Hottredpen\Lib\Action\HomeAction.class.php 第 27 行.
+NOTIC: [8] Undefined index: index D:\wamp\www\Hottredpen\Lib\Action\HomeAction.class.php 第 28 行.
+SQL: SHOW COLUMNS FROM `fdz_user` [ RunTime:0.148307s ]
+SQL: SELECT * FROM `fdz_user` ORDER BY id desc LIMIT 5   [ RunTime:0.002069s ]
+SQL: SHOW COLUMNS FROM `fdz_zuowen` [ RunTime:0.049334s ]
+SQL: SELECT * FROM `fdz_zuowen` WHERE ( `isfabu` = 1 ) ORDER BY id desc LIMIT 15   [ RunTime:0.046140s ]
+SQL: SHOW COLUMNS FROM `fdz_yygj` [ RunTime:0.019010s ]
+SQL: SELECT * FROM `fdz_yygj` WHERE ( `isfabu` = 1 ) ORDER BY id desc LIMIT 6   [ RunTime:0.001861s ]
+SQL: SHOW COLUMNS FROM `fdz_haocihaoju` [ RunTime:0.042272s ]
+SQL: SELECT * FROM `fdz_haocihaoju` WHERE ( `isfabu` = 1 ) ORDER BY id desc LIMIT 6   [ RunTime:0.001751s ]
+SQL: SHOW COLUMNS FROM `fdz_jiaocai` [ RunTime:0.076076s ]
+SQL: SELECT * FROM `fdz_jiaocai` WHERE ( `isfabu` = 1 ) ORDER BY id desc LIMIT 10   [ RunTime:0.002148s ]
+SQL: SELECT * FROM `fdz_zuowen` WHERE ( `isfabu` = 1 ) ORDER BY monthclick desc LIMIT 10   [ RunTime:0.004332s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: actenname D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 6 行.
+NOTIC: [8] Use of undefined constant img - assumed 'img' D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 182 行.
+NOTIC: [8] Use of undefined constant author - assumed 'author' D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 186 行.
+NOTIC: [8] Use of undefined constant author - assumed 'author' D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 186 行.
+NOTIC: [8] Use of undefined constant click - assumed 'click' D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 186 行.
+NOTIC: [8] Undefined index: modenname D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 187 行.
+NOTIC: [8] Undefined index: catenname D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 187 行.
+NOTIC: [8] Undefined index: catname D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 187 行.
+NOTIC: [8] Use of undefined constant img - assumed 'img' D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 182 行.
+NOTIC: [8] Use of undefined constant author - assumed 'author' D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 186 行.
+NOTIC: [8] Use of undefined constant click - assumed 'click' D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 186 行.
+NOTIC: [8] Undefined index: modenname D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 187 行.
+NOTIC: [8] Undefined index: catenname D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 187 行.
+NOTIC: [8] Undefined index: catname D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 187 行.
+NOTIC: [8] Use of undefined constant img - assumed 'img' D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 182 行.
+NOTIC: [8] Use of undefined constant author - assumed 'author' D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 186 行.
+NOTIC: [8] Use of undefined constant click - assumed 'click' D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 186 行.
+NOTIC: [8] Undefined index: modenname D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 187 行.
+NOTIC: [8] Undefined index: catenname D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 187 行.
+NOTIC: [8] Undefined index: catname D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 187 行.
+NOTIC: [8] Use of undefined constant img - assumed 'img' D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 182 行.
+NOTIC: [8] Use of undefined constant author - assumed 'author' D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 186 行.
+NOTIC: [8] Use of undefined constant click - assumed 'click' D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 186 行.
+NOTIC: [8] Undefined index: modenname D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 187 行.
+NOTIC: [8] Undefined index: catenname D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 187 行.
+NOTIC: [8] Undefined index: catname D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 187 行.
+NOTIC: [8] Use of undefined constant img - assumed 'img' D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 182 行.
+NOTIC: [8] Use of undefined constant author - assumed 'author' D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 186 行.
+NOTIC: [8] Use of undefined constant click - assumed 'click' D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 186 行.
+NOTIC: [8] Undefined index: modenname D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 187 行.
+NOTIC: [8] Undefined index: catenname D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 187 行.
+NOTIC: [8] Undefined index: catname D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 187 行.
+NOTIC: [8] Use of undefined constant img - assumed 'img' D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 182 行.
+NOTIC: [8] Use of undefined constant author - assumed 'author' D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 186 行.
+NOTIC: [8] Use of undefined constant click - assumed 'click' D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 186 行.
+NOTIC: [8] Undefined index: modenname D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 187 行.
+NOTIC: [8] Undefined index: catenname D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 187 行.
+NOTIC: [8] Undefined index: catname D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 187 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.416302s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.416717s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.085852s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.017149s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.054920s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.004317s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.163135s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002819s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003117s ]
+
+[ 2014-07-18T18:37:41+08:00 ] 127.0.0.1 /Public/css/fonts/glyphicons-halflings-regular.woff
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.023890s ]
+INFO: [ route_check ] --END-- [ RunTime:0.024273s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002248s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002595s ]
+NOTIC: [8] Undefined index: public D:\wamp\www\Hottredpen\Lib\Action\HomeAction.class.php 第 34 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.071074s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.071549s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002159s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002052s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001636s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002706s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009587s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002304s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002672s ]
+
+[ 2014-07-18T18:37:48+08:00 ] 127.0.0.1 /admin/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004176s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004563s ]
+ERR: 1146:Table 'fdzzj.think_auth_group_access' doesn't exist
+ [ SQL语句 ] : SELECT * FROM think_auth_group_access a LEFT JOIN think_auth_group g on a.group_id=g.id WHERE ( a.uid='' ) 
+
+[ 2014-07-18T18:37:52+08:00 ] 127.0.0.1 /Admin/Logo.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003163s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003544s ]
+
+[ 2014-07-18T18:37:53+08:00 ] 127.0.0.1 /DoApi/verify/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003088s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003465s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001899s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002236s ]
+
+[ 2014-07-18T18:38:05+08:00 ] 127.0.0.1 /Admin/Logo.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.018082s ]
+INFO: [ route_check ] --END-- [ RunTime:0.018447s ]
+
+[ 2014-07-18T18:38:07+08:00 ] 127.0.0.1 /admin/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.009665s ]
+INFO: [ route_check ] --END-- [ RunTime:0.010041s ]
+
+[ 2014-07-18T18:38:07+08:00 ] 127.0.0.1 /Public/css/fonts/glyphicons-halflings-regular.woff
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003701s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004067s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001870s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002242s ]
+NOTIC: [8] Undefined index: public D:\wamp\www\Hottredpen\Lib\Action\HomeAction.class.php 第 34 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019178s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019586s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001923s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001590s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001294s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001798s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007537s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002213s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002564s ]
+
+[ 2014-07-18T18:38:13+08:00 ] 127.0.0.1 /Admin/basic/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004417s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004808s ]
+
+[ 2014-07-18T18:38:20+08:00 ] 127.0.0.1 /Admin/Basic/email.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003805s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004195s ]
+
+[ 2014-07-18T18:38:27+08:00 ] 127.0.0.1 /admin/basic/email_send
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004911s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005293s ]
+
+[ 2014-07-18T18:38:28+08:00 ] 127.0.0.1 /admin/basic/email
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003583s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005323s ]
+
+[ 2014-07-18T18:38:35+08:00 ] 127.0.0.1 /admin/basic/email_send
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003627s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004034s ]
+
+[ 2014-07-18T18:38:36+08:00 ] 127.0.0.1 /admin/basic/email
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004288s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004715s ]
+
+[ 2014-07-18T18:38:43+08:00 ] 127.0.0.1 /Admin/Log/QianTaiLog.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003693s ]
+INFO: [ route_check ] --END-- [ RunTime:0.006781s ]
+
+[ 2014-07-18T18:40:45+08:00 ] 127.0.0.1 /Admin/Log/QianTaiLog.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004635s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005039s ]
+
+[ 2014-07-18T18:42:10+08:00 ] 127.0.0.1 /Admin/Log/QianTaiLog.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.005129s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005541s ]
+
+[ 2014-07-18T18:44:07+08:00 ] 127.0.0.1 /Admin/Log/QianTaiLog.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.042888s ]
+INFO: [ route_check ] --END-- [ RunTime:0.043329s ]
+
+[ 2014-07-18T18:44:44+08:00 ] 127.0.0.1 /Admin/Log/QianTaiLog.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004346s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004770s ]
+
+[ 2014-07-18T18:49:01+08:00 ] 127.0.0.1 /Admin/Log/QianTaiLog.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004671s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005145s ]
+
+[ 2014-07-18T18:50:14+08:00 ] 127.0.0.1 /Admin/Log/QianTaiLog.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004660s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005073s ]
+
+[ 2014-07-18T18:50:22+08:00 ] 127.0.0.1 /Admin/Log/qiantailog.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004625s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005124s ]
+
+[ 2014-07-18T18:50:25+08:00 ] 127.0.0.1 /Admin/Log/houtailog.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003989s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004446s ]
+
+[ 2014-07-18T18:52:54+08:00 ] 127.0.0.1 /Admin/Log/houtailog.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.005107s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005559s ]
+
+[ 2014-07-18T18:54:48+08:00 ] 127.0.0.1 /Admin/Log/houtailog.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004688s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005142s ]
+
+[ 2014-07-18T18:54:51+08:00 ] 127.0.0.1 /Admin/Log/houtailog.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004084s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004539s ]
+
+[ 2014-07-18T18:54:53+08:00 ] 127.0.0.1 /Admin/Log/qiantailog.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004067s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004522s ]
+
+[ 2014-07-18T18:54:59+08:00 ] 127.0.0.1 /Admin/basic/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004180s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004718s ]
+
+[ 2014-07-18T18:55:05+08:00 ] 127.0.0.1 /Admin/Basic/email.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004144s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004631s ]
+
+[ 2014-07-18T18:56:34+08:00 ] 127.0.0.1 /Admin/jifen/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.046715s ]
+INFO: [ route_check ] --END-- [ RunTime:0.047188s ]
+
+[ 2014-07-18T18:58:21+08:00 ] 127.0.0.1 /Admin/jifen/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.046102s ]
+INFO: [ route_check ] --END-- [ RunTime:0.046582s ]
+
+[ 2014-07-18T18:59:22+08:00 ] 127.0.0.1 /Admin/jifen/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.005594s ]
+INFO: [ route_check ] --END-- [ RunTime:0.006075s ]
+
+[ 2014-07-18T18:59:56+08:00 ] 127.0.0.1 /Admin/Jifen/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004131s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004679s ]
+
+[ 2014-07-18T19:00:48+08:00 ] 127.0.0.1 /Admin/Jifen/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.005044s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005721s ]
+
+[ 2014-07-18T19:01:33+08:00 ] 127.0.0.1 /Admin/Jifen/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.005057s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005518s ]
+
+[ 2014-07-18T19:02:09+08:00 ] 127.0.0.1 /Admin/Jifen/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.027989s ]
+INFO: [ route_check ] --END-- [ RunTime:0.028473s ]
+
+[ 2014-07-18T19:02:16+08:00 ] 127.0.0.1 /Admin/Jifen/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003953s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004408s ]
+
+[ 2014-07-18T19:02:21+08:00 ] 127.0.0.1 /Admin/Jifen/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003948s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004385s ]
+
+[ 2014-07-18T19:02:45+08:00 ] 127.0.0.1 /Admin/Jifen/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004603s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005055s ]
+
+[ 2014-07-18T19:03:09+08:00 ] 127.0.0.1 /Admin/Jifen/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.027367s ]
+INFO: [ route_check ] --END-- [ RunTime:0.027959s ]
+
+[ 2014-07-18T19:03:26+08:00 ] 127.0.0.1 /Admin/Jifen/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004164s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004624s ]
+
+[ 2014-07-18T19:03:32+08:00 ] 127.0.0.1 /Admin/Jifen/peizhi.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004376s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004981s ]
+
+[ 2014-07-18T19:03:49+08:00 ] 127.0.0.1 /Admin/Jifen/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004016s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004477s ]
+
+[ 2014-07-18T19:07:55+08:00 ] 127.0.0.1 /Admin/Jifen/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.005031s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005537s ]
+
+[ 2014-07-18T19:08:56+08:00 ] 127.0.0.1 /Admin/Jifen/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004135s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004650s ]
+
+[ 2014-07-18T19:09:40+08:00 ] 127.0.0.1 /Admin/Jifen/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004754s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005237s ]
+
+[ 2014-07-18T19:09:46+08:00 ] 127.0.0.1 /Admin/Jifen/editdengji/id/21.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004454s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004905s ]
+
+[ 2014-07-18T19:10:08+08:00 ] 127.0.0.1 /admin/jifen/adddengji
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004725s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005179s ]
+
+[ 2014-07-18T19:10:09+08:00 ] 127.0.0.1 /admin/jifen/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004189s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004618s ]
+
+[ 2014-07-18T19:10:20+08:00 ] 127.0.0.1 /admin/jifen/deledengji/id/29
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004091s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004553s ]
+
+[ 2014-07-18T19:10:21+08:00 ] 127.0.0.1 /admin/jifen/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004049s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004522s ]
+
+[ 2014-07-18T19:11:20+08:00 ] 127.0.0.1 /Admin/Jifen/peizhi.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004405s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004875s ]
+
+[ 2014-07-18T19:11:54+08:00 ] 127.0.0.1 /Admin/Jifen/peizhi.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003922s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004420s ]
+
+[ 2014-07-18T19:13:31+08:00 ] 127.0.0.1 /Admin/Jifen/peizhi.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004682s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005262s ]
+
+[ 2014-07-18T19:14:10+08:00 ] 127.0.0.1 /Admin/Jifen/peizhi.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004730s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005190s ]
+
+[ 2014-07-18T19:15:25+08:00 ] 127.0.0.1 /Admin/Jifen/peizhi.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.041222s ]
+INFO: [ route_check ] --END-- [ RunTime:0.041685s ]
+
+[ 2014-07-18T19:15:32+08:00 ] 127.0.0.1 /Admin/Jifen/peizhi.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004123s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004596s ]
+
+[ 2014-07-18T19:16:02+08:00 ] 127.0.0.1 /Admin/Jifen/peizhi.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004950s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005501s ]
+
+[ 2014-07-18T19:16:23+08:00 ] 127.0.0.1 /Admin/Jifen/peizhi.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.008840s ]
+INFO: [ route_check ] --END-- [ RunTime:0.009394s ]
+
+[ 2014-07-18T19:17:50+08:00 ] 127.0.0.1 /Admin/Jifen/peizhi.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.005515s ]
+INFO: [ route_check ] --END-- [ RunTime:0.006033s ]
+
+[ 2014-07-18T19:22:51+08:00 ] 127.0.0.1 /Admin/Jifen/peizhi.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.005058s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005532s ]
+
+[ 2014-07-18T19:23:04+08:00 ] 127.0.0.1 /admin/jifen/addpeizhi
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004896s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005355s ]
+
+[ 2014-07-18T19:23:12+08:00 ] 127.0.0.1 /admin/jifen/addpeizhi
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003845s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004233s ]
+
+[ 2014-07-18T19:23:14+08:00 ] 127.0.0.1 /admin/jifen/peizhi
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003848s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004222s ]
+
+[ 2014-07-18T19:23:43+08:00 ] 127.0.0.1 /admin/jifen/peizhi
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003903s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004389s ]
+
+[ 2014-07-18T19:23:49+08:00 ] 127.0.0.1 /Admin/Jifen/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003890s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004280s ]
+
+[ 2014-07-18T19:24:24+08:00 ] 127.0.0.1 /admin/jifen/adddengji
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.013509s ]
+INFO: [ route_check ] --END-- [ RunTime:0.014459s ]
+
+[ 2014-07-18T19:24:25+08:00 ] 127.0.0.1 /admin/jifen/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004585s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004968s ]
+
+[ 2014-07-18T19:24:31+08:00 ] 127.0.0.1 /admin/jifen/deledengji/id/30
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004321s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004721s ]
+
+[ 2014-07-18T19:24:32+08:00 ] 127.0.0.1 /admin/jifen/index
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003781s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004159s ]
+
+[ 2014-07-18T19:24:40+08:00 ] 127.0.0.1 /Admin/Jifen/peizhi.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.005843s ]
+INFO: [ route_check ] --END-- [ RunTime:0.006249s ]
+
+[ 2014-07-18T19:26:03+08:00 ] 127.0.0.1 /Admin/Jifen/peizhi.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.044397s ]
+INFO: [ route_check ] --END-- [ RunTime:0.044812s ]
+
+[ 2014-07-18T19:28:01+08:00 ] 127.0.0.1 /Admin/Jifen/peizhi.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.005228s ]
+INFO: [ route_check ] --END-- [ RunTime:0.007515s ]
+
+[ 2014-07-18T19:30:57+08:00 ] 127.0.0.1 /Admin/Jifen/peizhi.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.005669s ]
+INFO: [ route_check ] --END-- [ RunTime:0.006070s ]
+
+[ 2014-07-18T19:31:14+08:00 ] 127.0.0.1 /Admin/Jifen/peizhi.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.005065s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005674s ]
+
+[ 2014-07-18T19:35:40+08:00 ] 127.0.0.1 /Admin/Jifen/peizhi.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004944s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005345s ]
+
+[ 2014-07-18T19:37:00+08:00 ] 127.0.0.1 /Admin/Jifen/peizhi.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004041s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004430s ]
+
+[ 2014-07-18T19:37:32+08:00 ] 127.0.0.1 /Admin/Jifen/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003870s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004256s ]
+
+[ 2014-07-18T19:37:43+08:00 ] 127.0.0.1 /index.php?g=Admin&m=jifen&a=editpeizhiajax
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `fdz_integralconf` WHERE ( `id`= ) LIMIT 1  
+
+[ 2014-07-18T19:38:27+08:00 ] 127.0.0.1 /index.php?g=Admin&m=jifen&a=editpeizhiajax
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `fdz_integralconf` WHERE ( `id`= ) LIMIT 1  
+
+[ 2014-07-18T19:38:36+08:00 ] 127.0.0.1 /Admin/Jifen/peizhi.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004241s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004755s ]
+
+[ 2014-07-18T19:39:40+08:00 ] 127.0.0.1 /index.php?g=Admin&m=jifen&a=editpeizhiajax
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `fdz_integralconf` WHERE ( `id`= ) LIMIT 1  
+
+[ 2014-07-18T19:40:52+08:00 ] 127.0.0.1 /Admin/Jifen/peizhi.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.032859s ]
+INFO: [ route_check ] --END-- [ RunTime:0.033271s ]
+
+[ 2014-07-18T19:42:27+08:00 ] 127.0.0.1 /Admin/Jifen/peizhi.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003867s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004273s ]
+
+[ 2014-07-18T19:42:54+08:00 ] 127.0.0.1 /Admin/Jifen/peizhi.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004387s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004812s ]
+
+[ 2014-07-18T19:45:36+08:00 ] 127.0.0.1 /Admin/Jifen/peizhi.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004889s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005293s ]
+
+[ 2014-07-18T19:49:43+08:00 ] 127.0.0.1 /Admin/Jifen/peizhi.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.005961s ]
+INFO: [ route_check ] --END-- [ RunTime:0.006353s ]
+
+[ 2014-07-18T19:49:49+08:00 ] 127.0.0.1 /Admin/Jifen/peizhi.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004674s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005069s ]
+
+[ 2014-07-18T19:50:51+08:00 ] 127.0.0.1 /Admin/Jifen/peizhi.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004142s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004716s ]
+
+[ 2014-07-18T19:51:54+08:00 ] 127.0.0.1 /Admin/Jifen/peizhi.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.005277s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005687s ]
+
+[ 2014-07-18T19:52:54+08:00 ] 127.0.0.1 /Admin/Jifen/peizhi.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004612s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005014s ]
+
+[ 2014-07-18T19:53:09+08:00 ] 127.0.0.1 /admin/jifen/updatepeizhi
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003893s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004317s ]
+
+[ 2014-07-18T19:53:11+08:00 ] 127.0.0.1 /admin/jifen/peizhi
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003780s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004157s ]
+
+[ 2014-07-18T19:53:21+08:00 ] 127.0.0.1 /admin/jifen/updatepeizhi
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004041s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004504s ]
+
+[ 2014-07-18T19:53:23+08:00 ] 127.0.0.1 /admin/jifen/peizhi
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003976s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004360s ]
+
+[ 2014-07-18T19:53:27+08:00 ] 127.0.0.1 /admin/jifen/delepeizhi/id/27
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004232s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004701s ]
+
+[ 2014-07-18T19:53:29+08:00 ] 127.0.0.1 /admin/jifen/peizhi
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004534s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004978s ]
+
+[ 2014-07-18T19:56:22+08:00 ] 127.0.0.1 /admin/jifen/peizhi
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.005271s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005711s ]
+
+[ 2014-07-18T19:56:24+08:00 ] 127.0.0.1 /Admin/Jifen/peizhi.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004074s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004510s ]
+
+[ 2014-07-18T19:56:27+08:00 ] 127.0.0.1 /Admin/Jifen/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004642s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005054s ]
+
+[ 2014-07-18T19:56:35+08:00 ] 127.0.0.1 /Admin/Jifen/peizhi.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.012312s ]
+INFO: [ route_check ] --END-- [ RunTime:0.012718s ]
+
+[ 2014-07-18T19:56:53+08:00 ] 127.0.0.1 /Admin/Article/lanmu.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003871s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004281s ]
+
+[ 2014-07-18T20:02:38+08:00 ] 127.0.0.1 /Admin/Article/lanmu.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004736s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005285s ]
+
+[ 2014-07-18T20:05:24+08:00 ] 127.0.0.1 /Admin/Article/lanmu.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004484s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004876s ]
+
+[ 2014-07-18T20:05:44+08:00 ] 127.0.0.1 /Admin/Article/lanmu.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.005084s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005518s ]
+
+[ 2014-07-18T20:06:13+08:00 ] 127.0.0.1 /Admin/Article/addlanmu.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.007844s ]
+INFO: [ route_check ] --END-- [ RunTime:0.008241s ]
+
+[ 2014-07-18T20:11:27+08:00 ] 127.0.0.1 /Admin/Article/lanmu.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.031638s ]
+INFO: [ route_check ] --END-- [ RunTime:0.032108s ]
+
+[ 2014-07-18T20:12:07+08:00 ] 127.0.0.1 /Admin/Article/lanmu.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004698s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005104s ]
+
+[ 2014-07-18T20:12:29+08:00 ] 127.0.0.1 /Admin/Article/lanmu.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004646s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005039s ]
+
+[ 2014-07-18T20:12:56+08:00 ] 127.0.0.1 /Admin/Article/lanmu.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004939s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005370s ]
+
+[ 2014-07-18T20:13:17+08:00 ] 127.0.0.1 /Admin/Article/lanmu.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004049s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004438s ]
+
+[ 2014-07-18T20:13:25+08:00 ] 127.0.0.1 /Admin/Article/zuowenList.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.052404s ]
+INFO: [ route_check ] --END-- [ RunTime:0.052864s ]
+
+[ 2014-07-18T20:13:30+08:00 ] 127.0.0.1 /Admin/Article/lanmu.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003800s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004175s ]
+
+[ 2014-07-18T20:13:36+08:00 ] 127.0.0.1 /Admin/Article/zuowenList.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003897s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004282s ]
+
+[ 2014-07-18T20:15:28+08:00 ] 127.0.0.1 /Admin/Article/zuowenList.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004578s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004974s ]
+
+[ 2014-07-18T20:15:48+08:00 ] 127.0.0.1 /Admin/Article/zuowenList.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003912s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004294s ]
+
+[ 2014-07-18T20:16:36+08:00 ] 127.0.0.1 /Admin/Article/zuowenList.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004426s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004844s ]
+
+[ 2014-07-18T20:17:01+08:00 ] 127.0.0.1 /Admin/Article/zuowenList.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.035894s ]
+INFO: [ route_check ] --END-- [ RunTime:0.085022s ]
+
+[ 2014-07-18T20:17:27+08:00 ] 127.0.0.1 /Admin/Article/zuowenList.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.013319s ]
+INFO: [ route_check ] --END-- [ RunTime:0.013717s ]
+
+[ 2014-07-18T20:17:48+08:00 ] 127.0.0.1 /Admin/Article/zuowenList.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003802s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004200s ]
+
+[ 2014-07-18T20:18:07+08:00 ] 127.0.0.1 /Admin/Article/zuowenList.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004563s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004942s ]
+
+[ 2014-07-18T20:18:14+08:00 ] 127.0.0.1 /Admin/Article/zuowenList/year/2014.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004660s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005084s ]
+
+[ 2014-07-18T20:19:27+08:00 ] 127.0.0.1 /Admin/Article/zuowenList/year/2014.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004899s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005380s ]
+
+[ 2014-07-18T20:19:38+08:00 ] 127.0.0.1 /zuowen/html/977d3ce59cdce0.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.011822s ]
+INFO: [ route_check ] --END-- [ RunTime:0.012213s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001921s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002272s ]
+NOTIC: 建议使用I方法替代_get
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `fdz_zuowen` [ RunTime:0.099402s ]
+SQL: SELECT * FROM `fdz_zuowen` WHERE ( `indexid` = '977d3ce59cdce0' ) LIMIT 1   [ RunTime:0.018072s ]
+SQL: SHOW COLUMNS FROM `fdz_zuowen_content` [ RunTime:0.085042s ]
+SQL: SELECT * FROM `fdz_zuowen_content` WHERE ( `pid` = 280 ) LIMIT 1   [ RunTime:0.059564s ]
+SQL: SELECT `id`,`indexid`,`title`,`isfabu` FROM `fdz_zuowen` WHERE ( `id` < '280' ) AND ( `isfabu` = 1 ) ORDER BY id desc LIMIT 1   [ RunTime:0.006978s ]
+SQL: SELECT `id`,`indexid`,`title`,`isfabu` FROM `fdz_zuowen` WHERE ( `id` > '280' ) AND ( `isfabu` = 1 ) ORDER BY id asc LIMIT 1   [ RunTime:0.025875s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: actenname D:\wamp\www\Hottredpen\Runtime\Cache\Home\71aa390b2395c0a8068468d340d8323c.php 第 6 行.
+NOTIC: [8] Undefined variable: actenname D:\wamp\www\Hottredpen\Runtime\Cache\Home\71aa390b2395c0a8068468d340d8323c.php 第 130 行.
+NOTIC: [8] Undefined variable: actenname D:\wamp\www\Hottredpen\Runtime\Cache\Home\71aa390b2395c0a8068468d340d8323c.php 第 147 行.
+NOTIC: [8] Undefined variable: actenname D:\wamp\www\Hottredpen\Runtime\Cache\Home\71aa390b2395c0a8068468d340d8323c.php 第 156 行.
+NOTIC: [8] Undefined variable: moshi D:\wamp\www\Hottredpen\Runtime\Cache\Home\71aa390b2395c0a8068468d340d8323c.php 第 176 行.
+NOTIC: [8] Undefined variable: moshi D:\wamp\www\Hottredpen\Runtime\Cache\Home\71aa390b2395c0a8068468d340d8323c.php 第 217 行.
+NOTIC: [8] Undefined variable: moshi D:\wamp\www\Hottredpen\Runtime\Cache\Home\71aa390b2395c0a8068468d340d8323c.php 第 228 行.
+NOTIC: [8] Undefined variable: moshi D:\wamp\www\Hottredpen\Runtime\Cache\Home\71aa390b2395c0a8068468d340d8323c.php 第 176 行.
+NOTIC: [8] Undefined variable: moshi D:\wamp\www\Hottredpen\Runtime\Cache\Home\71aa390b2395c0a8068468d340d8323c.php 第 217 行.
+NOTIC: [8] Undefined variable: moshi D:\wamp\www\Hottredpen\Runtime\Cache\Home\71aa390b2395c0a8068468d340d8323c.php 第 228 行.
+NOTIC: [8] Undefined variable: moshi D:\wamp\www\Hottredpen\Runtime\Cache\Home\71aa390b2395c0a8068468d340d8323c.php 第 176 行.
+NOTIC: [8] Undefined variable: moshi D:\wamp\www\Hottredpen\Runtime\Cache\Home\71aa390b2395c0a8068468d340d8323c.php 第 217 行.
+NOTIC: [8] Undefined variable: moshi D:\wamp\www\Hottredpen\Runtime\Cache\Home\71aa390b2395c0a8068468d340d8323c.php 第 228 行.
+NOTIC: [8] Undefined variable: moshi D:\wamp\www\Hottredpen\Runtime\Cache\Home\71aa390b2395c0a8068468d340d8323c.php 第 176 行.
+NOTIC: [8] Undefined variable: moshi D:\wamp\www\Hottredpen\Runtime\Cache\Home\71aa390b2395c0a8068468d340d8323c.php 第 217 行.
+NOTIC: [8] Undefined variable: moshi D:\wamp\www\Hottredpen\Runtime\Cache\Home\71aa390b2395c0a8068468d340d8323c.php 第 228 行.
+NOTIC: [8] Undefined variable: moshi D:\wamp\www\Hottredpen\Runtime\Cache\Home\71aa390b2395c0a8068468d340d8323c.php 第 176 行.
+NOTIC: [8] Undefined variable: moshi D:\wamp\www\Hottredpen\Runtime\Cache\Home\71aa390b2395c0a8068468d340d8323c.php 第 217 行.
+NOTIC: [8] Undefined variable: moshi D:\wamp\www\Hottredpen\Runtime\Cache\Home\71aa390b2395c0a8068468d340d8323c.php 第 228 行.
+NOTIC: [8] Undefined variable: moshi D:\wamp\www\Hottredpen\Runtime\Cache\Home\71aa390b2395c0a8068468d340d8323c.php 第 176 行.
+NOTIC: [8] Undefined variable: moshi D:\wamp\www\Hottredpen\Runtime\Cache\Home\71aa390b2395c0a8068468d340d8323c.php 第 217 行.
+NOTIC: [8] Undefined variable: moshi D:\wamp\www\Hottredpen\Runtime\Cache\Home\71aa390b2395c0a8068468d340d8323c.php 第 228 行.
+NOTIC: [8] Undefined variable: moshi D:\wamp\www\Hottredpen\Runtime\Cache\Home\71aa390b2395c0a8068468d340d8323c.php 第 176 行.
+NOTIC: [8] Undefined variable: moshi D:\wamp\www\Hottredpen\Runtime\Cache\Home\71aa390b2395c0a8068468d340d8323c.php 第 217 行.
+NOTIC: [8] Undefined variable: moshi D:\wamp\www\Hottredpen\Runtime\Cache\Home\71aa390b2395c0a8068468d340d8323c.php 第 228 行.
+NOTIC: [8] Undefined variable: moshi D:\wamp\www\Hottredpen\Runtime\Cache\Home\71aa390b2395c0a8068468d340d8323c.php 第 176 行.
+NOTIC: [8] Undefined variable: moshi D:\wamp\www\Hottredpen\Runtime\Cache\Home\71aa390b2395c0a8068468d340d8323c.php 第 217 行.
+NOTIC: [8] Undefined variable: moshi D:\wamp\www\Hottredpen\Runtime\Cache\Home\71aa390b2395c0a8068468d340d8323c.php 第 228 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.350697s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.351053s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002226s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001705s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001349s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001919s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008181s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003112s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003465s ]
+
+[ 2014-07-18T20:19:40+08:00 ] 127.0.0.1 /Public/css/fonts/glyphicons-halflings-regular.woff
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.005627s ]
+INFO: [ route_check ] --END-- [ RunTime:0.006065s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002257s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002717s ]
+NOTIC: [8] Undefined index: public D:\wamp\www\Hottredpen\Lib\Action\HomeAction.class.php 第 34 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.065885s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.066341s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001948s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001987s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001634s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002877s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009566s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002456s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002859s ]
+
+[ 2014-07-18T20:19:40+08:00 ] 127.0.0.1 /index.php?g=Home&m=Hits&a=gethits
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001972s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002308s ]
+NOTIC: [8] Undefined index: hits D:\wamp\www\Hottredpen\Lib\Action\HomeAction.class.php 第 34 行.
+NOTIC: 建议使用I方法替代_post
+SQL: SHOW COLUMNS FROM `fdz_zuowen` [ RunTime:0.016260s ]
+SQL: SELECT * FROM `fdz_zuowen` WHERE ( `id` = 280 ) LIMIT 1   [ RunTime:0.001459s ]
+SQL: SHOW COLUMNS FROM `fdz_zuowen_jiexi_one` [ RunTime:0.070590s ]
+SQL: SELECT * FROM `fdz_zuowen_jiexi_one` WHERE ( `pid` = 280 )  [ RunTime:0.001365s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\Hottredpen\Lib\Action\Home\HitsAction.class.php 第 49 行.
+SQL: SELECT * FROM `fdz_zuowen` WHERE ( `isfabu` = 1 )  [ RunTime:0.013809s ]
+SQL: SELECT * FROM `fdz_zuowen` WHERE ( `isfabu` = 1 ) ORDER BY monthclick desc LIMIT 10   [ RunTime:0.002850s ]
+SQL: SELECT * FROM `fdz_zuowen` WHERE ( `isfabu` = 1 ) ORDER BY weekclick desc LIMIT 10   [ RunTime:0.002669s ]
+NOTIC: [8] Undefined variable: mod D:\wamp\www\Hottredpen\Lib\Action\Home\HitsAction.class.php 第 177 行.
+SQL: UPDATE `fdz_` SET `click`=1,`yesterdayclick`='0',`todayclick`=1,`weekclick`=1,`monthclick`=1,`clickupdatetime`=1405685980 WHERE ( `id` = '280' ) [ RunTime:0.047112s ]
+ERR: 1146:Table 'fdzzj.fdz_' doesn't exist
+ [ SQL语句 ] : UPDATE `fdz_` SET `click`=1,`yesterdayclick`='0',`todayclick`=1,`weekclick`=1,`monthclick`=1,`clickupdatetime`=1405685980 WHERE ( `id` = '280' )
+
+[ 2014-07-18T20:19:41+08:00 ] 127.0.0.1 /index.php?g=comments&m=pingxing&a=cha
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001957s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002342s ]
+NOTIC: 建议使用I方法替代_post
+SQL: SHOW COLUMNS FROM `fdz_zuowen` [ RunTime:0.050436s ]
+SQL: SELECT * FROM `fdz_zuowen` WHERE ( `id` = 280 ) LIMIT 1   [ RunTime:0.001430s ]
+NOTIC: [8] Undefined index: user_uid D:\wamp\www\Hottredpen\Lib\Action\Comments\PingxingAction.class.php 第 31 行.
+
+[ 2014-07-18T20:23:04+08:00 ] 127.0.0.1 /Admin/Article/zuowenList/year/2014.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004864s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005273s ]
+
+[ 2014-07-18T20:23:09+08:00 ] 127.0.0.1 /Admin/Article/yygjList.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003788s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004164s ]
+
+[ 2014-07-18T20:23:15+08:00 ] 127.0.0.1 /Admin/Article/yygjedit/pid/34.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.032199s ]
+INFO: [ route_check ] --END-- [ RunTime:0.032872s ]
+
+[ 2014-07-18T20:24:16+08:00 ] 127.0.0.1 /Admin/Article/yygjedit/pid/34.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.046048s ]
+INFO: [ route_check ] --END-- [ RunTime:0.046482s ]
+
+[ 2014-07-18T20:25:16+08:00 ] 127.0.0.1 /Admin/Article/yygjedit/pid/34.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004848s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005239s ]
+
+[ 2014-07-18T20:26:26+08:00 ] 127.0.0.1 /Admin/Article/yygjedit/pid/34.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004326s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004732s ]
+
+[ 2014-07-18T20:26:52+08:00 ] 127.0.0.1 /Admin/Article/yygjcontent/pid/34.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003905s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004352s ]
+
+[ 2014-07-18T20:27:12+08:00 ] 127.0.0.1 /Admin/Article/yygjedit/pid/34.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003816s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004438s ]
+
+[ 2014-07-18T20:27:17+08:00 ] 127.0.0.1 /Admin/Article/yygjcontent/pid/34.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004813s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005396s ]
+
+[ 2014-07-18T20:27:52+08:00 ] 127.0.0.1 /Admin/Article/yygjcontent/pid/34.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004324s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004717s ]
+
+[ 2014-07-18T20:27:58+08:00 ] 127.0.0.1 /Admin/Article/zuowenList.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.030080s ]
+INFO: [ route_check ] --END-- [ RunTime:0.030466s ]
+
+[ 2014-07-18T20:28:01+08:00 ] 127.0.0.1 /Admin/Article/zuowenList.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003833s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004224s ]
+
+[ 2014-07-18T20:28:04+08:00 ] 127.0.0.1 /Admin/Article/zuowenList/year/2014.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004289s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004675s ]
+
+[ 2014-07-18T20:28:08+08:00 ] 127.0.0.1 /Admin/Article/zuowenedit/pid/280.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004035s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004430s ]
+
+[ 2014-07-18T20:28:19+08:00 ] 127.0.0.1 /Admin/Article/zuowenedit/pid/280.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003866s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004279s ]
+
+[ 2014-07-18T20:28:51+08:00 ] 127.0.0.1 /Admin/Article/zuowenedit/pid/280.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.012783s ]
+INFO: [ route_check ] --END-- [ RunTime:0.013170s ]
+
+[ 2014-07-18T20:29:28+08:00 ] 127.0.0.1 /Admin/Article/zuowenedit/pid/280.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004704s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005091s ]
+
+[ 2014-07-18T20:30:12+08:00 ] 127.0.0.1 /Admin/Article/zuowenedit/pid/280.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003895s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004286s ]
+
+[ 2014-07-18T20:31:20+08:00 ] 127.0.0.1 /Admin/Article/zuowenedit/pid/280.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003828s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004222s ]
+
+[ 2014-07-18T20:34:02+08:00 ] 127.0.0.1 /Admin/Article/zuowenedit/pid/280.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.009716s ]
+INFO: [ route_check ] --END-- [ RunTime:0.010105s ]
+
+[ 2014-07-18T20:36:30+08:00 ] 127.0.0.1 /Admin/Article/zuowenedit/pid/280.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.005164s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005607s ]
+
+[ 2014-07-18T20:37:46+08:00 ] 127.0.0.1 /Admin/Article/zuowenedit/pid/280.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004583s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004972s ]
+
+[ 2014-07-18T20:38:09+08:00 ] 127.0.0.1 /Admin/Article/zuowenedit/pid/280.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003962s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004382s ]
+
+[ 2014-07-18T20:39:39+08:00 ] 127.0.0.1 /Admin/Article/zuowenedit/pid/280.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.005157s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005568s ]
+
+[ 2014-07-18T20:40:04+08:00 ] 127.0.0.1 /Admin/Article/zuowenedit/pid/280.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004731s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005132s ]
+
+[ 2014-07-18T20:40:20+08:00 ] 127.0.0.1 /Admin/Article/zuowenedit/pid/280.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004380s ]
+INFO: [ route_check ] --END-- [ RunTime:0.006580s ]
+
+[ 2014-07-18T20:41:00+08:00 ] 127.0.0.1 /Admin/Article/zuowenedit/pid/280.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.039915s ]
+INFO: [ route_check ] --END-- [ RunTime:0.040309s ]
+
+[ 2014-07-18T20:41:46+08:00 ] 127.0.0.1 /Admin/Article/zuowenedit/pid/280.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004095s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004491s ]
+
+[ 2014-07-18T20:42:42+08:00 ] 127.0.0.1 /Admin/Article/zuowenedit/pid/280.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004857s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005252s ]
+
+[ 2014-07-18T20:43:04+08:00 ] 127.0.0.1 /Admin/Article/zuowenList.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.009171s ]
+INFO: [ route_check ] --END-- [ RunTime:0.009592s ]
+
+[ 2014-07-18T20:43:07+08:00 ] 127.0.0.1 /Admin/Article/zuowenedit/pid/175.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003853s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004234s ]
+
+[ 2014-07-18T20:43:25+08:00 ] 127.0.0.1 /admin/article/zuowendelarticle/pid/175
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004506s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004953s ]
+
+[ 2014-07-18T20:43:44+08:00 ] 127.0.0.1 /Admin/Article/lanmu.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.005669s ]
+INFO: [ route_check ] --END-- [ RunTime:0.006061s ]
+
+[ 2014-07-18T20:43:47+08:00 ] 127.0.0.1 /Admin/Article/addlanmu.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004302s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004740s ]
+
+[ 2014-07-18T20:46:15+08:00 ] 127.0.0.1 /Admin/Article/addlanmu.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004721s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005113s ]
+
+[ 2014-07-18T20:47:17+08:00 ] 127.0.0.1 /Admin/Article/addlanmu.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.039084s ]
+INFO: [ route_check ] --END-- [ RunTime:0.039484s ]
+
+[ 2014-07-18T20:48:43+08:00 ] 127.0.0.1 /admin/article/savelanmu
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004613s ]
+INFO: [ route_check ] --END-- [ RunTime:0.009749s ]
+
+[ 2014-07-18T20:48:46+08:00 ] 127.0.0.1 /admin/article/lanmu
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004185s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004558s ]
+ERR: 1146:Table 'fdzzj.fdz_haociju_tags' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `fdz_haociju_tags`
+ERR: 1146:Table 'fdzzj.fdz_haociju_tags' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `fdz_haociju_tags` 
+
+[ 2014-07-18T20:49:23+08:00 ] 127.0.0.1 /admin/article/lanmu
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003748s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004168s ]
+
+[ 2014-07-18T20:50:08+08:00 ] 127.0.0.1 /admin/article/lanmu
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004595s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005013s ]
+
+[ 2014-07-18T20:50:40+08:00 ] 127.0.0.1 /admin/article/lanmu
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003768s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004160s ]
+
+[ 2014-07-18T20:55:00+08:00 ] 127.0.0.1 /Admin/Article/addlanmu/pid/18.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004775s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005163s ]
+
+[ 2014-07-18T20:55:27+08:00 ] 127.0.0.1 /admin/article/lanmu
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003754s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004229s ]
+
+[ 2014-07-18T20:55:58+08:00 ] 127.0.0.1 /Admin/Article/addlanmu/pid/18.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004616s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005004s ]
+
+[ 2014-07-18T20:56:33+08:00 ] 127.0.0.1 /Admin/Article/lanmu.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.035580s ]
+INFO: [ route_check ] --END-- [ RunTime:0.036374s ]
+
+[ 2014-07-18T20:56:40+08:00 ] 127.0.0.1 /Admin/Article/addlanmu/pid/18.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003918s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004530s ]
+
+[ 2014-07-18T20:56:45+08:00 ] 127.0.0.1 /admin/article/savelanmu
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004124s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004520s ]
+
+[ 2014-07-18T20:56:49+08:00 ] 127.0.0.1 /admin/article/lanmu
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004695s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005092s ]
+ERR: 1146:Table 'fdzzj.fdz_haociju_tags' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `fdz_haociju_tags`
+ERR: 1146:Table 'fdzzj.fdz_haociju_tags' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `fdz_haociju_tags` 
+
+[ 2014-07-18T20:56:59+08:00 ] 127.0.0.1 /admin/article/dellanmu/id/18
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004077s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004466s ]
+
+[ 2014-07-18T20:59:02+08:00 ] 127.0.0.1 /admin/article/lanmu
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004882s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005278s ]
+
+[ 2014-07-18T20:59:03+08:00 ] 127.0.0.1 /Public/css/fonts/glyphicons-halflings-regular.woff
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003954s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004535s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001877s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002219s ]
+NOTIC: [8] Undefined index: public D:\wamp\www\Hottredpen\Lib\Action\HomeAction.class.php 第 34 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.025209s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025589s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001568s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002119s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.045267s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002096s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.052670s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002240s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002583s ]
+
+[ 2014-07-18T21:01:10+08:00 ] 127.0.0.1 /admin/article/lanmu
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004910s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005307s ]
+
+[ 2014-07-18T21:01:11+08:00 ] 127.0.0.1 /Public/css/fonts/glyphicons-halflings-regular.woff
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003874s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004263s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001872s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002354s ]
+NOTIC: [8] Undefined index: public D:\wamp\www\Hottredpen\Lib\Action\HomeAction.class.php 第 34 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.020766s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021140s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001674s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001709s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001386s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002087s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007745s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.142693s ]
+INFO: [ view_end ] --END-- [ RunTime:0.143104s ]
+
+[ 2014-07-18T21:02:46+08:00 ] 127.0.0.1 /admin/article/lanmu
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.005003s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005455s ]
+
+[ 2014-07-18T21:02:47+08:00 ] 127.0.0.1 /Public/css/fonts/glyphicons-halflings-regular.woff
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003898s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004289s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001970s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002353s ]
+NOTIC: [8] Undefined index: public D:\wamp\www\Hottredpen\Lib\Action\HomeAction.class.php 第 34 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.020736s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021120s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001545s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001640s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001427s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.115537s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.121097s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002859s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003200s ]
+
+[ 2014-07-18T21:02:57+08:00 ] 127.0.0.1 /Admin/Article/editlanmu/id/1.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004134s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004525s ]
+
+[ 2014-07-18T21:03:41+08:00 ] 127.0.0.1 /Admin/Article/editlanmu/id/1.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004541s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004930s ]
+
+[ 2014-07-18T21:04:10+08:00 ] 127.0.0.1 /Admin/Article/editlanmu/id/1.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004488s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005035s ]
+
+[ 2014-07-18T23:35:21+08:00 ] 127.0.0.1 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.030987s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.048204s ]
+NOTIC: [2048] Declaration of IndexAction::aa() should be compatible with that of AppstartAction::aa() D:\wamp\www\Hottredpen\Lib\Action\Home\IndexAction.class.php 第 4 行.
+NOTIC: [8] Undefined index: index D:\wamp\www\Hottredpen\Lib\Action\HomeAction.class.php 第 26 行.
+NOTIC: [8] Undefined index: index D:\wamp\www\Hottredpen\Lib\Action\HomeAction.class.php 第 27 行.
+NOTIC: [8] Undefined index: index D:\wamp\www\Hottredpen\Lib\Action\HomeAction.class.php 第 28 行.
+SQL: SHOW COLUMNS FROM `fdz_user` [ RunTime:0.120243s ]
+SQL: SELECT * FROM `fdz_user` ORDER BY id desc LIMIT 5   [ RunTime:0.001725s ]
+SQL: SHOW COLUMNS FROM `fdz_zuowen` [ RunTime:0.079247s ]
+SQL: SELECT * FROM `fdz_zuowen` WHERE ( `isfabu` = 1 ) ORDER BY id desc LIMIT 15   [ RunTime:0.033971s ]
+SQL: SHOW COLUMNS FROM `fdz_yygj` [ RunTime:0.025716s ]
+SQL: SELECT * FROM `fdz_yygj` WHERE ( `isfabu` = 1 ) ORDER BY id desc LIMIT 6   [ RunTime:0.001878s ]
+SQL: SHOW COLUMNS FROM `fdz_haocihaoju` [ RunTime:0.122191s ]
+SQL: SELECT * FROM `fdz_haocihaoju` WHERE ( `isfabu` = 1 ) ORDER BY id desc LIMIT 6   [ RunTime:0.001844s ]
+SQL: SHOW COLUMNS FROM `fdz_jiaocai` [ RunTime:0.062097s ]
+SQL: SELECT * FROM `fdz_jiaocai` WHERE ( `isfabu` = 1 ) ORDER BY id desc LIMIT 10   [ RunTime:0.002202s ]
+SQL: SELECT * FROM `fdz_zuowen` WHERE ( `isfabu` = 1 ) ORDER BY monthclick desc LIMIT 10   [ RunTime:0.022283s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: actenname D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 6 行.
+NOTIC: [8] Use of undefined constant img - assumed 'img' D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 182 行.
+NOTIC: [8] Use of undefined constant author - assumed 'author' D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 186 行.
+NOTIC: [8] Use of undefined constant author - assumed 'author' D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 186 行.
+NOTIC: [8] Use of undefined constant click - assumed 'click' D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 186 行.
+NOTIC: [8] Undefined index: modenname D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 187 行.
+NOTIC: [8] Undefined index: catenname D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 187 行.
+NOTIC: [8] Undefined index: catname D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 187 行.
+NOTIC: [8] Use of undefined constant img - assumed 'img' D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 182 行.
+NOTIC: [8] Use of undefined constant author - assumed 'author' D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 186 行.
+NOTIC: [8] Use of undefined constant click - assumed 'click' D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 186 行.
+NOTIC: [8] Undefined index: modenname D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 187 行.
+NOTIC: [8] Undefined index: catenname D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 187 行.
+NOTIC: [8] Undefined index: catname D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 187 行.
+NOTIC: [8] Use of undefined constant img - assumed 'img' D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 182 行.
+NOTIC: [8] Use of undefined constant author - assumed 'author' D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 186 行.
+NOTIC: [8] Use of undefined constant click - assumed 'click' D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 186 行.
+NOTIC: [8] Undefined index: modenname D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 187 行.
+NOTIC: [8] Undefined index: catenname D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 187 行.
+NOTIC: [8] Undefined index: catname D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 187 行.
+NOTIC: [8] Use of undefined constant img - assumed 'img' D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 182 行.
+NOTIC: [8] Use of undefined constant author - assumed 'author' D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 186 行.
+NOTIC: [8] Use of undefined constant click - assumed 'click' D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 186 行.
+NOTIC: [8] Undefined index: modenname D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 187 行.
+NOTIC: [8] Undefined index: catenname D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 187 行.
+NOTIC: [8] Undefined index: catname D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 187 行.
+NOTIC: [8] Use of undefined constant img - assumed 'img' D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 182 行.
+NOTIC: [8] Use of undefined constant author - assumed 'author' D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 186 行.
+NOTIC: [8] Use of undefined constant click - assumed 'click' D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 186 行.
+NOTIC: [8] Undefined index: modenname D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 187 行.
+NOTIC: [8] Undefined index: catenname D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 187 行.
+NOTIC: [8] Undefined index: catname D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 187 行.
+NOTIC: [8] Use of undefined constant img - assumed 'img' D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 182 行.
+NOTIC: [8] Use of undefined constant author - assumed 'author' D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 186 行.
+NOTIC: [8] Use of undefined constant click - assumed 'click' D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 186 行.
+NOTIC: [8] Undefined index: modenname D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 187 行.
+NOTIC: [8] Undefined index: catenname D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 187 行.
+NOTIC: [8] Undefined index: catname D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 187 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.585622s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.586031s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.026800s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002470s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002044s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002672s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.035032s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.010835s ]
+INFO: [ view_end ] --END-- [ RunTime:0.011139s ]
+
+[ 2014-07-18T23:35:27+08:00 ] 127.0.0.1 /Public/css/fonts/glyphicons-halflings-regular.woff
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.007655s ]
+INFO: [ route_check ] --END-- [ RunTime:0.008059s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002192s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002543s ]
+NOTIC: [8] Undefined index: public D:\wamp\www\Hottredpen\Lib\Action\HomeAction.class.php 第 34 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.074745s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.075212s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002068s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002087s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001655s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002336s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009189s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002319s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002697s ]
+
+[ 2014-07-18T23:35:33+08:00 ] 127.0.0.1 /admin/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003720s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004108s ]
+ERR: 1146:Table 'fdzzj.think_auth_group_access' doesn't exist
+ [ SQL语句 ] : SELECT * FROM think_auth_group_access a LEFT JOIN think_auth_group g on a.group_id=g.id WHERE ( a.uid='' ) 
+
+[ 2014-07-18T23:35:37+08:00 ] 127.0.0.1 /Admin/Logo.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.025621s ]
+INFO: [ route_check ] --END-- [ RunTime:0.026011s ]
+
+[ 2014-07-18T23:35:38+08:00 ] 127.0.0.1 /DoApi/verify/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002937s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003303s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001829s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004950s ]
+
+[ 2014-07-18T23:35:58+08:00 ] 127.0.0.1 /Admin/Logo.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.019249s ]
+INFO: [ route_check ] --END-- [ RunTime:0.019661s ]
+
+[ 2014-07-18T23:35:59+08:00 ] 127.0.0.1 /admin/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003583s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003970s ]
+
+[ 2014-07-18T23:36:00+08:00 ] 127.0.0.1 /Public/css/fonts/glyphicons-halflings-regular.woff
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003762s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004119s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001849s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002178s ]
+NOTIC: [8] Undefined index: public D:\wamp\www\Hottredpen\Lib\Action\HomeAction.class.php 第 34 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.117457s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.117881s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001530s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001557s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001279s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002233s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007550s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001954s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002305s ]
+
+[ 2014-07-18T23:36:04+08:00 ] 127.0.0.1 /Admin/Article/lanmu.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004111s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004514s ]
+
+[ 2014-07-18T23:36:05+08:00 ] 127.0.0.1 /Public/css/fonts/glyphicons-halflings-regular.woff
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003803s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004205s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001864s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002222s ]
+NOTIC: [8] Undefined index: public D:\wamp\www\Hottredpen\Lib\Action\HomeAction.class.php 第 34 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.020319s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020745s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001514s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001731s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001422s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001823s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007455s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001951s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002311s ]
+
+[ 2014-07-18T23:36:10+08:00 ] 127.0.0.1 /Admin/Article/zuowenList.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003767s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004600s ]
+
+[ 2014-07-18T23:36:13+08:00 ] 127.0.0.1 /Admin/Article/zuowenList/year/2014.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.033060s ]
+INFO: [ route_check ] --END-- [ RunTime:0.054634s ]
+
+[ 2014-07-18T23:36:17+08:00 ] 127.0.0.1 /Admin/Article/zuowencontent/pid/280.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003947s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004334s ]
+
+[ 2014-07-18T23:38:26+08:00 ] 127.0.0.1 /Admin/Article/zuowencontent/pid/280.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004535s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005243s ]
+
+[ 2014-07-18T23:38:37+08:00 ] 127.0.0.1 /Admin/Article/zuowentianduan/pid/280.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003667s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004054s ]
+
+[ 2014-07-18T23:39:33+08:00 ] 127.0.0.1 /Admin/Article/zuowentianduan/pid/280.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003655s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004039s ]
+
+[ 2014-07-18T23:41:33+08:00 ] 127.0.0.1 /Admin/Article/zuowentianduan/pid/280.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.005012s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005421s ]
+
+[ 2014-07-18T23:42:43+08:00 ] 127.0.0.1 /Admin/Article/zuowentianduan/pid/280.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004454s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004877s ]
+
+[ 2014-07-18T23:43:21+08:00 ] 127.0.0.1 /Admin/Article/zuowencontent/pid/280.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004528s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004946s ]
+
+[ 2014-07-18T23:44:02+08:00 ] 127.0.0.1 /Admin/Article/zuowenList.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.038720s ]
+INFO: [ route_check ] --END-- [ RunTime:0.039137s ]
+
+[ 2014-07-18T23:44:04+08:00 ] 127.0.0.1 /Admin/Article/zuowenAdd.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.057520s ]
+INFO: [ route_check ] --END-- [ RunTime:0.057936s ]
+
+[ 2014-07-18T23:45:35+08:00 ] 127.0.0.1 /Admin/Article/zuowenAdd.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003583s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003996s ]
+
+[ 2014-07-18T23:46:01+08:00 ] 127.0.0.1 /Admin/Article/zuowenAdd.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004122s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004557s ]
+
+[ 2014-07-18T23:47:26+08:00 ] 127.0.0.1 /Admin/Article/zuowenAdd.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004330s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004748s ]
+
+[ 2014-07-18T23:48:53+08:00 ] 127.0.0.1 /Admin/Article/zuowenAdd.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003886s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004314s ]
+
+[ 2014-07-18T23:50:32+08:00 ] 127.0.0.1 /Admin/Article/zuowenAdd.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004471s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005048s ]
+
+[ 2014-07-18T23:51:15+08:00 ] 127.0.0.1 /Admin/Article/zuowenAdd.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004022s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004452s ]
+
+[ 2014-07-18T23:52:32+08:00 ] 127.0.0.1 /Admin/Tags/alltags.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003629s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004052s ]
+
+[ 2014-07-18T23:52:42+08:00 ] 127.0.0.1 /Admin/User.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003691s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004976s ]
+
+[ 2014-07-18T23:53:06+08:00 ] 127.0.0.1 /admin/user/userGroups.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004335s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004751s ]
+

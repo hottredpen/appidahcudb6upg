@@ -1,0 +1,119 @@
+<include file="Index:header" />
+<!--头部 end -->
+<!-- container start --> 
+<div class="container">
+  
+    <div class="col-lg-8 col-md-8 content">
+      <div class="clean"></div>
+      
+
+
+
+
+      <div class="panel panel-default">
+        <div class="panel-heading">
+			<ol class="breadcrumb">
+			  <li><a href="#">首页</a></li>
+			  <li><a href="#">作文标签库</a></li>
+			  <li class="active">{$words}</li>
+			</ol>		
+          <h1 class="pull-left" itemprop="headline">关于{$words}的作文</h1>
+          <div class="pull-right"> 
+            <!-- Baidu Button BEGIN -->
+            <div id="bdshare" class="bdshare_b" style="line-height: 12px;"> <a class="btn btn-default btn-sm pull-left"> <span class="glyphicon glyphicon-thumbs-up"></span> 分享</a> <a class="shareCount btn btn-default btn-sm pull-right" style="background: #fff !important;line-height: 28px;height: 30px;width: auto;color: #666;padding: 0 10px;"></a>
+              <div class="clean"></div>
+            </div>
+            <script type="text/javascript" id="bdshare_js" data="type=button&amp;mini=1&amp;uid=835052" ></script> 
+            <script type="text/javascript" id="bdshell_js"></script> 
+            <script type="text/javascript">
+                document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000);
+                    </script> 
+            <!-- Baidu Button END --> 
+            </div>
+          <div class="clean"></div>
+        </div>
+		
+		
+        <div class="panel-body">
+			<aside class="panel panel-default">
+			  <div class="panel-heading">
+				<h3 class="panel-title">相关细分标签</h3>
+			  </div>
+			  <div class="panel-body">
+					<div class="btn-group">
+					  <button type="button" class="btn btn-default">春天的景色</button>
+					  <button type="button" class="btn btn-default">美丽的春天</button>
+					</div>
+					<div class="btn-group">
+					  <button type="button" class="btn btn-default">春天的小河</button>
+					  <button type="button" class="btn btn-default">春天的校园</button>
+
+					</div>
+			  </div>
+			</aside>
+				<volist name="list" id="list" >
+				  <div itemprop="itemListElement">
+					<h2 class="h4" itemprop="name"><small><span class="glyphicon glyphicon-eye-open"></span>{$list[click]}</small><a href="/zuowen/html/{$list.indexid}" rel="bookmark" itemprop="url">{$list.title}</a><small class="pull-right"><span class="glyphicon glyphicon-user"></span><empty name="list[author]">佚名<else />{$list[author]}</empty></small></h2>
+					<div itemprop="description">
+					  <p>{$list.gaiyao}</p>
+					</div>
+				  </div>
+				</volist>
+        </div>
+        <div class="panel-footer text-muted"> “<{$catName}>”分类目录为您找到结果 <{$count}>个</div>
+      </div>
+      <{$show}>
+ 
+    </div>
+
+  <div class="col-lg-4 col-md-4 sidebar">
+    <div class="clean"></div>
+    <aside class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">公告</h3>
+      </div>
+      <div class="panel-body">
+       <{:R('Siteinfo/info',array('announcement'),'Widget')}>
+      </div>
+    </aside>
+    <div class="panel-group mb20" id="accordion">
+      <div class="panel panel-danger">
+        <div class="panel-heading">
+          <h3 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" class="collapsed"> <span class="glyphicon glyphicon-fire mr10"></span> <span itemprop="name">按浏览次数推荐的5篇文章</span> </a> </h3>
+        </div>
+        <div id="collapseOne" class="panel-collapse collapse" style="height: 0px;"> 
+          <foreach name="sidebar1" item="sidebar1Val">
+            <a href="<{:U('Index/Article/index',array('articleid'=>$sidebar1Val['article_id']))}>" class="list-group-item"><span><{$sidebar1Val.title}></span></a> 
+          </foreach>
+        </div>
+      </div>
+      <div class="panel panel-success">
+        <div class="panel-heading">
+          <h3 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" class="collapsed"> <span class="glyphicon glyphicon-volume-up mr10"></span> <span itemprop="name">最受网友争议5篇文章</span> </a> </h3>
+        </div>
+        <div id="collapseTwo" class="panel-collapse collapse" style="height: 0px;"> 
+          <foreach name="sidebar2" item="sidebar2Val">
+            <a href="<{:U('Index/Article/index',array('articleid'=>$sidebar2Val['article_id']))}>" class="list-group-item"><span><{$sidebar2Val.title}></span></a> 
+          </foreach>
+        </div>
+      </div>
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <h3 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" class=""> <span class="glyphicon glyphicon-thumbs-up mr10"></span> <span itemprop="name">随机推荐5篇精选文章</span> </a> </h3>
+        </div>
+        <div id="collapseThree" class="panel-collapse in" style="height: auto;"> 
+          <foreach name="sidebar3" item="sidebar3Val">
+            <a href="<{:U('Index/Article/index',array('articleid'=>$sidebar3Val['article_id']))}>" class="list-group-item"><span><{$sidebar3Val.title}></span></a> 
+          </foreach>
+        </div>
+      </div>
+    </div>
+    
+
+    
+  </div>
+  <div class="clean"></div>
+</div>
+<!-- container end -->
+<!--底部  start-->
+<include file="Index:footer" />

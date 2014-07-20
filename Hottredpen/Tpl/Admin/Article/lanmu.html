@@ -1,0 +1,63 @@
+<include file="Index:header" />
+<style type="text/css">
+.cla1{ font-weight:600; font-size:14px;}
+.cla2{ font-weight:500; font-size:12px; margin-left:5px;}
+.cla3{ font-weight:500; font-size:10px; margin-left:10px;}
+</style>
+<div class="container">
+	<include file="left" />
+	<div id="content" class="col-md-10">
+		<ul class="breadcrumb">
+			<li><a href="__ROOT__/Admin.html">首页</a></li>
+			<li><a href="__ROOT__/Admin/Article/lanmu.html">文章相关管理</a></li>
+			<li class="active">栏目管理</li>
+			<div  class="pull-right"> 
+			    <a href="__ROOT__/Admin/Article/addlanmu.html">添加新栏目</a>
+			</div>
+		</ul>
+          <table class="table table-striped table-bordered table-condensed">
+            <thead>
+              <tr>
+                <th>栏目ID</th>
+                <th>栏目名称</th>
+				<th>英文名称</th>
+				<th>栏目关键词</th>
+                <th>栏目描述</th>
+                <th>操作</th>
+              </tr>
+            </thead>
+            <tbody>
+			 <volist name="lanmulist" id="vo">
+              <tr>
+                <td>{$vo.id}</td>
+                <td>
+                <a>
+                  <span class="cla{$vo.order}">
+                    <if condition="$vo['order'] eq 1 ">
+                       {$vo.title}
+                    <elseif condition="$vo['order'] eq 2 " />
+                       ├ {$vo.title}
+                    <elseif condition="$vo['order'] eq 3 " /> 
+                       │├ {$vo.title}
+                    </if>
+                  </span>
+                </a>
+                </td>
+				<td>{$vo.entitle}</td>
+				<td>{$vo.keywords}</td>
+                <td>{$vo.description}</td>
+                <td>
+                    <a href="__ROOT__/Admin/Article/editlanmu/id/{$vo.id}.html" title="编辑栏目"><span class="glyphicon glyphicon-pencil"></span></a>
+                    <if condition="intval($vo['order']) lt 3 ">
+                    <a href="__ROOT__/Admin/Article/addlanmu/pid/{$vo.id}.html" data-rel="tooltip"  class="icon icon-color icon-plus" title="添加子栏目"><span class="glyphicon glyphicon-tasks"></span></a>
+                    </if>
+                    <a href="#" title="删除栏目" onclick="if(confirm('是否要删除？'))window.location.href='__URL__/dellanmu/id/{$vo.id}'"><span class="glyphicon glyphicon-trash"></span></a>
+                   
+                </td>
+              </tr>
+            </volist>
+            </tbody>
+          </table>          
+    </div>
+</div>
+<include file="Index:footer" />

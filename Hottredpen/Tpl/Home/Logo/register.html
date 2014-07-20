@@ -1,0 +1,65 @@
+<include file="Index:nofollowheader" />
+<div class="container">
+    	<div class="col-md-6 col-md-offset-2">
+    	    <h2>用户注册</h2>
+					<form class="form-horizontal" role="form" action="__APP__/addreg" method="post" onSubmit="return yz()">
+					<div class="form-group">
+						<label class="col-sm-3 control-label" for="inputEmail">账号</label>
+						<div class="col-sm-9">
+						    <input type="text" id="inputUsername_Z" placeholder="用户名由3到9个字符或文字组成" name="username" /><span id="usernametishi_Z"></span>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-sm-3 control-label" for="inputPassword">密码</label>
+						<div class="col-sm-9">
+						    <input type="password" id="inputPassword_Z" placeholder="请输入6到12个字符" name="password" /><span id="passwordtishi_Z"></span>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-sm-3 control-label" for="inputPassword">确认密码</label>
+						<div class="col-sm-9">
+						    <input type="password" id="inputRePassword_Z" placeholder="请再次输入密码" name="repassword" /><span id="repasswordtishi_Z"></span>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-sm-3 control-label" for="inputPassword">邮箱</label>
+						<div class="col-sm-9">
+						    <input type="text" id="inputEmail_Z" placeholder="请输入正确的邮箱地址" name="email" /><span id="emailtishi_Z"></span>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-sm-3 control-label" >验证码</label>
+						<div class="col-sm-9">
+						    <input class="span1" type="text" id="inputYanzhengma_Z"  name="verify" /><img id="verifyImg" src='__APP__/DoApi/verify/' onClick="changeVerify()" title="点击刷新验证码" /><a  href="javascript:void(0)" onclick="changeVerify()" >看不清？</a><span id="yanzhengmatishi_Z"></span>
+						</div>
+					</div>	
+					<div class="form-group">
+						<div class="col-sm-offset-3 col-sm-9">
+						    <button type="submit" class="btn btn-success">注册</button>
+						</div>
+					</div>
+					</fieldset>
+					</form>
+        </div>
+        <div class="col-md-4">
+            <p>已经注册了？<a href="__ROOT__/login.html" class="btn btn-primary">登陆</a></p>
+        </div>
+</div>
+ <script language="JavaScript">
+	function changeVerify(){
+		var timenow = new Date().getTime();
+		document.getElementById('verifyImg').src='__APP__/DoApi/verify/'+timenow;
+	}
+</script>
+<script type="text/javascript">
+var DOMAIN='';
+(function () {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';
+    ds.async = true;
+    ds.src = DOMAIN+'/public/js/zhuce.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
+})();
+</script>	
+<include file="Index:footer" />

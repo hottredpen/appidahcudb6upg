@@ -1,0 +1,99 @@
+<div class="clean"></div>
+<footer id="footer">
+	<empty name="article.title">
+	<!--友情链接 -->
+	<div class="container">
+		<div class="panel panel-default">
+			<div class="panel-body">
+				<ul>
+				    <li><span class="text-muted">友情连接：</span></li>
+				    <li><a href="http://www.jk-kj.com/zuowen.html" target="_blank">作文大全</a></li>
+				</ul>
+			</div>
+		</div>
+    </div>
+	</empty>
+    <!--说明 -->
+	<div class="panel panel-default">
+		<div class="panel-footer">
+			<p class="text-muted">版权归作者所有，如果无意之中侵犯了您的版权，请来信告知，本站将在3个工作日内删除</p>
+			<p class="text-muted">联系站长:277488199@qq.com</p>
+			<p class="text-muted">Copyright ©2014 jk-kj.com Inc. All Rights Reserved.<a rel="nofollow" class="text-muted" href="http://www.miitbeian.gov.cn" ref="nofollow">浙ICP备13033425-2号</a></p>
+		    <p class="text-muted"><a ref="nofollow" href="http://webscan.360.cn/index/checkwebsite/url/www.jk-kj.com" name="35c4968029238ffdce1707bfc21caf4c" >360网站安全检测平台</a></p>
+		</div>
+	</div>
+</footer>
+<!-- footer end -->
+<!-- 右侧的刷新回顶 -->
+<div class="btn-group-vertical floatButton">
+  <button type="button" class="btn btn-default" id="goTop" title="去顶部"><span class="glyphicon glyphicon-arrow-up"></span></button>
+  <button type="button" class="btn btn-default" id="refresh" title="刷新"><span class="glyphicon glyphicon-repeat"></span></button>
+  <button type="button" class="btn btn-default" id="goBottom" title="去底部"><span class="glyphicon glyphicon-arrow-down"></span></button>
+</div>
+<script type="text/javascript">
+jQuery(document).ready(function($){
+  $('#goTop').click(function(){$('html,body').animate({scrollTop: '0px'}, 800);});
+  $('#goBottom').click(function(){$('html,body').animate({scrollTop:$('#footer').offset().top}, 800);});
+  $('#refresh').click(function(){location.reload();});
+  $('#searchsubmit').bind('click', function (e) {
+        var words=$("#searchwords")[0].value; ;
+		window.location.href="/search?words="+words;
+	});
+<notempty name="article.title">
+  var catid={$article.catid},id={$article.id};
+		$.ajax({
+			type: "POST",
+			url: "/index.php?g=Home&m=Hits&a=gethits",
+			dataType: "json",
+			data: {
+				'catid': catid,
+				'id':id,
+			},
+			success: function (backdata) {
+			    $("#header_info").html(backdata.header_infohtml);
+			    $("#hits").html(backdata.click);
+				$("#userpizhu").html(backdata.userpizhuhtml);
+				$("#gaiyaorand").html(backdata.gaiyaorandhtml);
+				$("#pingjia").html(backdata.pingjiahtml);
+				$("#tuijian").html(backdata.tuijianhtml);
+				$("#monthhot").html(backdata.monthhothtml);
+				$("#weekhot").html(backdata.weekhothtml);
+				//绑定
+                ksllbind(catid,id);
+			}
+		}); 
+	//激活tooltip
+	$('a[rel=tooltip]').tooltip({});
+	//激活popover
+	$('.jiexiceng').popover();
+</notempty>
+
+
+});
+</script>
+<!-- endjs -->
+<script src="__PUBLIC__/js/star/jquery.rateit.js"></script>
+<notempty name="article.title">
+<script charset="utf-8" src="__PUBLIC__/js/jk-kj.js?v=jkkj"></script>
+</notempty>
+<notempty name="active.center"> 
+<script type="text/javascript">
+	(function($) {
+		//三级联动
+		$(function(){
+			var yuyu=$("#sees").attr("title");
+			$("#area").area({cache:region,shengshiqu:yuyu});
+		});
+	})(jQuery);
+  //点击更换城市的a 的# 不会到顶部
+	$('#show a').click(function (e) {
+	e.preventDefault();
+    })
+</script>
+</notempty>
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F2dc4ce76f4e4904b954a3f42f3f8594d' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta charset="UTF-8" />
+<if condition="$actenname eq 'user' ">
+<meta name="robots" content="nofollow" /><!--nofollow-->
+</if>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+<notempty name="indextitle">
+<title>{$indextitle}-{$sys.sys_name}</title>
+<else />
+<notempty name="article.title">
+<title>《{$article.title}》<notempty name="article.author">{$article.author}<else />佚名</notempty>-{$lanmutitle}-{$sys.sys_name}</title>
+<else />
+<title>{$sys.sys_name}——{$sys.sys_index_info}</title>
+</notempty>
+</notempty>
+<notempty name="indexkeywords">
+<meta name="KeyWords" content="{$indexkeywords}" />
+<else />
+<notempty name="article.keywords">
+<meta name="KeyWords" content="{$article.keywords}" />
+<else />
+<meta name="KeyWords" content="{$sys.sys_keyword}" />
+</notempty>
+</notempty>
+<notempty name="indexdescription">
+<meta name="description" content="{$indexdescription}" />
+<else />
+<notempty name="article.description">
+<meta name="description" content="{$article.description}" />
+<else />
+<meta name="description" content="{$sys.sys_describe}" />
+</notempty>
+</notempty>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href="__PUBLIC__/css/boot3/bootstrap.min.css" rel="stylesheet" media="screen" />
+<link href="__PUBLIC__/css/boot3/style.css" rel="stylesheet" media="screen" />
+<link href="__PUBLIC__/js/star/rateit.css" rel="stylesheet" media="screen" />
+<link href="__PUBLIC__/js/colorbox/colorbox.css" rel="stylesheet" media="screen" />
+<script src="__PUBLIC__/js/boot3/jquery.js"></script>
+<script src="__PUBLIC__/js/boot3/bootstrap.min.js"></script>
+<script src="__PUBLIC__/js/ajaxForm.js"></script>
+<script src="__PUBLIC__/js/colorbox/jquery.colorbox-min.js"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$(".jk-kj_com").colorbox({ rel: 'group1',loop:false});
+});
+</script>
+</head>
+<body id="body">
+<header> 
+    <nav id="navbar" class="navbar navbar-default navbar-static-top" role="navigation">
+		<div class="container">
+		    <!--logo-->
+			<div class="navbar-header nav navbar-nav col-lg-3">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">切换导航</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+				<a href="/"><img class="logo img-responsive" alt="简看空间" href="/" src="__PUBLIC__/images/logo.png" /></a>
+			</div>
+			<!--logo右边-->
+			<div class="nav navbar-nav col-lg-9">
+				    <div id="header_info" class="col-md-7"></div>
+					<div class="col-md-5">
+						<div class="col-sm-12">
+							<ul id="user" class="nav navbar-nav navbar-right header-nav-right">
+								<empty name="Think.session.user_name">
+										<li><a href="__ROOT__/login.html">登陆</a></li>
+								<else />
+										<if condition="$Think.session.user_haveimg eq 1">
+											<li class="txclass"><a  id="user_name" title="{$Think.session.user_name}"><img style="width:44px;height:44px" src="/Public/FaustCplus/php/img/small_user_{$Think.session.user_uid}.jpg" alt=""></a><a>暂无徽章</a></li>
+										<else />
+											<li class="txclass"><a  id="user_name" title="{$Think.session.user_name}"><img style="width:44px;height:44px" src="/Public/FaustCplus/php/img/noimg.png" alt=""></a><a>暂无徽章</a></li>
+										</if>
+										<li><a href="__ROOT__/Center.html">{$Think.session.user_name}</a></li>
+										<li><a href="__ROOT__/exits.html">退出</a></li>
+								</empty>
+							</ul>
+						</div>
+					</div>
+
+
+			</div>
+		    <div class="clean"></div>
+		</div>
+		<!--导航start-->
+		<div class="collapse navbar-collapse nav_bj" id="bs-example-navbar-collapse-1">
+			<div class="container">
+				<ul id="headernav" class="nav navbar-nav">
+				   
+					<li <notempty name="active.index">class="{$active.index}" </notempty>><a href="__APP__/" title="首页">首页</a></li>
+					<li <notempty name="active.zuowen">class="{$active.zuowen}" </notempty>><a href="__APP__/zuowen.html"  title="作文大全">作文大全</a></li>
+					<li <notempty name="active.haocihaoju">class="{$active.haocihaoju}" </notempty>><a href="__APP__/haocihaoju.html"  title="好词好句">好词好句</a></li>
+					<li <notempty name="active.mingrenmingyan">class="{$active.mingrenmingyan}" </notempty>><a href="__APP__/mingrenmingyan.html"  title="名人名言">名人名言</a></li>
+					<li <notempty name="active.zheligushi">class="{$active.zheligushi}" </notempty>><a href="__APP__/zheligushi.html"  title="哲理故事">哲理故事</a></li>
+                    <li <notempty name="active.fenlei">class="{$active.fenlei}" </notempty>><a href="__APP__/fenlei.html"  title="分类标记">分类标记</a></li> 					
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li class="searchinput">
+							<div class="input-group">
+								<input id="searchwords" type="text" class="form-control" placeholder="输入关键词搜索" />
+								<span class="input-group-btn">
+								    <button class="btn btn-default" type="button" id="searchsubmit"><span class="glyphicon glyphicon-search"></span></button>
+							    </span>
+							</div>
+					</li>
+					<li>
+						<a href="__APP__/tougao.html">投稿</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	  <!--导航end-->
+    </nav>
+</header>
+
+
+
+

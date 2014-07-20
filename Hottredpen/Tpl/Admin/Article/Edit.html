@@ -1,0 +1,155 @@
+<include file="Index:header" />
+<div class="container">
+	<include file="left" />
+	<div id="content" class="col-md-10">
+		<ul class="breadcrumb">
+			<li><a href="__ROOT__/Admin.html">首页</a></li>
+			<li><a href="__ROOT__/Admin/Article/lanmu.html">文章相关管理</a></li>
+			<li><a href="__ROOT__/Admin/Article/{$article.mod}List.html">{$article.modname}</a></li>
+			<li class="active">{$data.title}<a href="__ROOT__/Admin/Article/{$article.mod}content/pid/{$data['id']}.html">[全部段落]</a></li>
+		</ul>
+		<ul id="myTab" class="nav nav-tabs">
+		    <li class="active"><a href="#home" data-toggle="tab">文章基本信息</a></li>
+		</ul>
+            <form method="post"  action='__URL__/{$article.mod}updatearticle'>
+            <input name="id" type="hidden" value="{$data['id']}" />
+                <div id="myTabContent" class="tab-content">
+
+                    <div class="tab-pane fade in active" id="home">
+               
+							<table class="table">
+											<tbody>
+											  <tr>
+												<td>
+													   ID：
+												</td>
+												<td>
+												  {$data['id']}
+												</td>
+											  </tr>
+											  <tr>
+												<td>
+													   indexid：
+												</td>
+												<td>
+												    <div class="col-sm-5">
+												        <input name="indexid" type="text" class="form-control" value="{$data['indexid']}">
+												    </div>
+												</td>
+											  </tr>
+											  <tr>
+												<td>												
+													   indexpuid：
+												</td>
+												<td>
+												    <div class="col-sm-5">
+												        <input name="indexpuid" type="text" class="form-control" value="{$data['indexpuid']}">
+												    </div>
+												</td>
+											  </tr>
+											  <tr>
+												<td>
+													   title：
+												</td>
+												<td>
+												    <div class="col-sm-5">
+												        <input name="title" type="text" class="form-control" value="{$data['title']}">
+													</div>
+												</td>
+											  </tr>
+											  <tr>
+												<td>
+													   来源：
+												</td>
+												<td>
+												    <div class="col-sm-5">
+												        <input name="laiyuan" type="text" class="form-control" value="{$data['laiyuan']}">
+												    </div>
+												</td>
+											  </tr>
+											  <tr>
+												<td>
+													   tags标签：
+												</td>
+												<td>
+												    <div class="col-sm-5">
+												        <input name="tags" type="text" class="form-control" value="{$data['tags']}">
+												    </div>
+												</td>
+											  </tr>
+											  <tr>
+												<td>
+													   作者：
+												</td>
+												<td>
+												    <div class="col-sm-5">
+												        <input name="author" type="text" class="form-control" value="{$data['author']}">
+												    </div>
+												</td>
+											  </tr>
+											  <tr>
+												<td>
+													  概要：
+												</td>
+												<td>
+												    <div class="col-sm-8">
+												    <textarea name="gaiyao" type="text" class="form-control" rows="3">{$data['gaiyao']}</textarea>
+													</div>
+												</td>
+											  </tr>
+											  <tr>
+											  <tr>
+												<td>
+													   缩略图原图：
+												</td>
+												<td>
+												    <div class="col-sm-5">
+												        <input name="img" type="text" class="form-control" value="{$data['img']}">
+													</div>
+												</td>
+											  </tr>
+											  <tr>
+												<td>
+													   缩略图：
+												</td>
+												<td>
+												    <div class="col-sm-5">
+														<a href="{$data['img']|substr=0,-4}01.jpg" class="cboxElement"><img src="{$data['img']|substr=0,-4}01.jpg" width="180" height="45"></a>
+														<span>为原图末尾去掉.jpg加01.jpg</span><a href="__ROOT__/Admin/Article/sumb?img={$data['img']}">进行裁剪</a>
+													</div>
+												</td>
+											  </tr>
+											  <tr>
+												<td>
+													   是否发布：
+												</td>
+												<td>
+												    <div class="col-sm-5">
+												        <input name="isfabu" type="text" class="form-control" value="{$data['isfabu']}">
+													</div>
+												</td>
+											  </tr>
+											</tbody>
+						
+							</table>
+                    </div>
+
+					    <div class="modal-footer">
+						  <button type="submit" class="btn btn-primary" >确认修改</button>
+					    </div>
+            
+
+
+                </div>
+            </form>
+    </div>
+   <script>
+     function setCatPid(v){
+		 var catpid  = $(v).attr("catpid");
+		 var order =  $(v).attr("order");
+		 var pid  = $(v).attr("value");
+		 $("#catpid").attr("value",catpid);
+	 }
+   </script>
+</div>
+<include file="Index:footer" />

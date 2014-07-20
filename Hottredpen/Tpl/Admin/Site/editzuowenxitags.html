@@ -1,0 +1,100 @@
+<include file="Index:header" />
+
+<div class="container-fluid">
+	<div class="row-fluid">
+        <!--左栏 starts -->
+		<include file="left" />
+        <!--左栏 end -->
+			
+			
+       <!-- content starts -->
+      <div id="content" class="span10">
+          <ul class="breadcrumb">
+              <li>
+                  <a href="__ROOT__/Admin.html">首页</a> <span class="divider">/</span>
+              </li>
+              <li>
+                  <a href="__ROOT__/Admin/Site.html">栏目管理</a> <span class="divider">/</span>
+              </li>
+              <li class="active">添加栏目</li>
+              
+          </ul>
+          
+            <ul id="myTab" class="nav nav-tabs">
+              <li class="active"><a href="#home" data-toggle="tab">基本信息</a></li>
+            </ul>
+ <form method="post"  action='__ROOT__/Admin/Site/updatazuowenxitags'>
+ <input name="id" type="hidden"  value="{$thisdata['id']}" >
+ <input id="order" name="order" type="hidden" value="{$thisdata['newOrder']}">  
+            <div id="myTabContent" class="tab-content">
+
+              <div class="tab-pane fade in active" id="home">
+
+                
+                    <table class="table">
+                                    <tbody>
+                                      <tr>
+                                        <td>
+                                               栏目名称：
+                                        </td>
+                                        <td>
+                                          <input name="title" type="text" class="span5" value="{$thisdata['title']}" maxlength="30">
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                               栏目英文：
+                                        </td>
+                                        <td>
+                                          <input name="entitle" type="text" class="span5" value="{$thisdata['entitle']}" maxlength="30">
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                               上级类目：
+                                        </td>
+                                        <td>
+                                          <if condition="$tagsdata">
+                                          <select name="pid" id="pid"  onchange="var id=$(this).val();orclick(id);setCatPid(id);">
+                                          <option value="{$thisdata.pid}" class="cal{$pdata.order}">{$pdata.title}</option>
+                                          <volist id="vo" name="tagsdata">
+                                          <option id="o_{$vo.id}" value="{$vo.id}" class="cal{$vo.order}" catpid="{$vo.absPath}" order="{$vo.order}">
+                                            <if condition="intval($vo['order']) eq 1 ">
+                                               {$vo.title}
+											<elseif condition="intval($vo['order']) eq 2 " />
+												├ {$vo.title}
+											<elseif condition="intval($vo['order']) eq 3 " /> 
+												│├ {$vo.title}
+											</if>
+                                          </option>
+                                          
+                                          </volist>
+                                          
+                                          </select>
+                                       
+                                          </if>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+              
+                    </table>
+
+
+              </div>
+              <!--基本信息end-->
+              <div class="modal-footer">
+                  <a href="#" class="btn" data-dismiss="modal">关闭</a>
+                  <button type="submit" class="btn btn-primary" >确认添加</button>
+              </div>
+              </form>
+
+
+            </div>
+
+          
+          
+      </div>
+       <!-- content end -->
+   </div>
+</div>
+<include file="Index:footer" />

@@ -1,0 +1,81 @@
+<include file="index/header" />
+<div class="container">
+	<include file="left" />
+    <div id="content" class="col-md-10">
+		<ul class="breadcrumb">
+			  <li><a href="__ROOT__/Admin.html">首页</a></li>
+			  <li><a href="__ROOT__/Admin/basic/index">全站基础设置</a></li>
+			  <li class="active">邮箱设置</li>
+		</ul>
+<form method="post"  action='__URL__/email_send'>
+<table class="table table-hover">
+            <thead>
+              <tr>
+                <th>参数说明</th>
+                <th>参数值</th>
+              </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                <td>
+                       SMTP服务器:
+                </td>
+                <td>
+				  <input name="smtp" class="form-control" type="text" value="{$vo.0.smtp}" />
+                </td>
+              </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                <td>
+                       SMTP服务器是否需要验证:
+                </td>
+                <td>
+                	<label><input type="radio" name="validation" value="1"  checked/>是</label>
+                  	<label><input type="radio" name="validation" value="0"  />否</label>
+                </td>
+              </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                <td>
+                       邮箱地址:
+                </td>
+                <td>
+				  <input name="send_email" class="form-control" type="text" value="{$vo.0.send_email}" />
+                </td>
+              </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                <td>
+                       邮箱密码:
+                </td>
+                <td>
+				  <input name="password" class="form-control" type="password" value="{$vo.0.password}" />
+                </td>
+              </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                <td>
+                       发件人:
+                </td>
+                <td>
+				  <input name="addresser" class="form-control" type="text" value="{$vo.0.addresser}" />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+			<div class="col-md-5 col-md-offset-4">
+					  <button class="btn btn-primary" type="submit">
+						  确认修改
+					  </button>
+					  <input name="id" type="hidden" value="1" />
+			</div>
+</form>
+<!--底部 -->
+  </div>
+</div>
+<include file="index/footer" />

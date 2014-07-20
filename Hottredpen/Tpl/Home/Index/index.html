@@ -1,0 +1,267 @@
+<include file="Index:header" />
+<!--头部 end -->
+
+<div class="container">
+  <div class="col-lg-8 col-md-8 col-sm-8 content">
+    <div id="carousel-example-generic" class="carousel slide mb20" data-ride="carousel"> 
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+      </ol>
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <a href="/" target="_blank"><img  style="margin:0 auto;max-height:300px;" src="__PUBLIC__/images/test.jpeg" alt="简看" /></a>
+          <div class="carousel-caption"> </div>
+        </div>
+        <div class="item">
+          <a href="/" target="_blank"><img  style="margin:0 auto;max-height:300px;" src="__PUBLIC__/images/test.jpeg" alt="简看" /></a>
+          <div class="carousel-caption"> </div>
+        </div>
+		<div class="item">
+          <a href="/" target="_blank"><img  style="margin:0 auto;max-height:300px;" src="__PUBLIC__/images/test.jpeg" alt="简看" /></a>
+          <div class="carousel-caption"> </div>
+        </div>
+      </div>
+      <!-- Controls --> 
+      <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev" > <span class="glyphicon glyphicon-chevron-left"></span> </a> <a class="right carousel-control" href="#carousel-example-generic" data-slide="next" > <span class="glyphicon glyphicon-chevron-right"></span> </a> 
+	</div>
+	
+	
+
+
+
+
+    <div class="row mb20">
+         <div class="col-md-7">
+			  <div class="panel panel-info">
+				<div class="panel-heading">
+				  <h3 class="panel-title">推荐作文</h3>
+				</div>
+			   <ul class="row list-group">
+				<volist name="newartlist" id="art">
+					<if condition="$art.bj eq 1">
+						<li>
+							<a class="list-group-item" href="/zuowen/html/{$art.indexid}.html" >
+								<div class="col-md-6">
+									{$art.title}<small class="text-muted">--<empty name="art.author">佚名<else />{$art.author}</empty></small>
+								</div>
+								<div class="col-md-6">
+									<div class="rateit pull-right" data-rateit-value="{$art.starfenshu}" title="{$art.starfenshu}" data-rateit-ispreset="true" data-rateit-readonly="true"><font>好句(0)</font><font>好段(0)</font></div>
+									<div></div>
+								</div>
+								<div class="clean"></div>
+							</a>
+						</li>		
+					<else />
+						<li>
+							<a class="list-group-item bei2" href="/zuowen/html/{$art.indexid}.html" >
+								<div class="col-md-6">
+									{$art.title}<small class="text-muted">--<empty name="art.author">佚名<else />{$art.author}</empty></small>
+								</div>
+								<div class="col-md-6">
+									<div class="rateit pull-right" data-rateit-value="{$art.starfenshu}" title="{$art.starfenshu}" data-rateit-ispreset="true" data-rateit-readonly="true"><font>好句(0)</font><font>好段(0)</font></div>
+								</div>
+								<div class="clean"></div>
+							</a>
+						</li>
+					</if>
+				</volist>
+			  </ul>
+			  </div>
+	     </div>
+		 
+         <div class="col-md-5">
+			  <div class="panel panel-info">
+				<div class="panel-heading">
+				  <h3 class="panel-title">精彩图文</h3>
+				</div>
+			    <ul class="row list-group">
+				       <volist name="jingcaituwendata" id="foo">
+						<li>
+							
+								<div class="col-md-6">
+									<a title="{$foo.title}" href="/yygj/html/{$foo.indexid}.html" class="thumbnail"><img alt="{$foo.title}" src="{$foo[img]|substr=0,-4}01.jpg" ></a>
+								</div>
+								<div class="col-md-6">
+                                    <a href="/yygj/html/{$foo.indexid}.html" title="">{$foo.title}</a>
+									<p> <span class="muted"><i class="icon-user icon12"></i><empty name="foo[author]">佚名<else />{$foo[author]}</empty></span><span class="muted"><i class="icon-eye-open icon12"></i>{$foo[click]}浏览</span> <span class="muted"></span>
+										<a href="/{$foo.modenname}/{$foo.catenname}"><span class="label">{$foo.catname}</span></a>
+									</p>
+								</div>
+								<div class="clean"></div>
+							
+						</li>
+						</volist>
+			    </ul>
+			  </div>
+	     </div>
+		 <div class="clean"></div>
+         <div class="col-md-7">
+			  <div class="panel panel-info">
+				<div class="panel-heading">
+				  <h3 class="panel-title">好词好句</h3>
+				</div>
+			   <ul class="row list-group">
+				<volist name="haocijudata" id="art">
+					<if condition="$art.bj eq 1">
+						<li>
+							<a class="list-group-item" href="/haocihaoju/html/{$art.indexid}.html" >
+								<div class="col-md-6">
+									{$art.title}<small class="text-muted">--<empty name="art.author">佚名<else />{$art.author}</empty></small>
+								</div>
+								<div class="col-md-6">
+									<div class="rateit pull-right" data-rateit-value="{$art.starfenshu}" title="{$art.starfenshu}" data-rateit-ispreset="true" data-rateit-readonly="true"><font>好句(0)</font><font>好段(0)</font></div>
+									<div></div>
+								</div>
+								<div class="clean"></div>
+							</a>
+						</li>		
+					<else />
+						<li>
+							<a class="list-group-item bei2" href="/haocihaoju/html/{$art.indexid}.html" >
+								<div class="col-md-6">
+									{$art.title}<small class="text-muted">--<empty name="art.author">佚名<else />{$art.author}</empty></small>
+								</div>
+								<div class="col-md-6">
+									<div class="rateit pull-right" data-rateit-value="{$art.starfenshu}" title="{$art.starfenshu}" data-rateit-ispreset="true" data-rateit-readonly="true"><font>好句(0)</font><font>好段(0)</font></div>
+								</div>
+								<div class="clean"></div>
+							</a>
+						</li>
+					</if>
+				</volist>
+			  </ul>
+			  </div>
+	     </div>
+		 <div class="clean"></div>
+         <div class="col-md-7">
+			  <div class="panel panel-info">
+				<div class="panel-heading">
+				  <h3 class="panel-title">简看教材</h3>
+				</div>
+			   <ul class="row list-group">
+				<volist name="jiaocaidata" id="art">
+					<if condition="$art.bj eq 1">
+						<li>
+							<a class="list-group-item" href="/jiaocai/html/{$art.indexid}.html" >
+								<div class="col-md-6">
+									{$art.title}<small class="text-muted">--<empty name="art.author">佚名<else />{$art.author}</empty></small>
+								</div>
+								<div class="col-md-6">
+									<div class="rateit pull-right" data-rateit-value="{$art.starfenshu}" title="{$art.starfenshu}" data-rateit-ispreset="true" data-rateit-readonly="true"><font>好句(0)</font><font>好段(0)</font></div>
+									<div></div>
+								</div>
+								<div class="clean"></div>
+							</a>
+						</li>		
+					<else />
+						<li>
+							<a class="list-group-item bei2" href="/jiaocai/html/{$art.indexid}.html" >
+								<div class="col-md-6">
+									{$art.title}<small class="text-muted">--<empty name="art.author">佚名<else />{$art.author}</empty></small>
+								</div>
+								<div class="col-md-6">
+									<div class="rateit pull-right" data-rateit-value="{$art.starfenshu}" title="{$art.starfenshu}" data-rateit-ispreset="true" data-rateit-readonly="true"><font>好句(0)</font><font>好段(0)</font></div>
+								</div>
+								<div class="clean"></div>
+							</a>
+						</li>
+					</if>
+				</volist>
+			  </ul>
+			  </div>
+	     </div>
+    </div>
+
+    
+   
+ 
+
+
+  </div>
+  
+  <div class="col-lg-4 col-md-4 col-sm-4 sidebar">
+  
+  
+    <aside class="panel panel-info">
+      <div class="panel-heading">
+        <h3 class="panel-title">站长寄语</h3>
+      </div>
+      <div class="panel-body">
+      		网站全面改版！更多精彩体验尽请期待！
+      </div>
+    </aside>
+
+
+    <aside class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">最新注册会员</h3>
+      </div>
+      <ul class="ds-recent-visitors" data-num-items="24" data-show-time="0" data-avatar-size="44" id="ds-recent-visitors">
+        <volist name="userslist" id="portraits">
+		    <if condition="$portraits.haveimg eq 1">
+                <li>
+				        <div class="userlist">
+						    <a title="{$portraits.username}"><img style="width:44px;height:44px" src="/Public/FaustCplus/php/img/small_user_{$portraits.id}.jpg" alt=""></a>
+						    <a href="#">{$portraits.username}</a>
+							<span class="pull-right text-muted">{$portraits.time|date='y-m-d',###}</span>
+						</div>
+				</li>
+            <else />
+                <li>
+				        <div class="userlist">
+						    <a title="{$portraits.username}"><img style="width:44px;height:44px" src="/Public/FaustCplus/php/img/noimg.png" alt=""></a>
+						    <a href="#">{$portraits.username}</a>
+							<span class="pull-right text-muted">{$portraits.time|date='y-m-d',###}</span>
+						</div>
+				</li>
+			</if>
+		</volist>
+      </ul>
+    </aside>
+	
+    <div id="ad" data-spy="affix" class="fade in"><a class="close" data-dismiss="alert" href="#" aria-hidden="true" style="position:absolute;color:#c5c5c5;" title="关闭"><span class="glyphicon glyphicon-ban-circle"></span></a>
+      <aside class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">赞助商</h3>
+        </div>
+        <div class="panel-body" style="padding:0;text-align:left;">
+        	{:R('Siteinfo/info',array('ad'),'Widget')}
+        </div>
+      </aside>
+    </div>
+    <!-- 右侧底部广告 --> 
+    <script>var ad=$('#ad'),st;var sd=$('.sidebar'),st;ad.attr('data-offset-top',ad.offset().top+ad.innerWidth());var wd=sd.innerWidth()-30;ad.attr({style:'width:'+wd+'px'});</script> 
+  
+    <div class="panel-group mb20" id="accordion">
+	
+			<div class="panel panel-monthhot-border">
+				<div class="panel-monthhot">
+					<span class="glyphicon glyphicon-fire mr10"></span><font>热门文章</font>
+				</div>
+				<div class="panel-neirong">
+				    <ul>
+				    <volist name="monthclicklist" id="vo">
+					    <li><a href="__APP__/zuowen/html/{$vo['indexid']}.html">{$vo['title']}</a><small class='text-muted'>{$vo['author']}</small></li>
+					</volist>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="panel panel-weekhot-border">
+				<div class="panel-weekhot">
+					<span class="glyphicon glyphicon-fire mr10"></span><font>热门标签</font>
+				</div>
+				<div class="panel-neirong"></div>
+			</div>
+    </div>
+  
+  </div>
+  <div class="clean"></div>
+</div>
+
+<!-- footer start -->
+<include file="Index:footer" />

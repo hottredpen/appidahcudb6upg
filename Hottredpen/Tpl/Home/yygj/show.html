@@ -1,0 +1,207 @@
+<include file="Index:header" />
+<div class="container">
+    <div class="col-lg-8 col-md-8 col-sm-8 content_box">
+			<!-- 文章头部 -->
+			<div class="row content_head">
+				<div class="col-md-12 ">
+						<!-- 位置导航 -->
+						<span class="glyphicon glyphicon-home"></span><a href="/">首页</a>-><a href="/{$lanmuentitle}.html">{$lanmutitle}</a>-><font><notempty name="article['title']">《{$article['title']}》<empty name="article.author">佚名<else />{$article.author}</empty></notempty><notempty name="article['pizhuwith']">-由{$article.pizhuwith}进行批注</notempty></font>
+						<!-- JiaThis Button BEGIN -->
+						<div class="row pull-right"> <a class="jiathis jiathis_txt btn btn-default btn-sm pull-left">
+								<span class="glyphicon glyphicon-thumbs-up"></span> 分享</a> 
+								<div class="pull-right btn btn-default btn-sm">
+									<a class="jiathis_counter_style">0</a>
+								</div>
+						</div>
+						<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1397096685796123" charset="utf-8"></script>
+						<!-- JiaThis Button END -->			
+				</div>
+				<div class="clean"></div>
+				<h1 class="text-center" itemprop="name">{$article.title}</h1>
+				<div class="col-md-12">
+					<div class="col-sm-3"><span>作者：<empty name="article.author">佚名<else />{$article.author}</empty></span></div>
+					<div class="col-sm-3"><span>来源：<empty name="article.laiyuan">网络<else />{$article.laiyuan}</empty></span></div>
+					<div class="col-sm-3"><span>时间：{$article.addtime|date='Y-m-d',###}</span></div>
+					<div class="col-sm-3"><span>点击：<i id="hits">0</i></span></div>
+				</div>
+				<div class="clean"></div>
+				<div class="row line">
+					<if condition="$actenname eq 'user' ">
+						   <a href="/{$modenname}/html/{$indexid}.html">返回原文</a>
+					<else />
+						<notempty name="Think.session.user_uid">
+						    <if condition="$Think.session.user_uid eq '10' ">
+						         <a class="intomyurl" data-pid="{$article.id}" data-mokuai="{$modenname}" href="javascript:void(0)">进入我的批注模式</a>
+						    </if>
+						</notempty>				
+					</if>
+				</div>
+				<div class="h10 clean"></div>
+				<div class="tags panel panel-default col-sm-12">
+						<div class="col-sm-1"><span>标签</span></div>
+						<div class="col-sm-10">
+							<div class="panel-heading">
+							<volist name="article.tags" id="gos">
+								<a class="label label-info" href="/{$modenname}/tags?w={$gos}">{$gos}</a><span class="glyphicon"></span>
+							</volist>
+							</div>
+						</div>
+				</div>
+				<div id="gaiyao" class="panel panel-default">
+					<if condition="$actenname eq 'user' ">
+						<div class="panel-heading">
+								 <i>简要说明：</i>
+								 <p class="text-primary">{$article.gaiyao}</p>
+						</div>
+						 <if condition="$moshi eq '批注' ">					
+						 <div  id="gaiyao-btn" class="bianji">
+								  <button class="btn btn-default J_gaiyao_btn" data-pid= "{$article.id}" data-mokuai="{$modenname}"  data-uid="{$uid}">批注概要</button>
+						 </div>
+						 <div id="gaiyao-tijiao" class="bianji">
+						 </div>
+						 </if>
+					<else />
+						<div  class="panel-heading">
+								 <i>简要说明：</i>
+								 <p>粗略翻译，具体可<a class="lookyuanwen" href="javascript:void(0)">查看原文</a></p>
+						</div>				
+					</if>
+				</div>
+			</div>
+			<div class="clean"></div>
+			<!-- 文章内容 -->
+			<article>
+			<div class="row content_body">
+				<div  id="content_bd" class="content_hang">
+					<volist name="yuandata" id="vo">
+							<div id="duan-{$vo.duanid}" <if condition="$moshi eq '批注' ">class="panel panel_tags xbianji"</if> >
+							
+								<if condition="$vo.leixing eq 0 ">
+									<div id="duan-{$vo.duanid}-yuanwen" class="hotten">
+										<p>{$vo.content}</p>
+									</div>
+								<else />
+									<div id="duan-{$vo.duanid}-yuanwen" class="hottimg">
+										<img class="img-thumbnail" src="{$vo.content}" alt="{$article.title}-{$vo.duanid}" title="{$article.title}-{$vo.duanid}" /><p></p>
+									</div>
+								</if>
+								  
+								  
+								<notempty name="vo.duanyi">
+									<div id="duan-{$vo.duanid}-duanyi" class="row hottcn yuanwen" style="display:none">
+										<div class="alert alert-info col-md-10 col-md-offset-2">
+											{$vo.duanyi}
+										</div>
+									</div>
+								</notempty>
+								
+								<if condition="$moshi eq '批注' ">
+									<div id="duan-btn-{$vo.duanid}" class="bianji">
+										<button class="btn btn-default J_duanyi_btn" data-pid= "{$vo.pid}" data-catid="{$article.catid}"  data-uid="{$uid}" data-duanid="{$vo.duanid}">批注段意</button>
+										<button class="btn btn-default J_huajuzi_btn" data-pid= "{$vo.pid}" data-catid="{$article.catid}"  data-uid="{$uid}" data-duanid="{$vo.duanid}">批注句子</button>
+										<button class='btn btn-default J_quanzi_btn' data-pid= "{$vo.pid}" data-catid="{$article.catid}"  data-uid="{$uid}" data-duanid="{$vo.duanid}">批注字词</button>
+									</div>
+								</if>
+								  
+
+								<if condition="$moshi eq '批注' ">
+									<div id="duan-{$vo.duanid}-tijiao" class="bianji"></div>
+								</if>
+								
+							</div>
+					</volist>
+				</div>
+			</div>
+			</article>
+			<div class="clean"></div>
+			<!-- 上一篇下一篇 -->
+			<div class="panel pre_next panel-heading">
+			  <div class="pull-left" >
+				<if condition="$preArticle neq null">
+					<font class="text-success">上一篇：</font><a title="{$preArticle.title}" href="/{$modenname}/html/{$preArticle.indexid}.html" ><span>{$preArticle.title}</span></a>
+				<else/>
+					<font class="text-success">没有上一篇了</font>
+				</if>
+			  </div>
+			  <div class="pull-right" >
+				<if condition="$nextArticle neq null">
+					<font class="text-danger">下一篇：</font><a title="{$nextArticle.title}" href="/{$modenname}/html/{$nextArticle.indexid}.html" ><span>{$nextArticle.title}</span></a>
+				<else/>
+					<font class="text-danger">没有下一篇了</font>
+				</if>
+			  </div>
+			</div>
+			<div class="clean"></div>
+			<!-- 点赞 -->
+			<div class="dianzan">
+				<!-- 将此标记放在您希望显示like按钮的位置 -->
+				<div class="bdlikebutton"></div>
+				<!-- 将此代码放在适当的位置，建议在body结束前 --> 
+				<script id="bdlike_shell"></script> 
+				<script>
+				var bdShare_config = {
+					"type":"medium",
+					"color":"blue",
+					"likeText":"喜欢,顶一个",
+					"likedText":"亲.您已顶过"
+				};
+				document.getElementById("bdlike_shell").src="http://bdimg.share.baidu.com/static/js/like_shell.js?t=" + new Date().getHours();
+				</script>
+			</div>
+			<div class="clean"></div>
+			<!-- 评论 -->
+			<!-- UY BEGIN -->
+			<div id="uyan_frame"></div>
+			<script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=1915631"></script>
+			<!-- UY END -->
+			<div class="clean"></div>
+    </div>
+
+
+    <div class="col-lg-4 col-md-4 col-sm-4 sidebar">
+		<div class="panel panel-pingjia-border">
+			<div class="panel-pingjia">
+			    <span class="glyphicon glyphicon-thumbs-up mr10"></span><font>本文评价</font>
+			</div>
+			<div id="pingjia" class="panel-neirong"></div>
+		</div>
+		
+		<div class="panel panel-tuijian-border">
+			<div class="panel-tuijian">
+			    <span class="glyphicon glyphicon-send mr10"></span><font>相关推荐</font><a class="pull-right huantuijian" href="javascript:void(0)">换一批</a>
+			</div>
+			<div id="tuijian" class="panel-neirong"></div>
+		</div>
+	  
+		<div class="panel panel-monthhot-border">
+			<div class="panel-monthhot">
+			    <span class="glyphicon glyphicon-fire mr10"></span><font>本月热门文章</font>
+			</div>
+			<div id="monthhot" class="panel-neirong"></div>
+		</div>
+        <div class="panel panel-weekhot-border">
+			<div class="panel-weekhot">
+				<span class="glyphicon glyphicon-fire mr10"></span><font>本周热门文章</font>
+			</div>
+            <div id="weekhot" class="panel-neirong"></div>
+        </div>
+<!-- UJian Button BEGIN -->
+<div class="ujian-hook"></div>
+<script type="text/javascript">var ujian_config = {num:6,fillet:0,lkrc:0,picSize:120,picHeight:72,textHeight:15};</script>
+<script type="text/javascript" src="http://v1.ujian.cc/code/ujian.js?uid=1915631"></script>
+<a href="http://www.ujian.cc" style="border:0;"><img src="http://img.ujian.cc/pixel.png" alt="友荐云推荐" style="border:0;padding:0;margin:0;" /></a>
+<!-- UJian Button END -->
+    </div>
+    <div class="clean"></div>
+<!-- 有道 -->
+<div id="YOUDAO_SELECTOR_WRAPPER" style="display:none; margin:0; border:0; padding:0; width:320px; height:240px;"></div>
+<script type="text/javascript" src="http://fanyi.youdao.com/openapi.do?keyfrom=jiankankongjian&key=606223861&type=selector&version=1.2&translate=on" charset="utf-8"></script>
+<!-- 有道 end-->
+</div>
+<!-- footer-->
+<script type="text/javascript">
+	$('.lookyuanwen').click(function (e) {
+	    $(".yuanwen").toggle();
+    })
+</script>
+<include file="Index:footer" />

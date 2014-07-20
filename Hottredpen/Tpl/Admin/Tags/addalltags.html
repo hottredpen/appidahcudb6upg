@@ -1,0 +1,86 @@
+<include file="Index:header" />
+
+<div class="container-fluid">
+	<div class="row-fluid">
+        <!--左栏 starts -->
+		<include file="left" />
+        <!--左栏 end -->
+
+        <!-- content starts -->
+        <div id="content" class="span10">
+				<ul class="breadcrumb">
+					<li>
+						<a href="__ROOT__/Admin.html">首页</a> <span class="divider">/</span>
+					</li>
+					<li>
+						<a href="__ROOT__/Admin/Article/lanmu.html">栏目管理</a> <span class="divider">/</span>
+					</li>
+					<li class="active">添加栏目</li>
+				</ul>
+          
+				<ul id="myTab" class="nav nav-tabs">
+					<li class="active"><a href="#home" data-toggle="tab">基本信息</a></li>
+				</ul>
+
+                <div id="myTabContent" class="tab-content">
+                    <form method="post"  action="__URL__/savelanmu">
+					    <!--基本信息start-->
+                        <div class="tab-pane fade in active" id="home">
+
+						    <table class="table">
+											<tbody>
+											  <tr>
+												<td>
+													   栏目名称：
+												</td>
+												<td>
+												  <input name="title" type="text" class="span5" placeholder="请输入分类名称..." >
+												</td>
+											  </tr>
+											  <tr>
+												<td>
+													   栏目英文：
+												</td>
+												<td>
+												  <input name="entitle" type="text" class="span5" placeholder="请输入分类名称..." >
+												</td>
+											  </tr>
+											  <tr>
+												<td>
+													   上级类目：
+												</td>
+												<td>
+												<notempty name="idtree">
+													<select name="pid" id="pid">
+														<option value="{$pid}" id="Type">{$pdata['title']}</option>
+													</select>
+                                                    <input name="order" type="hidden" value="{$pdata['neworder']}">
+                                                    <input name="idtree" type="hidden" value="{$pdata['newidtree']}">													
+												<else />
+													<select name="pid" id="pid">
+														<option value="0" id="Type">顶级类目</option>
+													</select>
+													<input name="order" type="hidden" value="1">
+												</notempty>
+												</td>
+											  </tr>
+											</tbody>
+
+						
+							</table>
+
+
+                        </div>
+                        <!--基本信息end-->
+
+					    <div class="modal-footer">
+						    <a href="#" class="btn" data-dismiss="modal">关闭</a>
+						    <button type="submit" class="btn btn-primary" >确认添加</button>
+					    </div>
+                    </form>
+                </div>
+        </div>
+       <!-- content end -->
+    </div>
+</div>
+<include file="Index:footer" />

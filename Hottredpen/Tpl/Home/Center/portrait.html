@@ -1,0 +1,38 @@
+<include file="Index:centerheader" />
+<div class="container">
+<include file="left" />
+    <div  id="content" class="col-md-8">
+    	<div id="altContent"></div>
+		
+
+		<script type="text/javascript" src="__PUBLIC__/FaustCplus/swfobject.js"></script>
+		<script type="text/javascript">
+			var flashvars = {
+			  "jsfunc":"uploadevent",
+			  "imgUrl":'__PUBLIC__/FaustCplus/<if condition="$heads gt 0">php/img/raw_user_{$Think.session.user_uid}.jpg<else />php/img/raw_user_0.jpg</if>',
+			  "pid":"75642723",
+			  "uploadSrc":true,
+			  "showBrow":true,
+			  "showCame":true,
+			  "uploadUrl":"__PUBLIC__/FaustCplus/php/saveavater.php?action=user_{$Think.session.user_uid}"
+			};
+
+			var params = {
+				menu: "false",
+				scale: "noScale",
+				allowFullscreen: "true",
+				allowScriptAccess: "always",
+				wmode:"transparent",
+				bgcolor: "#FFFFFF"
+			};
+
+			var attributes = {
+				id:"FaustCplus"
+			};
+
+			swfobject.embedSWF("__PUBLIC__/FaustCplus/FaustCplus.swf", "altContent", "650", "500", "9.0.0", "", flashvars, params, attributes);
+
+		</script>
+    </div>
+</div>
+<include file="Index:footer" />

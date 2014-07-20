@@ -1,0 +1,1 @@
+<?php	return array ( 4 => 'admin', 13 => 'DDS', 14 => 'rere', 15 => 'jiji', 10 => '直观层', 17 => '原英文', );?>

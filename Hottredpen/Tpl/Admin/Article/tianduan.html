@@ -1,0 +1,66 @@
+<include file="Index:header" />
+<div class="container">
+	<include file="left" />
+	<div id="content" class="col-md-10">
+		<ul class="breadcrumb">
+			<li><a href="__ROOT__/Admin.html">首页</a></li>
+			<li><a href="__ROOT__/Admin/Article/lanmu.html">文章相关管理</a></li>
+			<li><a href="__ROOT__/Admin/Article/{$article.mod}List.html">{$article.modname}</a></li>
+			<li><a href="__ROOT__/Admin/Article/{$article.mod}content/pid/{$article['id']}.html">{$article.title}</a></li>
+			<li class="active">添加段落</li>
+		</ul>
+            <ul id="myTab" class="nav nav-tabs">
+              <li class="active"><a href="#home" data-toggle="tab">基本信息</a></li>
+            </ul>
+ <form method="post"  action='__URL__/{$article.mod}baoduan' name="myform" id="myform">
+  <input name="pid" type="hidden" value="{$pid}" />
+            <div id="myTabContent" class="tab-content">
+
+              <div class="tab-pane fade in active" id="home">
+
+                
+                    <table class="table">
+                                    <tbody>
+                                      <tr>
+                                        <td>
+                                               段落ID：
+                                        </td>
+                                        <td>
+                                          <input name="duanid" type="text" class="form-control"  maxlength="30">
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                               段落类型：
+                                        </td>
+                                        <td>
+                                          <input name="leixing" type="radio" value="0" checked />文字<input name="leixing" type="radio" value="1" />图片
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                               段落内容：
+                                        </td>
+                                        <td>
+                                          <textarea name="content" type="text" class="form-control" ></textarea>
+                                        </td>
+                                      </tr>
+
+                                    </tbody>
+                
+                    </table>
+              </div>
+
+              <div class="modal-footer">
+                  <button type="submit" class="btn btn-primary" >确认添加</button>
+              </div>
+              </form>
+
+
+            </div>
+
+          
+          
+    </div>
+</div>
+<include file="Index:footer" />

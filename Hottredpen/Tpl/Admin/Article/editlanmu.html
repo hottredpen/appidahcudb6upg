@@ -1,0 +1,80 @@
+<include file="Index:header" />
+<div class="container">
+	<include file="left" />
+	<div id="content" class="col-md-10">
+		<ul class="breadcrumb">
+			<li><a href="__ROOT__/Admin.html">首页</a></li>
+			<li><a href="__ROOT__/Admin/Article/lanmu.html">文章相关管理</a></li>
+			<li><a href="__ROOT__/Admin/Article/lanmu.html">栏目管理</a></li>
+			<li class="active">修改栏目</li>
+		</ul>
+          
+            <ul id="myTab" class="nav nav-tabs">
+              <li class="active"><a href="#home" data-toggle="tab">基本信息</a></li>
+            </ul>
+
+            <div id="myTabContent" class="tab-content">
+                <form method="post"  action="__URL__/updatelanmu">
+				<input name="id" type="hidden" value="{$thisdata['id']}">
+				    <!--基本信息start-->
+                    <div class="tab-pane fade in active" id="home">
+							<table class="table">
+											<tbody>
+											  <tr>
+												<td>
+													   栏目名称：
+												</td>
+												<td>
+												  <input name="title" type="text" class="form-control" value="{$thisdata['title']}" maxlength="30">
+												</td>
+											  </tr>
+											  <tr>
+												<td>
+													   栏目英文：
+												</td>
+												<td>
+												  <input name="entitle" type="text" class="form-control" value="{$thisdata['entitle']}" maxlength="30">
+												</td>
+											  </tr>
+											  <tr>
+												<td>
+													   栏目keywords：
+												</td>
+												<td>
+												  <input name="keywords" type="text" class="form-control" value="{$thisdata['keywords']}" maxlength="100">
+												</td>
+											  </tr>
+											  <tr>
+												<td>
+													   栏目description：
+												</td>
+												<td>
+												  <input name="description" type="text" class="form-control" value="{$thisdata['description']}" maxlength="200">
+												</td>
+											  </tr>
+											  <tr>
+												<td>
+													   上级类目：
+												</td>
+												<td>
+												  <select name="pid" id="pid">
+													   <option value="{$thisdata.pid}" class="cal{$pdata.order}">{$pdata.title}</option>
+												  </select>
+												</td>
+											  </tr>
+											</tbody>
+					  
+							</table>
+                    </div>
+                    <!--基本信息end-->
+					<div class="modal-footer">
+						<a href="#" class="btn" data-dismiss="modal">关闭</a>
+						<button type="submit" class="btn btn-primary" >确认添加</button>
+					</div>
+                </form>
+            </div>
+        </div>
+       <!-- content end -->
+    </div>
+</div>
+<include file="Index:footer" />

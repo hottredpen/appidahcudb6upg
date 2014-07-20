@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <title><{$title}>-辅导站之家</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" type="text/css" href="/public/css/fdzzj.css" >
+    <!-- Le styles -->
+    <link rel="stylesheet" type="text/css" href="/public/css/boot/bootstrap.css">
+
+    <!--[if lte IE 6]>
+    <link rel="stylesheet" type="text/css" href="/public/css/boot/bootstrap-ie6.css">
+    <![endif]-->
+    <!--[if lte IE 7]>
+    <link rel="stylesheet" type="text/css" href="/public/css/boot/ie.css">
+    <![endif]-->
+
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+
+    </style>
+    <link href="../assets/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="../assets/ico/favicon.png">
+  </head>
+
+<body>
+
+
+    <!-- <div style="background-color: #ccc;height:50px;width:940px;margin:auto;"></div> -->
+
+    <div class="navbar  navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="#">www.fdzzj.com</a>
+          <div  class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="<{$nv_li[0]}>"><a href="__APP__">首页</a></li>
+              <li class="dropdown <{$nv_li[1]}>">
+			    <a href="#" class="dropdown-toggle" data-toggle="dropdown">课内解析<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="__APP__/knjx/yuwenrj">（人教）小学语文</a></li>
+                  <li><a href="__APP__/knjx/shuxuerj">（人教）小学数学</a></li>
+                  <li><a href="__APP__/knjx/yingyurj">（人教）小学英语</a></li>
+				  <li><a href="__APP__/knjx/kexuerj">（人教）小学科学</a></li>
+                  <li class="divider"></li>
+                  <li class="nav-header">目前只有人教的解析</li>
+                </ul>
+			  </li>
+              <li class="dropdown <{$nv_li[2]}>">
+			    <a href="#" class="dropdown-toggle" data-toggle="dropdown">阅读洗礼<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="__APP__/knjx/yuwenrj_list">（人教）小学语文</a></li>
+                  <li><a href="#">（人教）小学数学</a></li>
+                  <li><a href="#">（人教）小学英语</a></li>
+				  <li><a href="#">（人教）小学科学</a></li>
+                  <li class="divider"></li>
+                  <li class="nav-header">目前只有人教的解析</li>
+                </ul>
+			  </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li class="nav-header">Nav header</li>
+                  <li><a href="#">Separated link</a></li>
+                  <li><a href="#">One more separated link</a></li>
+                </ul>
+              </li>
+            </ul>
+			<ul class="nav pull-right">
+			    
+                <if condition="($Think.session.userid neq null)">
+           	            <li class="divider-vertical"></li>
+						<li class="dropdown">
+									<a data-toggle="dropdown" class="dropdown-toggle" href="#" id="userid" title="<{$Think.session.userid}>"><{$Think.session.username}><strong class="caret"></strong></a>
+									<ul class="dropdown-menu">
+										<li>
+											<a href="/users">个人中心</a>
+										</li>
+										<li>
+											<a href="/users/fabu">发布文章</a>
+										</li>
+										<li>
+											<a href="#">我的好友</a>
+										</li>
+										<li class="divider">
+										</li>
+										<li>
+											<a href="__APP__/login/out"><span>退出</span></a>
+										</li>
+								    </ul>
+						</li>
+                        <li class="dropdown">
+									<a data-toggle="dropdown" class="dropdown-toggle" href="#" >消息<strong class="caret"></strong></a>
+									<ul class="dropdown-menu">
+										<li>
+											<a href="">私信（34/100）</a>
+										</li>
+										<li>
+											<a href="">通知（1/5）</a>
+										</li>
+								    </ul>
+						</li>
+                <else /> 
+				        <li><a href="#zhuce"  data-toggle="modal" id="head_reg">注册</a></li>
+			            <li><a href="#denglu"  data-toggle="modal" id="head_login">登录</a></li>
+                </if>
+
+					
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+<!--===================logo部分================= -->
+    <div id="head" class="container-fluid">
+        <div class="row-fluid">
+            <div class="span12">
+			    <div class="row-fluid">
+				        <div id="logo" class="span4">
+		                    <img src="/public/images/logo.gif"></img>
+		                </div>	
+			
+		                <div id="head_info" class="span8">
+			                 <p>咨询电话 | 帮助中心 | 辅导站之家微博 |<a href="__APP__/about">关于我们</a> </p>
+				
+				              <p id="head_user">
+				              欢迎来到辅导站之家~~~~~~主要服务的对象主要是辅导站的老师，家长和学生。
+
+				              </p>
+
+                             <p>教育快讯：</p>		
+		                </div>
+				</div>
+            </div>
+	    </div>
+	</div>
+<!--===================导航部分================= -->
+    <div id="box_nv" class="container-fluid">
+		<div class="row-fluid navchang">
+		        <div class="nv_ul_l"></div>
+                    <div class="span11">
+					    
+					    <ul class="navchang">
+						    
+			                <li class="<{$nv_li[0]}>"><a href="__APP__" title="首页">首页</a></li>
+                            <li class="<{$nv_li[1]}>"><a href="__APP__/knjx"  title="课内解析">课内解析</a></li>
+				            <li class="<{$nv_li[2]}>"><a href="__APP__/ydxl"  title="阅读洗礼">阅读洗礼</a></li>
+                            <li class="<{$nv_li[3]}>"><a href="__APP__/youxiuzuowen"  title="优秀作文">优秀作文</a></li>
+						</ul>
+					</div>
+                <div class="nv_ul_r"></div>
+        </div>   
+    </div>
+<!--===================home部分================= -->
+    <div id="home" class="container-fluid">
+        <div class="row-fluid">
+		    <div class="span12">
+			    <ul>
+	                <li><span><i class="icon-home"></i>您现在的位置：</span></li>			
+                    <li><a href="/index.php">辅导站之家</a>
+                    <li><{$homeurl}></li>
+                </ul>
+			</div>
+        </div>				
+    </div>
+
+    
+<!--=================content================-->
+    <!-- Button to trigger modal -->
+    
+     
+    <!-- Modal -->
+    <div id="zhuce" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+        <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    
+    <form class="form-horizontal" action="__APP__/reg/insert" method="post" onSubmit="return yz()">
+	<fieldset><div class="zhuce"><legend><h2>注册</h2></legend></div>
+    <div class="control-group">
+    <label class="control-label" for="inputEmail">账号</label>
+    <div class="controls">
+    <input type="text" id="inputUsername_Z" placeholder="用户名由3到9个字符或文字组成" name="username"><span id="usernametishi_Z"></span>
+    </div>
+    </div>
+    <div class="control-group">
+    <label class="control-label" for="inputPassword">密码</label>
+    <div class="controls">
+    <input type="password" id="inputPassword_Z" placeholder="请输入6到12个字符" name="password"><span id="passwordtishi_Z"></span>
+    </div>
+    </div>
+    <div class="control-group">
+    <label class="control-label" for="inputPassword">确认密码</label>
+    <div class="controls">
+    <input type="password" id="inputRePassword_Z" placeholder="请再次输入密码" name="repassword"><span id="repasswordtishi_Z"></span>
+    </div>
+    </div>
+    <div class="control-group">
+    <label class="control-label" for="inputPassword">邮箱</label>
+    <div class="controls">
+    <input type="text" id="inputEmail_Z" placeholder="请输入正确的邮箱地址" name="email"><span id="emailtishi_Z"></span>
+    </div>
+    </div>
+    <div class="control-group">
+    <label class="control-label" >验证码</label>
+    <div class="controls">
+	<input class="span1" type="text" id="inputYanzhengma_Z"  name="code" onkeyup="if (this.value != this.value.toUpperCase()) this.value=this.value.toUpperCase();"><img src="__APP__/login/code" id="codes_Z"><a  href="javascript:void(0)" onclick="ccode()" >看不清？</a><span id="yanzhengmatishi_Z"></span>
+    </div>
+    </div>	
+    <div class="control-group">
+    <div class="controls">
+    <button type="submit" class="btn btn-large btn-primary">注册</button>
+    </div>
+    </div>
+	</fieldset>
+    </form>
+	  </div>
+
+    </div>
+	
+	    <!-- Modal -->
+    <div id="denglu" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+        <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <form class="form-horizontal" action="__APP__/login/loging" method="post">
+	<fieldset><div class="zhuce"><legend><h2>登录</h2></legend></div>
+    <div class="control-group">
+    <label class="control-label" for="inputEmail">账号</label>
+    <div class="controls">
+    <input type="text" id="inputUsername_D" placeholder="输入您的账号" name="username"><span id="usertishi_D"></span>
+    </div>
+    </div>
+    <div class="control-group">
+    <label class="control-label" for="inputPassword">密码</label>
+    <div class="controls">
+    <input type="password" id="inputPassword_D" placeholder="输入您的密码" name="password"><span id="passwordtishi_D"></span>
+    </div>
+    </div>
+    <div class="control-group">
+    <label class="control-label" >验证码</label>
+    <div class="controls">
+    <input class="span1" type="text" id="inputYanzhengma_D"  name="code" onkeyup="if (this.value != this.value.toUpperCase()) this.value=this.value.toUpperCase();"><img src="__APP__/login/code" id="codes_D"><a  href="javascript:void(0)" onclick="ccode()" >看不清？</a><span id="yanzhengmatishi_D"></span>
+    </div>
+    </div>	
+    <div class="control-group">
+    <div class="controls">
+    <label class="checkbox">
+    <input type="checkbox"> Remember me
+    </label>
+    <button type="submit" class="btn btn-large btn-primary">登入</button>
+    </div>
+    </div>
+	</fieldset>
+    </form>
+
+			
+	  </div>
+
+    </div>
+	
+	
+<script src="/public/js/jquery-1.4.2.js"></script>
+		
+        <script>
+		
+			var rr1=false;
+			var rr2=false;
+			var rr3=false;
+			var rr4=false;
+			var rr5=false;
+			var rr6=true;
+			$(function(){
+				$("#inputUsername_Z").click(function(){
+					//$("#usernametishi_Z").html("用户名由3到12个字符组成");
+					if($("#userid").attr("title")){
+					    alert("您已经登录了！");
+						rr6=false;
+					}					
+				}).bind('blur',function(){
+
+					if($(this).val().length < 3 ){
+						$("#usernametishi_Z").html("<font color='red'>字数小于3</font>");
+						rr1=flase;
+					}else{
+					    if($(this).val().length > 9 ){
+							$("#usernametishi_Z").html("<font color='red'>字数大于9</font>");
+						    rr1=flase;
+						}
+						else{
+							$.post("/reg/check/username/"+$(this).val(),null,function(data){
+							if(data){
+								$("#usernametishi_Z").html("<img src='/public/images/ok.png'/>");
+								rr1=true;
+							}else{
+								$("#usernametishi_Z").html("<font color='red'>用户名已存在！</font>");
+								rr1=flase;
+								$("#inputUsername_Z").focus();	
+							}
+						})
+						}
+					}
+				});
+				
+				$("#inputPassword_Z").click(function(){
+					//$("#passwordtishi_Z").html("请输入6到12个字符");
+				}).bind('blur',function(){
+					if($(this).val().length < 6 ){
+						$("#passwordtishi_Z").html("<font color='red'>密码小于6</font>");
+						rr2=flase;
+						//$("#pass1").focus();
+					}else{
+					    if($(this).val().length > 12 ){
+							$("#passwordtishi_Z").html("<font color='red'>密码大于12</font>");
+						    rr2=flase;
+						}else{
+						$("#passwordtishi_Z").html("<img src='/public/images/ok.png'/>");
+						rr2=true;
+						}
+					}
+				})
+				
+				$("#inputRePassword_Z").click(function(){
+					//$("#repasswordtishi_Z").html("请再次输入密码");
+				}).bind('blur',function(){
+					if($(this).val() != $("#inputPassword_Z").val()){
+						$("#repasswordtishi_Z").html("<font color='red'>密码输入不一致</font>");
+						rr3=flase;
+					}else{
+						$("#repasswordtishi_Z").html("<img src='/public/images/ok.png'/>");
+						rr3=true;
+					}
+				})
+				
+				$("#inputEmail_Z").click(function(){
+					//$("#emailtishi_Z").html("请输入正确的邮箱地址");
+				}).bind('blur',function(){
+					var t=/^([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+@([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+\.[a-zA-Z]{2,3}$/
+					if(!$(this).val().match(t)){
+						$("#emailtishi_Z").html("<font color='red'>邮箱地址不合法</font>");
+						rr4=flase;
+					}else{
+						$.post("/reg/verify/email/"+$(this).val(),null,function(data){
+						//alert($(this).val());
+							if(data){
+								$("#emailtishi_Z").html("<img src='/public/images/ok.png'/>");
+								rr4=true;
+							}else{
+								$("#emailtishi_Z").html("<font color='red'>邮箱地址已占用！</font>");
+								rr4=flase;
+							}
+						})	
+					}
+				})
+				
+				$("#inputYanzhengma_Z").click(function(){
+					$("#yanzhengmatishi_Z").html("<font color='red'>请输入验证码</font>");
+				}).bind('blur',function(){
+					$.post("__APP__/reg/yzcode/codes/"+$("#inputYanzhengma_Z").val(),null,function(data){
+						if(data){
+							$("#yanzhengmatishi_Z").html("<img src='/public/images/ok.png'/>");
+							rr5=true;
+						}else{
+							$("#yanzhengmatishi_Z").html("<font color='red'>验证码错误</font>");
+							rr5=false;
+						}
+					})
+				})
+				
+			})
+			function yz(){
+				if(rr1 && rr2 && rr3 && rr4 && rr5 && rr6){ return true; }else{return false;}
+			}
+
+		</script>	
+
+
+
+		<script>
+
+		$(function(){
+		$("#inputYanzhengma_D").click(function(){
+					$("#yanzhengmatishi_D").html("<font color='red'>请输入验证码</font>");
+				}).bind('blur',function(){
+					$.post("__APP__/login/yzcode/codes/"+$("#inputYanzhengma_D").val(),null,function(data){
+						if(data){
+							$("#yanzhengmatishi_D").html("<img src='/public/images/ok.png'/>");
+							
+						}else{
+							$("#yanzhengmatishi_D").html("<font color='red'>验证码错误</font>");
+							
+						}
+					})
+				})
+		})
+		
+		</script>
+
+		<script>
+				function ccode(){
+					$('#codes_Z').attr('src','__APP__/login/code/'+Math.random());
+					$('#codes_D').attr('src','__APP__/login/code/'+Math.random());
+				}
+		</script>

@@ -1,0 +1,117 @@
+<include file="Index:header" />
+
+<div class="container-fluid">
+<div class="container">
+	<include file="left" />
+	<div id="content" class="col-md-10">
+            <ul class="breadcrumb">
+                <li>
+                    <a href="__ROOT__/Admin.html">首页</a> <span class="divider">/</span>
+                </li>
+                <li>
+                    <a href="__ROOT__/Admin/Tags/{$article.mod}List.html">{$article.modname}</a> <span class="divider">/</span>
+                </li>
+			    <li>{$data.title}<a href="__ROOT__/Admin/Tags/{$article.mod}content/pid/{$data['id']}.html">[进入]</a></li>
+            </ul>
+          
+            <ul id="myTab" class="nav nav-tabs">
+              <li class="active"><a href="#home" data-toggle="tab">基本信息</a></li>
+            </ul>
+            <form method="post"  action='__URL__/{$article.mod}updatearticle'>
+            <input name="id" type="hidden" value="{$data['id']}" />
+                <div id="myTabContent" class="tab-content">
+
+                    <div class="tab-pane fade in active" id="home">
+               
+								<table class="table">
+												<tbody>
+												  <tr>
+													<td>
+														   栏目名称：
+													</td>
+													<td>
+													  <input name="title" type="text" class="span5" value="{$thisdata['title']}" maxlength="30">
+													</td>
+												  </tr>
+												  <tr>
+													<td>
+														   栏目英文：
+													</td>
+													<td>
+													  <input name="entitle" type="text" class="span5" value="{$thisdata['entitle']}" maxlength="30">
+													</td>
+												  </tr>
+												  <tr>
+													<td>
+														   细化：
+													</td>
+													<td>
+													  <input name="isxihua" type="text" class="span5" value="{$thisdata['isxihua']}" maxlength="30">
+													</td>
+												  </tr>
+												  <tr>
+													<td>
+														   上级类目：
+													</td>
+													<td>
+													  <select name="pid" id="pid">
+														   <option value="{$thisdata.pid}" class="cal{$pdata.order}">{$pdata.title}</option>
+													  </select>
+													</td>
+												  </tr>
+												 <input name="id" type="hidden"  value="{$thisdata['id']}" >
+												 <input id="order" name="order" type="hidden" value="{$thisdata['newOrder']}">  
+												</tbody>
+						  
+								</table>
+                    </div>
+					    <!--基本信息end-->
+
+					  
+					    <div class="modal-footer">
+						  <a href="#" class="btn" data-dismiss="modal">关闭</a>
+						  <button type="submit" class="btn btn-primary" >确认添加</button>
+					    </div>
+            
+
+
+                </div>
+            </form>
+        </div>
+		<!--添加{$pname} start-->
+		<div id="caijian" class="modal hide fade">
+			
+			<div class="modal-header">
+			  <a class="close" data-dismiss="modal" >&times;</a>
+			  <h3>添加{$pname}</h3>
+			</div>
+			<form method="post"  action='__URL__/add'>
+			<div style="float:right;"><img id="target" src="{$data['img']}"  ></div>
+			<div style="width:48px;height:48px;margin:10px;overflow:hidden; float:left;"><img  style="float:left;" id="preview" src="{$data['img']}" ></div>
+			<div style="width:190px;height:195px;margin:10px;overflow:hidden; float:left;"><img  style="float:left;" id="preview2" src="{$data['img']}" ></div>
+			<form action="index.php?act=cut" method="post" onsubmit="return checkCoords();">
+				<input type="hidden" id="x" name="x" />
+				<input type="hidden" id="y" name="y" />
+				<input type="hidden" id="w" name="w" />
+				<input type="hidden" id="h" name="h" />
+				<input type="submit" value="裁剪" />
+			</form>
+			<div class="modal-footer">
+				<a href="#" class="btn" data-dismiss="modal">关闭</a>
+				<button type="submit" class="btn btn-primary" >确认添加</button>
+			</div>
+			</form>
+		</div>
+		<!--添加{$pname} end-->
+       <!-- content end -->
+    </div>
+   <script>
+     function setCatPid(v){
+		 var catpid  = $(v).attr("catpid");
+		 var order =  $(v).attr("order");
+		 var pid  = $(v).attr("value");
+		 $("#catpid").attr("value",catpid);
+	 }
+   </script>
+</div>
+<include file="Index:footer" />

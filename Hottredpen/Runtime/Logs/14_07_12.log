@@ -1,0 +1,1141 @@
+[ 2014-07-12T13:28:20+08:00 ] 127.0.0.1 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003696s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004067s ]
+NOTIC: [2048] Declaration of IndexAction::aa() should be compatible with that of AppstartAction::aa() D:\wamp\www\Hottredpen\Lib\Action\Home\IndexAction.class.php 第 4 行.
+NOTIC: [8] Undefined index: index D:\wamp\www\Hottredpen\Lib\Action\HomeAction.class.php 第 26 行.
+NOTIC: [8] Undefined index: index D:\wamp\www\Hottredpen\Lib\Action\HomeAction.class.php 第 27 行.
+NOTIC: [8] Undefined index: index D:\wamp\www\Hottredpen\Lib\Action\HomeAction.class.php 第 28 行.
+SQL: SHOW COLUMNS FROM `fdz_user` [ RunTime:0.108079s ]
+SQL: SELECT * FROM `fdz_user` ORDER BY id desc LIMIT 5   [ RunTime:0.001522s ]
+SQL: SHOW COLUMNS FROM `fdz_zuowen` [ RunTime:0.141218s ]
+SQL: SELECT * FROM `fdz_zuowen` WHERE ( `isfabu` = 1 ) ORDER BY id desc LIMIT 15   [ RunTime:0.015606s ]
+SQL: SHOW COLUMNS FROM `fdz_yygj` [ RunTime:0.017540s ]
+SQL: SELECT * FROM `fdz_yygj` WHERE ( `isfabu` = 1 ) ORDER BY id desc LIMIT 6   [ RunTime:0.001892s ]
+SQL: SHOW COLUMNS FROM `fdz_haocihaoju` [ RunTime:0.082176s ]
+SQL: SELECT * FROM `fdz_haocihaoju` WHERE ( `isfabu` = 1 ) ORDER BY id desc LIMIT 6   [ RunTime:0.001868s ]
+SQL: SHOW COLUMNS FROM `fdz_jiaocai` [ RunTime:0.079073s ]
+SQL: SELECT * FROM `fdz_jiaocai` WHERE ( `isfabu` = 1 ) ORDER BY id desc LIMIT 10   [ RunTime:0.002590s ]
+SQL: SELECT * FROM `fdz_zuowen` WHERE ( `isfabu` = 1 ) ORDER BY monthclick desc LIMIT 10   [ RunTime:0.052366s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: actenname D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 6 行.
+NOTIC: [8] Use of undefined constant img - assumed 'img' D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 182 行.
+NOTIC: [8] Use of undefined constant author - assumed 'author' D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 186 行.
+NOTIC: [8] Use of undefined constant author - assumed 'author' D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 186 行.
+NOTIC: [8] Use of undefined constant click - assumed 'click' D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 186 行.
+NOTIC: [8] Undefined index: modenname D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 187 行.
+NOTIC: [8] Undefined index: catenname D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 187 行.
+NOTIC: [8] Undefined index: catname D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 187 行.
+NOTIC: [8] Use of undefined constant img - assumed 'img' D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 182 行.
+NOTIC: [8] Use of undefined constant author - assumed 'author' D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 186 行.
+NOTIC: [8] Use of undefined constant click - assumed 'click' D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 186 行.
+NOTIC: [8] Undefined index: modenname D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 187 行.
+NOTIC: [8] Undefined index: catenname D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 187 行.
+NOTIC: [8] Undefined index: catname D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 187 行.
+NOTIC: [8] Use of undefined constant img - assumed 'img' D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 182 行.
+NOTIC: [8] Use of undefined constant author - assumed 'author' D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 186 行.
+NOTIC: [8] Use of undefined constant click - assumed 'click' D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 186 行.
+NOTIC: [8] Undefined index: modenname D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 187 行.
+NOTIC: [8] Undefined index: catenname D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 187 行.
+NOTIC: [8] Undefined index: catname D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 187 行.
+NOTIC: [8] Use of undefined constant img - assumed 'img' D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 182 行.
+NOTIC: [8] Use of undefined constant author - assumed 'author' D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 186 行.
+NOTIC: [8] Use of undefined constant click - assumed 'click' D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 186 行.
+NOTIC: [8] Undefined index: modenname D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 187 行.
+NOTIC: [8] Undefined index: catenname D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 187 行.
+NOTIC: [8] Undefined index: catname D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 187 行.
+NOTIC: [8] Use of undefined constant img - assumed 'img' D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 182 行.
+NOTIC: [8] Use of undefined constant author - assumed 'author' D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 186 行.
+NOTIC: [8] Use of undefined constant click - assumed 'click' D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 186 行.
+NOTIC: [8] Undefined index: modenname D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 187 行.
+NOTIC: [8] Undefined index: catenname D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 187 行.
+NOTIC: [8] Undefined index: catname D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 187 行.
+NOTIC: [8] Use of undefined constant img - assumed 'img' D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 182 行.
+NOTIC: [8] Use of undefined constant author - assumed 'author' D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 186 行.
+NOTIC: [8] Use of undefined constant click - assumed 'click' D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 186 行.
+NOTIC: [8] Undefined index: modenname D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 187 行.
+NOTIC: [8] Undefined index: catenname D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 187 行.
+NOTIC: [8] Undefined index: catname D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 187 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.499875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.500288s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.033915s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002810s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002335s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.008485s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.048451s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003115s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003429s ]
+
+[ 2014-07-12T13:28:26+08:00 ] 127.0.0.1 /Public/css/fonts/glyphicons-halflings-regular.woff
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.301906s ]
+INFO: [ route_check ] --END-- [ RunTime:0.302304s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002542s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002897s ]
+NOTIC: [8] Undefined index: public D:\wamp\www\Hottredpen\Lib\Action\HomeAction.class.php 第 34 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.148019s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.148428s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002040s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001991s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001607s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002527s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009052s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002284s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002614s ]
+
+[ 2014-07-12T13:28:31+08:00 ] 127.0.0.1 /admin/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004050s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004584s ]
+ERR: 1146:Table 'fdzzj.think_auth_group_access' doesn't exist
+ [ SQL语句 ] : SELECT * FROM think_auth_group_access a LEFT JOIN think_auth_group g on a.group_id=g.id WHERE ( a.uid='' ) 
+
+[ 2014-07-12T13:28:35+08:00 ] 127.0.0.1 /Admin/Logo.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003538s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003906s ]
+
+[ 2014-07-12T13:28:36+08:00 ] 127.0.0.1 /Public/js/fotorama.js
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004310s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004711s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001846s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002196s ]
+NOTIC: [8] Undefined index: public D:\wamp\www\Hottredpen\Lib\Action\HomeAction.class.php 第 34 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.262266s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.262654s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002027s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002053s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001902s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002432s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009282s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002784s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003116s ]
+
+[ 2014-07-12T13:28:36+08:00 ] 127.0.0.1 /DoApi/verify/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003796s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004766s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002218s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002578s ]
+
+[ 2014-07-12T13:33:49+08:00 ] 127.0.0.1 /Admin/Logo.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003819s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004193s ]
+
+[ 2014-07-12T13:33:51+08:00 ] 127.0.0.1 /admin/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003608s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003979s ]
+
+[ 2014-07-12T13:34:07+08:00 ] 127.0.0.1 /admin/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.008330s ]
+INFO: [ route_check ] --END-- [ RunTime:0.008725s ]
+
+[ 2014-07-12T13:34:08+08:00 ] 127.0.0.1 /Public/js/fotorama.js
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004355s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004743s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002195s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002549s ]
+NOTIC: [8] Undefined index: public D:\wamp\www\Hottredpen\Lib\Action\HomeAction.class.php 第 34 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.286147s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.286531s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002183s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001913s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001823s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002458s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009250s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002264s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002588s ]
+
+[ 2014-07-12T13:34:46+08:00 ] 127.0.0.1 /admin/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.005286s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005712s ]
+
+[ 2014-07-12T13:34:46+08:00 ] 127.0.0.1 /Public/js/fotorama.js
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004664s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005063s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002692s ]
+NOTIC: [8] Undefined index: public D:\wamp\www\Hottredpen\Lib\Action\HomeAction.class.php 第 34 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.072701s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.073093s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002125s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002116s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001714s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002351s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009507s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002463s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002800s ]
+
+[ 2014-07-12T13:34:47+08:00 ] 127.0.0.1 /Public/js/fotorama.js
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004716s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005111s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002595s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002939s ]
+NOTIC: [8] Undefined index: public D:\wamp\www\Hottredpen\Lib\Action\HomeAction.class.php 第 34 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.190498s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.191130s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002270s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002943s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002001s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002647s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010828s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002822s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003152s ]
+
+[ 2014-07-12T13:37:58+08:00 ] 127.0.0.1 /admin/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004880s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005254s ]
+
+[ 2014-07-12T13:37:59+08:00 ] 127.0.0.1 /Public/js/fotorama.js
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.044848s ]
+INFO: [ route_check ] --END-- [ RunTime:0.045246s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002157s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002512s ]
+NOTIC: [8] Undefined index: public D:\wamp\www\Hottredpen\Lib\Action\HomeAction.class.php 第 34 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.068327s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.068710s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001878s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001995s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001785s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002121s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008655s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002564s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002885s ]
+
+[ 2014-07-12T13:38:25+08:00 ] 127.0.0.1 /admin/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003932s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004407s ]
+
+[ 2014-07-12T13:38:25+08:00 ] 127.0.0.1 /Public/js/fotorama.js
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004846s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005253s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002427s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002868s ]
+NOTIC: [8] Undefined index: public D:\wamp\www\Hottredpen\Lib\Action\HomeAction.class.php 第 34 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.127891s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.128279s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001980s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001988s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001778s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002322s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009045s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002463s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002795s ]
+
+[ 2014-07-12T13:38:26+08:00 ] 127.0.0.1 /Public/css/fonts/glyphicons-halflings-regular.woff
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003997s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004386s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001945s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002294s ]
+NOTIC: [8] Undefined index: public D:\wamp\www\Hottredpen\Lib\Action\HomeAction.class.php 第 34 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.085312s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.085801s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002128s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.019437s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001352s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.008423s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.032369s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003004s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003330s ]
+
+[ 2014-07-12T13:39:04+08:00 ] 127.0.0.1 /admin/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.006404s ]
+INFO: [ route_check ] --END-- [ RunTime:0.006816s ]
+
+[ 2014-07-12T13:39:04+08:00 ] 127.0.0.1 /Public/js/fotorama.js
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.005112s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005510s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002715s ]
+NOTIC: [8] Undefined index: public D:\wamp\www\Hottredpen\Lib\Action\HomeAction.class.php 第 34 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.132331s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.132794s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002054s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002036s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001692s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002754s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009502s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002493s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002816s ]
+
+[ 2014-07-12T13:39:05+08:00 ] 127.0.0.1 /Public/css/fonts/glyphicons-halflings-regular.woff
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.005053s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005502s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001942s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002381s ]
+NOTIC: [8] Undefined index: public D:\wamp\www\Hottredpen\Lib\Action\HomeAction.class.php 第 34 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.025566s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026100s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.110244s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002351s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002047s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002599s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.118184s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003379s ]
+
+[ 2014-07-12T13:39:39+08:00 ] 127.0.0.1 /admin/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003975s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004411s ]
+
+[ 2014-07-12T13:39:39+08:00 ] 127.0.0.1 /Public/js/fotorama.js
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004732s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005131s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002739s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003256s ]
+NOTIC: [8] Undefined index: public D:\wamp\www\Hottredpen\Lib\Action\HomeAction.class.php 第 34 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.139847s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.140238s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002292s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002274s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001987s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002614s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010186s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002705s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003038s ]
+
+[ 2014-07-12T13:39:58+08:00 ] 127.0.0.1 /admin/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004364s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004968s ]
+
+[ 2014-07-12T13:39:58+08:00 ] 127.0.0.1 /Public/js/fotorama.js
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004422s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004829s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001993s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002354s ]
+NOTIC: [8] Undefined index: public D:\wamp\www\Hottredpen\Lib\Action\HomeAction.class.php 第 34 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.026814s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027199s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002169s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002565s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001977s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002703s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010375s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002748s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003101s ]
+
+[ 2014-07-12T13:40:14+08:00 ] 127.0.0.1 /admin/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003890s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004355s ]
+
+[ 2014-07-12T13:40:15+08:00 ] 127.0.0.1 /Public/js/fotorama.js
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004780s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005176s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002302s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002655s ]
+NOTIC: [8] Undefined index: public D:\wamp\www\Hottredpen\Lib\Action\HomeAction.class.php 第 34 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.140115s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.140494s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001971s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002109s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001681s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002534s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009195s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002364s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002700s ]
+
+[ 2014-07-12T13:40:58+08:00 ] 127.0.0.1 /admin/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003935s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004332s ]
+
+[ 2014-07-12T13:40:58+08:00 ] 127.0.0.1 /Public/js/fotorama.js
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004486s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002273s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002634s ]
+NOTIC: [8] Undefined index: public D:\wamp\www\Hottredpen\Lib\Action\HomeAction.class.php 第 34 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.026148s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026530s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002449s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.133033s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002436s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002788s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.141633s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002714s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003529s ]
+
+[ 2014-07-12T13:41:06+08:00 ] 127.0.0.1 /admin/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004846s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005263s ]
+
+[ 2014-07-12T13:41:07+08:00 ] 127.0.0.1 /Public/js/fotorama.js
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004752s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005147s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002278s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002631s ]
+NOTIC: [8] Undefined index: public D:\wamp\www\Hottredpen\Lib\Action\HomeAction.class.php 第 34 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.138223s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.138614s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001958s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002135s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001979s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002285s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009351s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002979s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003313s ]
+
+[ 2014-07-12T13:41:10+08:00 ] 127.0.0.1 /admin/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003267s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003666s ]
+
+[ 2014-07-12T13:41:11+08:00 ] 127.0.0.1 /Public/js/fotorama.js
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004007s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004403s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001972s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002319s ]
+NOTIC: [8] Undefined index: public D:\wamp\www\Hottredpen\Lib\Action\HomeAction.class.php 第 34 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018955s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019380s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001594s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001763s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001289s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002261s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007812s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002209s ]
+INFO: [ view_end ] --END-- [ RunTime:0.111734s ]
+
+[ 2014-07-12T13:41:14+08:00 ] 127.0.0.1 /admin/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.031452s ]
+INFO: [ route_check ] --END-- [ RunTime:0.031895s ]
+
+[ 2014-07-12T13:41:15+08:00 ] 127.0.0.1 /Public/js/fotorama.js
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004761s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005171s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.005015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005470s ]
+NOTIC: [8] Undefined index: public D:\wamp\www\Hottredpen\Lib\Action\HomeAction.class.php 第 34 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.027558s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028026s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.116932s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002190s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001997s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002923s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.124972s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002706s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003043s ]
+
+[ 2014-07-12T13:41:24+08:00 ] 127.0.0.1 /Admin/User.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003947s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004350s ]
+
+[ 2014-07-12T13:41:25+08:00 ] 127.0.0.1 /Public/js/fotorama.js
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004459s ]
+INFO: [ route_check ] --END-- [ RunTime:0.010930s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003261s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003676s ]
+NOTIC: [8] Undefined index: public D:\wamp\www\Hottredpen\Lib\Action\HomeAction.class.php 第 34 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.025973s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026367s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002222s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.170469s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002040s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002532s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.178320s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002751s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003125s ]
+
+[ 2014-07-12T13:50:16+08:00 ] 127.0.0.1 /Admin/User.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004406s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004808s ]
+
+[ 2014-07-12T13:50:16+08:00 ] 127.0.0.1 /Public/js/fotorama.js
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.047063s ]
+INFO: [ route_check ] --END-- [ RunTime:0.047503s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002412s ]
+NOTIC: [8] Undefined index: public D:\wamp\www\Hottredpen\Lib\Action\HomeAction.class.php 第 34 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.121150s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.121662s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002632s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002128s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001980s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002874s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010682s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002833s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003166s ]
+
+[ 2014-07-12T13:50:17+08:00 ] 127.0.0.1 /Public/js/fotorama.js
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.005139s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005613s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001987s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002561s ]
+NOTIC: [8] Undefined index: public D:\wamp\www\Hottredpen\Lib\Action\HomeAction.class.php 第 34 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.026310s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026709s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.141985s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002215s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002036s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002621s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.150245s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002878s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003215s ]
+
+[ 2014-07-12T13:50:21+08:00 ] 127.0.0.1 /Admin.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004394s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004797s ]
+
+[ 2014-07-12T13:50:22+08:00 ] 127.0.0.1 /Public/js/fotorama.js
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003957s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004482s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002060s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002506s ]
+NOTIC: [8] Undefined index: public D:\wamp\www\Hottredpen\Lib\Action\HomeAction.class.php 第 34 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.020260s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020656s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001550s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001733s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001389s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001955s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007576s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.122218s ]
+INFO: [ view_end ] --END-- [ RunTime:0.122586s ]
+
+[ 2014-07-12T13:50:46+08:00 ] 127.0.0.1 /Admin.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004786s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005198s ]
+
+[ 2014-07-12T13:50:47+08:00 ] 127.0.0.1 /Public/js/fotorama.js
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.012213s ]
+INFO: [ route_check ] --END-- [ RunTime:0.012627s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002548s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002999s ]
+NOTIC: [8] Undefined index: public D:\wamp\www\Hottredpen\Lib\Action\HomeAction.class.php 第 34 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.066562s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.066999s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001729s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001731s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001348s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007769s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002047s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002378s ]
+
+[ 2014-07-12T13:51:11+08:00 ] 127.0.0.1 /Admin.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003923s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004325s ]
+
+[ 2014-07-12T13:51:12+08:00 ] 127.0.0.1 /Public/js/fotorama.js
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004929s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005333s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002658s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003437s ]
+NOTIC: [8] Undefined index: public D:\wamp\www\Hottredpen\Lib\Action\HomeAction.class.php 第 34 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.069326s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.069805s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002319s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002313s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001998s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003061s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010871s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002746s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003092s ]
+
+[ 2014-07-12T13:51:48+08:00 ] 127.0.0.1 /Admin.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.005578s ]
+INFO: [ route_check ] --END-- [ RunTime:0.006030s ]
+
+[ 2014-07-12T13:51:48+08:00 ] 127.0.0.1 /Public/js/fotorama.js
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003952s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004343s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001938s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002284s ]
+NOTIC: [8] Undefined index: public D:\wamp\www\Hottredpen\Lib\Action\HomeAction.class.php 第 34 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.041441s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041830s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001547s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001868s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001343s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001959s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007648s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003179s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003511s ]
+
+[ 2014-07-12T13:51:50+08:00 ] 127.0.0.1 /Public/js/fotorama.js
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003877s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004610s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002057s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002492s ]
+NOTIC: [8] Undefined index: public D:\wamp\www\Hottredpen\Lib\Action\HomeAction.class.php 第 34 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.030043s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030477s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001715s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.008363s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001334s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002251s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.014622s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.108861s ]
+INFO: [ view_end ] --END-- [ RunTime:0.111083s ]
+
+[ 2014-07-12T13:54:08+08:00 ] 127.0.0.1 /Admin.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004231s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004626s ]
+
+[ 2014-07-12T13:54:09+08:00 ] 127.0.0.1 /Public/js/fotorama.js
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004846s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005243s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002751s ]
+NOTIC: [8] Undefined index: public D:\wamp\www\Hottredpen\Lib\Action\HomeAction.class.php 第 34 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.131868s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.132258s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002391s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002079s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001684s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002640s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009964s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002564s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002897s ]
+
+[ 2014-07-12T13:55:14+08:00 ] 127.0.0.1 /Admin.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004299s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004704s ]
+
+[ 2014-07-12T13:55:15+08:00 ] 127.0.0.1 /Public/css/fonts/glyphicons-halflings-regular.woff
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003819s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004659s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002940s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003304s ]
+NOTIC: [8] Undefined index: public D:\wamp\www\Hottredpen\Lib\Action\HomeAction.class.php 第 34 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.184916s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.185352s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002402s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002377s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002021s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002636s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010320s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002944s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003498s ]
+
+[ 2014-07-12T13:55:21+08:00 ] 127.0.0.1 /Admin/Article/lanmu.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004810s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005251s ]
+
+[ 2014-07-12T13:55:42+08:00 ] 127.0.0.1 /Admin.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.005953s ]
+INFO: [ route_check ] --END-- [ RunTime:0.006352s ]
+
+[ 2014-07-12T13:55:42+08:00 ] 127.0.0.1 /Public/css/fonts/glyphicons-halflings-regular.woff
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003932s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004461s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002435s ]
+NOTIC: [8] Undefined index: public D:\wamp\www\Hottredpen\Lib\Action\HomeAction.class.php 第 34 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019618s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020273s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001692s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001668s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001261s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001886s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007387s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.141803s ]
+INFO: [ view_end ] --END-- [ RunTime:0.142155s ]
+
+[ 2014-07-12T13:56:16+08:00 ] 127.0.0.1 /Admin.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.006479s ]
+INFO: [ route_check ] --END-- [ RunTime:0.007307s ]
+
+[ 2014-07-12T13:56:18+08:00 ] 127.0.0.1 /Public/css/fonts/glyphicons-halflings-regular.woff
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003952s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004389s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002026s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002486s ]
+NOTIC: [8] Undefined index: public D:\wamp\www\Hottredpen\Lib\Action\HomeAction.class.php 第 34 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019209s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019655s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001592s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001734s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001334s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001985s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007557s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.138866s ]
+INFO: [ view_end ] --END-- [ RunTime:0.139229s ]
+
+[ 2014-07-12T13:57:24+08:00 ] 127.0.0.1 /Admin.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003987s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004417s ]
+
+[ 2014-07-12T13:57:25+08:00 ] 127.0.0.1 /Public/css/fonts/glyphicons-halflings-regular.woff
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003973s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004364s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002012s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002360s ]
+NOTIC: [8] Undefined index: public D:\wamp\www\Hottredpen\Lib\Action\HomeAction.class.php 第 34 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.027985s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028468s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001584s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001623s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001269s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002310s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007862s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.148949s ]
+INFO: [ view_end ] --END-- [ RunTime:0.149291s ]
+
+[ 2014-07-12T13:57:31+08:00 ] 127.0.0.1 /Admin/jifen/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.010547s ]
+INFO: [ route_check ] --END-- [ RunTime:0.010947s ]
+
+[ 2014-07-12T13:58:32+08:00 ] 127.0.0.1 /Admin.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004705s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005117s ]
+
+[ 2014-07-12T13:58:34+08:00 ] 127.0.0.1 /Public/css/fonts/glyphicons-halflings-regular.woff
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004352s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004821s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002063s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002451s ]
+NOTIC: [8] Undefined index: public D:\wamp\www\Hottredpen\Lib\Action\HomeAction.class.php 第 34 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.020426s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020997s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002011s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001702s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001290s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002067s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007980s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.147527s ]
+INFO: [ view_end ] --END-- [ RunTime:0.147859s ]
+
+[ 2014-07-12T13:59:06+08:00 ] 127.0.0.1 /Admin.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003605s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004004s ]
+
+[ 2014-07-12T13:59:07+08:00 ] 127.0.0.1 /Public/css/fonts/glyphicons-halflings-regular.woff
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003884s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004409s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002109s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002493s ]
+NOTIC: [8] Undefined index: public D:\wamp\www\Hottredpen\Lib\Action\HomeAction.class.php 第 34 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019676s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020288s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001604s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001664s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001267s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002036s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007437s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002647s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003003s ]
+
+[ 2014-07-12T14:00:08+08:00 ] 127.0.0.1 /Admin.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003206s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003610s ]
+
+[ 2014-07-12T14:00:09+08:00 ] 127.0.0.1 /Public/css/fonts/glyphicons-halflings-regular.woff
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004445s ]
+INFO: [ route_check ] --END-- [ RunTime:0.006002s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002142s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+NOTIC: [8] Undefined index: public D:\wamp\www\Hottredpen\Lib\Action\HomeAction.class.php 第 34 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.021188s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021638s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001640s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001616s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001306s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001906s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007516s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002041s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002375s ]
+
+[ 2014-07-12T14:00:39+08:00 ] 127.0.0.1 /Admin.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004325s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004737s ]
+
+[ 2014-07-12T14:00:41+08:00 ] 127.0.0.1 /Public/css/fonts/glyphicons-halflings-regular.woff
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003998s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004432s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002008s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002359s ]
+NOTIC: [8] Undefined index: public D:\wamp\www\Hottredpen\Lib\Action\HomeAction.class.php 第 34 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019332s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019821s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001624s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001781s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001462s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001878s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007796s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.143039s ]
+INFO: [ view_end ] --END-- [ RunTime:0.143428s ]
+
+[ 2014-07-12T18:07:31+08:00 ] 127.0.0.1 /Admin.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.031181s ]
+INFO: [ route_check ] --END-- [ RunTime:0.294052s ]
+
+[ 2014-07-12T18:07:34+08:00 ] 127.0.0.1 /Public/css/fonts/glyphicons-halflings-regular.woff
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003879s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004263s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001914s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002260s ]
+NOTIC: [8] Undefined index: public D:\wamp\www\Hottredpen\Lib\Action\HomeAction.class.php 第 34 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.050733s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051152s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001494s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001565s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001264s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001767s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006946s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002753s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003077s ]
+
+[ 2014-07-12T18:07:36+08:00 ] 127.0.0.1 /admin/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.103210s ]
+INFO: [ route_check ] --END-- [ RunTime:0.103692s ]
+
+[ 2014-07-12T18:07:37+08:00 ] 127.0.0.1 /Public/css/fonts/glyphicons-halflings-regular.woff
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004246s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004692s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001945s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002280s ]
+NOTIC: [8] Undefined index: public D:\wamp\www\Hottredpen\Lib\Action\HomeAction.class.php 第 34 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.024745s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025229s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.108413s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002177s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001967s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002565s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.116080s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003140s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003566s ]
+
+[ 2014-07-12T19:35:13+08:00 ] 127.0.0.1 /admin/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004212s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004619s ]
+
+[ 2014-07-12T19:35:14+08:00 ] 127.0.0.1 /Public/css/fonts/glyphicons-halflings-regular.woff
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003809s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004191s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002754s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003097s ]
+NOTIC: [8] Undefined index: public D:\wamp\www\Hottredpen\Lib\Action\HomeAction.class.php 第 34 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.029263s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029747s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002085s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.133862s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002738s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002815s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.142760s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002701s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003073s ]
+
+[ 2014-07-12T19:35:43+08:00 ] 127.0.0.1 /admin/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004283s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004768s ]
+
+[ 2014-07-12T19:35:45+08:00 ] 127.0.0.1 /Public/css/fonts/glyphicons-halflings-regular.woff
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003840s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004233s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001978s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002322s ]
+NOTIC: [8] Undefined index: public D:\wamp\www\Hottredpen\Lib\Action\HomeAction.class.php 第 34 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019143s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019583s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.007869s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001753s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001313s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001937s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.013878s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.132194s ]
+INFO: [ view_end ] --END-- [ RunTime:0.132529s ]
+
+[ 2014-07-12T19:36:00+08:00 ] 127.0.0.1 /admin/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004198s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004575s ]
+
+[ 2014-07-12T19:36:01+08:00 ] 127.0.0.1 /Public/css/fonts/glyphicons-halflings-regular.woff
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004310s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004740s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001954s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002287s ]
+NOTIC: [8] Undefined index: public D:\wamp\www\Hottredpen\Lib\Action\HomeAction.class.php 第 34 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.020478s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020916s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001640s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001770s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001294s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001916s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007479s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.004220s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004566s ]
+
+[ 2014-07-12T19:36:11+08:00 ] 127.0.0.1 /admin/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003191s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003649s ]
+
+[ 2014-07-12T19:36:12+08:00 ] 127.0.0.1 /Public/css/fonts/glyphicons-halflings-regular.woff
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003905s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004318s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001944s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002296s ]
+NOTIC: [8] Undefined index: public D:\wamp\www\Hottredpen\Lib\Action\HomeAction.class.php 第 34 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.022136s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022873s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001556s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001661s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001324s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001911s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007880s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002195s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002533s ]
+
+[ 2014-07-12T19:36:41+08:00 ] 127.0.0.1 /admin/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004018s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004399s ]
+
+[ 2014-07-12T19:36:43+08:00 ] 127.0.0.1 /Public/css/fonts/glyphicons-halflings-regular.woff
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004392s ]
+INFO: [ route_check ] --END-- [ RunTime:0.004808s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002616s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003283s ]
+NOTIC: [8] Undefined index: public D:\wamp\www\Hottredpen\Lib\Action\HomeAction.class.php 第 34 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.157723s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.174347s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002282s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002361s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001945s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002728s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010648s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002791s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003112s ]
+

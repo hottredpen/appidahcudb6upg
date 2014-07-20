@@ -1,0 +1,1 @@
+<?php	return array ( '作文大全' => 'zuowen', '英语广角' => 'yygj', '好词好句' => 'haocihaoju', '分类标记' => 'fenlei', '简看教材' => 'jiaocai', 'sefsafdd' => 'sefasfd', 'asdfsaf' => 'ssss', );?>

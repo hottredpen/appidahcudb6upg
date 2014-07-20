@@ -1,0 +1,196 @@
+[ 2014-06-30T09:46:07+08:00 ] 127.0.0.1 /
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.005613s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006052s ]
+NOTIC: [2048] Declaration of IndexAction::aa() should be compatible with that of AppstartAction::aa() D:\wamp\www\Hottredpen\Lib\Action\Home\IndexAction.class.php 第 4 行.
+NOTIC: [8] Undefined index: index D:\wamp\www\Hottredpen\Lib\Action\HomeAction.class.php 第 26 行.
+NOTIC: [8] Undefined index: index D:\wamp\www\Hottredpen\Lib\Action\HomeAction.class.php 第 27 行.
+NOTIC: [8] Undefined index: index D:\wamp\www\Hottredpen\Lib\Action\HomeAction.class.php 第 28 行.
+SQL: SHOW COLUMNS FROM `fdz_user` [ RunTime:0.154423s ]
+SQL: SELECT * FROM `fdz_user` ORDER BY id desc LIMIT 5   [ RunTime:0.094492s ]
+SQL: SHOW COLUMNS FROM `fdz_zuowen` [ RunTime:0.049664s ]
+SQL: SELECT * FROM `fdz_zuowen` WHERE ( `isfabu` = 1 ) ORDER BY id desc LIMIT 15   [ RunTime:0.002400s ]
+SQL: SHOW COLUMNS FROM `fdz_yygj` [ RunTime:0.117429s ]
+SQL: SELECT * FROM `fdz_yygj` WHERE ( `isfabu` = 1 ) ORDER BY id desc LIMIT 6   [ RunTime:0.001780s ]
+SQL: SHOW COLUMNS FROM `fdz_haocihaoju` [ RunTime:0.034625s ]
+SQL: SELECT * FROM `fdz_haocihaoju` WHERE ( `isfabu` = 1 ) ORDER BY id desc LIMIT 6   [ RunTime:0.001593s ]
+SQL: SHOW COLUMNS FROM `fdz_jiaocai` [ RunTime:0.092188s ]
+SQL: SELECT * FROM `fdz_jiaocai` WHERE ( `isfabu` = 1 ) ORDER BY id desc LIMIT 10   [ RunTime:0.001627s ]
+SQL: SELECT * FROM `fdz_zuowen` WHERE ( `isfabu` = 1 ) ORDER BY monthclick desc LIMIT 10   [ RunTime:0.066502s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: actenname D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 6 行.
+NOTIC: [8] Use of undefined constant img - assumed 'img' D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 182 行.
+NOTIC: [8] Use of undefined constant author - assumed 'author' D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 186 行.
+NOTIC: [8] Use of undefined constant author - assumed 'author' D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 186 行.
+NOTIC: [8] Use of undefined constant click - assumed 'click' D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 186 行.
+NOTIC: [8] Undefined index: modenname D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 187 行.
+NOTIC: [8] Undefined index: catenname D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 187 行.
+NOTIC: [8] Undefined index: catname D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 187 行.
+NOTIC: [8] Use of undefined constant img - assumed 'img' D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 182 行.
+NOTIC: [8] Use of undefined constant author - assumed 'author' D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 186 行.
+NOTIC: [8] Use of undefined constant click - assumed 'click' D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 186 行.
+NOTIC: [8] Undefined index: modenname D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 187 行.
+NOTIC: [8] Undefined index: catenname D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 187 行.
+NOTIC: [8] Undefined index: catname D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 187 行.
+NOTIC: [8] Use of undefined constant img - assumed 'img' D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 182 行.
+NOTIC: [8] Use of undefined constant author - assumed 'author' D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 186 行.
+NOTIC: [8] Use of undefined constant click - assumed 'click' D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 186 行.
+NOTIC: [8] Undefined index: modenname D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 187 行.
+NOTIC: [8] Undefined index: catenname D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 187 行.
+NOTIC: [8] Undefined index: catname D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 187 行.
+NOTIC: [8] Use of undefined constant img - assumed 'img' D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 182 行.
+NOTIC: [8] Use of undefined constant author - assumed 'author' D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 186 行.
+NOTIC: [8] Use of undefined constant click - assumed 'click' D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 186 行.
+NOTIC: [8] Undefined index: modenname D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 187 行.
+NOTIC: [8] Undefined index: catenname D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 187 行.
+NOTIC: [8] Undefined index: catname D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 187 行.
+NOTIC: [8] Use of undefined constant img - assumed 'img' D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 182 行.
+NOTIC: [8] Use of undefined constant author - assumed 'author' D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 186 行.
+NOTIC: [8] Use of undefined constant click - assumed 'click' D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 186 行.
+NOTIC: [8] Undefined index: modenname D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 187 行.
+NOTIC: [8] Undefined index: catenname D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 187 行.
+NOTIC: [8] Undefined index: catname D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 187 行.
+NOTIC: [8] Use of undefined constant img - assumed 'img' D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 182 行.
+NOTIC: [8] Use of undefined constant author - assumed 'author' D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 186 行.
+NOTIC: [8] Use of undefined constant click - assumed 'click' D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 186 行.
+NOTIC: [8] Undefined index: modenname D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 187 行.
+NOTIC: [8] Undefined index: catenname D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 187 行.
+NOTIC: [8] Undefined index: catname D:\wamp\www\Hottredpen\Runtime\Cache\Home\d7d7304fe2b1a1e2db17742d81f94c2f.php 第 187 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.497505s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.497910s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.045805s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.015787s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.004356s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.025964s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.092804s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.004858s ]
+INFO: [ view_end ] --END-- [ RunTime:0.005181s ]
+
+[ 2014-06-30T09:46:09+08:00 ] 127.0.0.1 /Public/css/fonts/glyphicons-halflings-regular.woff
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.251972s ]
+INFO: [ route_check ] --END-- [ RunTime:0.252344s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003822s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004244s ]
+NOTIC: [8] Undefined index: public D:\wamp\www\Hottredpen\Lib\Action\HomeAction.class.php 第 34 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.145466s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.145853s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003063s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002740s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002422s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003182s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012340s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003648s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003983s ]
+
+[ 2014-06-30T09:46:14+08:00 ] 127.0.0.1 /zuowen/html/977d3ce59cdce0.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.004842s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005292s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003461s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003839s ]
+NOTIC: 建议使用I方法替代_get
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `fdz_zuowen` [ RunTime:0.014467s ]
+SQL: SELECT * FROM `fdz_zuowen` WHERE ( `indexid` = '977d3ce59cdce0' ) LIMIT 1   [ RunTime:0.002097s ]
+SQL: SHOW COLUMNS FROM `fdz_zuowen_content` [ RunTime:0.052717s ]
+SQL: SELECT * FROM `fdz_zuowen_content` WHERE ( `pid` = 280 ) LIMIT 1   [ RunTime:0.002345s ]
+SQL: SELECT `id`,`indexid`,`title`,`isfabu` FROM `fdz_zuowen` WHERE ( `id` < '280' ) AND ( `isfabu` = 1 ) ORDER BY id desc LIMIT 1   [ RunTime:0.001139s ]
+SQL: SELECT `id`,`indexid`,`title`,`isfabu` FROM `fdz_zuowen` WHERE ( `id` > '280' ) AND ( `isfabu` = 1 ) ORDER BY id asc LIMIT 1   [ RunTime:0.001054s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: actenname D:\wamp\www\Hottredpen\Runtime\Cache\Home\39c90f2c90760846edce1a56e13fede7.php 第 6 行.
+NOTIC: [8] Undefined variable: actenname D:\wamp\www\Hottredpen\Runtime\Cache\Home\39c90f2c90760846edce1a56e13fede7.php 第 130 行.
+NOTIC: [8] Undefined variable: actenname D:\wamp\www\Hottredpen\Runtime\Cache\Home\39c90f2c90760846edce1a56e13fede7.php 第 147 行.
+NOTIC: [8] Undefined variable: actenname D:\wamp\www\Hottredpen\Runtime\Cache\Home\39c90f2c90760846edce1a56e13fede7.php 第 156 行.
+NOTIC: [8] Undefined variable: moshi D:\wamp\www\Hottredpen\Runtime\Cache\Home\39c90f2c90760846edce1a56e13fede7.php 第 176 行.
+NOTIC: [8] Undefined variable: moshi D:\wamp\www\Hottredpen\Runtime\Cache\Home\39c90f2c90760846edce1a56e13fede7.php 第 217 行.
+NOTIC: [8] Undefined variable: moshi D:\wamp\www\Hottredpen\Runtime\Cache\Home\39c90f2c90760846edce1a56e13fede7.php 第 228 行.
+NOTIC: [8] Undefined variable: moshi D:\wamp\www\Hottredpen\Runtime\Cache\Home\39c90f2c90760846edce1a56e13fede7.php 第 176 行.
+NOTIC: [8] Undefined variable: moshi D:\wamp\www\Hottredpen\Runtime\Cache\Home\39c90f2c90760846edce1a56e13fede7.php 第 217 行.
+NOTIC: [8] Undefined variable: moshi D:\wamp\www\Hottredpen\Runtime\Cache\Home\39c90f2c90760846edce1a56e13fede7.php 第 228 行.
+NOTIC: [8] Undefined variable: moshi D:\wamp\www\Hottredpen\Runtime\Cache\Home\39c90f2c90760846edce1a56e13fede7.php 第 176 行.
+NOTIC: [8] Undefined variable: moshi D:\wamp\www\Hottredpen\Runtime\Cache\Home\39c90f2c90760846edce1a56e13fede7.php 第 217 行.
+NOTIC: [8] Undefined variable: moshi D:\wamp\www\Hottredpen\Runtime\Cache\Home\39c90f2c90760846edce1a56e13fede7.php 第 228 行.
+NOTIC: [8] Undefined variable: moshi D:\wamp\www\Hottredpen\Runtime\Cache\Home\39c90f2c90760846edce1a56e13fede7.php 第 176 行.
+NOTIC: [8] Undefined variable: moshi D:\wamp\www\Hottredpen\Runtime\Cache\Home\39c90f2c90760846edce1a56e13fede7.php 第 217 行.
+NOTIC: [8] Undefined variable: moshi D:\wamp\www\Hottredpen\Runtime\Cache\Home\39c90f2c90760846edce1a56e13fede7.php 第 228 行.
+NOTIC: [8] Undefined variable: moshi D:\wamp\www\Hottredpen\Runtime\Cache\Home\39c90f2c90760846edce1a56e13fede7.php 第 176 行.
+NOTIC: [8] Undefined variable: moshi D:\wamp\www\Hottredpen\Runtime\Cache\Home\39c90f2c90760846edce1a56e13fede7.php 第 217 行.
+NOTIC: [8] Undefined variable: moshi D:\wamp\www\Hottredpen\Runtime\Cache\Home\39c90f2c90760846edce1a56e13fede7.php 第 228 行.
+NOTIC: [8] Undefined variable: moshi D:\wamp\www\Hottredpen\Runtime\Cache\Home\39c90f2c90760846edce1a56e13fede7.php 第 176 行.
+NOTIC: [8] Undefined variable: moshi D:\wamp\www\Hottredpen\Runtime\Cache\Home\39c90f2c90760846edce1a56e13fede7.php 第 217 行.
+NOTIC: [8] Undefined variable: moshi D:\wamp\www\Hottredpen\Runtime\Cache\Home\39c90f2c90760846edce1a56e13fede7.php 第 228 行.
+NOTIC: [8] Undefined variable: moshi D:\wamp\www\Hottredpen\Runtime\Cache\Home\39c90f2c90760846edce1a56e13fede7.php 第 176 行.
+NOTIC: [8] Undefined variable: moshi D:\wamp\www\Hottredpen\Runtime\Cache\Home\39c90f2c90760846edce1a56e13fede7.php 第 217 行.
+NOTIC: [8] Undefined variable: moshi D:\wamp\www\Hottredpen\Runtime\Cache\Home\39c90f2c90760846edce1a56e13fede7.php 第 228 行.
+NOTIC: [8] Undefined variable: moshi D:\wamp\www\Hottredpen\Runtime\Cache\Home\39c90f2c90760846edce1a56e13fede7.php 第 176 行.
+NOTIC: [8] Undefined variable: moshi D:\wamp\www\Hottredpen\Runtime\Cache\Home\39c90f2c90760846edce1a56e13fede7.php 第 217 行.
+NOTIC: [8] Undefined variable: moshi D:\wamp\www\Hottredpen\Runtime\Cache\Home\39c90f2c90760846edce1a56e13fede7.php 第 228 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.221842s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.222863s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003071s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002889s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.002614s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.005834s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015345s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003300s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003614s ]
+
+[ 2014-06-30T09:46:17+08:00 ] 127.0.0.1 /index.php?g=Home&m=Hits&a=gethits
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003224s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003569s ]
+NOTIC: [8] Undefined index: hits D:\wamp\www\Hottredpen\Lib\Action\HomeAction.class.php 第 34 行.
+NOTIC: 建议使用I方法替代_post
+SQL: SHOW COLUMNS FROM `fdz_zuowen` [ RunTime:0.279637s ]
+SQL: SELECT * FROM `fdz_zuowen` WHERE ( `id` = 280 ) LIMIT 1   [ RunTime:0.001345s ]
+SQL: SHOW COLUMNS FROM `fdz_zuowen_jiexi_one` [ RunTime:0.011769s ]
+SQL: SELECT * FROM `fdz_zuowen_jiexi_one` WHERE ( `pid` = 280 )  [ RunTime:0.001172s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\Hottredpen\Lib\Action\Home\HitsAction.class.php 第 49 行.
+SQL: SELECT * FROM `fdz_zuowen` WHERE ( `isfabu` = 1 )  [ RunTime:0.010226s ]
+SQL: SELECT * FROM `fdz_zuowen` WHERE ( `isfabu` = 1 ) ORDER BY monthclick desc LIMIT 10   [ RunTime:0.002744s ]
+SQL: SELECT * FROM `fdz_zuowen` WHERE ( `isfabu` = 1 ) ORDER BY weekclick desc LIMIT 10   [ RunTime:0.005410s ]
+NOTIC: [8] Undefined variable: mod D:\wamp\www\Hottredpen\Lib\Action\Home\HitsAction.class.php 第 177 行.
+SQL: UPDATE `fdz_` SET `click`=1,`yesterdayclick`='0',`todayclick`=1,`weekclick`=1,`monthclick`=1,`clickupdatetime`=1404092777 WHERE ( `id` = '280' ) [ RunTime:0.001959s ]
+ERR: 1146:Table 'fdzzj.fdz_' doesn't exist
+ [ SQL语句 ] : UPDATE `fdz_` SET `click`=1,`yesterdayclick`='0',`todayclick`=1,`weekclick`=1,`monthclick`=1,`clickupdatetime`=1404092777 WHERE ( `id` = '280' )
+
+[ 2014-06-30T09:46:17+08:00 ] 127.0.0.1 /Public/css/fonts/glyphicons-halflings-regular.woff
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.334765s ]
+INFO: [ route_check ] --END-- [ RunTime:0.335171s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.006151s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006850s ]
+NOTIC: [8] Undefined index: public D:\wamp\www\Hottredpen\Lib\Action\HomeAction.class.php 第 34 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.042113s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042494s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.095942s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.006171s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.042412s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.004719s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.150178s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.033170s ]
+INFO: [ view_end ] --END-- [ RunTime:0.033548s ]
+
+[ 2014-06-30T09:46:18+08:00 ] 127.0.0.1 /index.php?g=comments&m=pingxing&a=cha
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003230s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003581s ]
+NOTIC: 建议使用I方法替代_post
+SQL: SHOW COLUMNS FROM `fdz_zuowen` [ RunTime:0.014237s ]
+SQL: SELECT * FROM `fdz_zuowen` WHERE ( `id` = 280 ) LIMIT 1   [ RunTime:0.001354s ]
+NOTIC: [8] Undefined index: user_uid D:\wamp\www\Hottredpen\Lib\Action\Comments\PingxingAction.class.php 第 31 行.
+

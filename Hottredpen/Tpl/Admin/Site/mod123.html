@@ -1,0 +1,83 @@
+<include file="Index:header" />
+
+<div class="container-fluid">
+	<div class="row-fluid">
+        <!--左栏 starts -->
+		<include file="left" />
+        <!--左栏 end -->
+			
+			
+       <!-- content starts -->
+      <div id="content" class="span10">
+          <ul class="breadcrumb">
+              <li>
+                  <a href="__ROOT__/Admin.html">首页</a> <span class="divider">/</span>
+              </li>
+              <li>
+                  <a href="__ROOT__/Admin/Site/{$article.mod}List.html">{$article.modname}</a> <span class="divider">/</span>
+              </li>
+			  <li><a href="__ROOT__/Admin/Site/show123/{$article.mod}/{$article['id']}.html">{$article.title}</a></li><span class="divider">/</span>
+              <li class="active">编辑段落</li>
+              
+          </ul>
+          
+            <ul id="myTab" class="nav nav-tabs">
+              <li class="active"><a href="#home" data-toggle="tab">基本信息</a></li>
+            </ul>
+  <form method="post"  action='__URL__/upda'>
+  <input name="user_id" type="hidden" value="{$list['user_id']}" />
+  <input name="u"  type="hidden" value="__ROOT__/Admin/Site/show123/{$article.mod}/{$list['pid']}.html" />
+  <input name="sid" type="hidden" value="{$list['id']}" />
+  <input name="q" id="q" type="hidden" value="{$article.mod}123" />
+            <div id="myTabContent" class="tab-content">
+
+              <div class="tab-pane fade in active" id="home">
+
+                
+                    <table class="table">
+                                    <tbody>
+                                      <tr>
+                                        <td>
+                                               段落ID：
+										</td>
+                                        <td>
+                                          <input name="whichduan" type="text" class="span5" value="{$list['whichduan']}" maxlength="30">
+                                        </td>
+									  </tr>
+                                      <tr>
+                                        <td>
+                                               段落内容：
+                                        </td>
+                                        <td>
+                                          <textarea name="c_name" type="text" class="span5" >{$list['c_name']}</textarea>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                
+                    </table>
+              </div>
+              <!--基本信息end-->
+              <div class="modal-footer">
+                  <a href="#" class="btn" data-dismiss="modal">关闭</a>
+                  <button type="submit" class="btn btn-primary" >确认添加</button>
+              </div>
+              </form>
+
+
+            </div>
+
+          
+          
+      </div>
+       <!-- content end -->
+   </div>
+   <script>
+     function setCatPid(v){
+		 var catpid  = $(v).attr("catpid");
+		 var order =  $(v).attr("order");
+		 var pid  = $(v).attr("value");
+		 $("#catpid").attr("value",catpid);
+	 }
+   </script>
+</div>
+<include file="Index:footer" />
